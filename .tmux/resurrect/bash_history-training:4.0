@@ -1,0 +1,1000 @@
+cd ../../..
+git status
+rm -rf feature-pyramid-builder/
+git status
+cd ../_build/
+make clean
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+gutit branch
+git branch
+git checkout Facense-Release 
+git submodule update --init --recursive
+git status
+git pull
+ls ../modules/
+rm -rf CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+make -j9
+git status
+git branch
+git commit -a
+git push
+git branch
+git checkout yg/new_models
+git fetch
+git checkout yg/new_models
+git checkout yg/new_model 
+vim ../models/age_gender_net.prototxt 
+git branch
+git log
+git diff HEAD^
+git help diff
+git diff -s HEAD^
+git help diff
+git diff -=-names-only HEAD^
+git diff --names-only HEAD^
+git diff --name-only HEAD^
+git branch
+git checkout Facense-Release 
+git checkout -b gs/update-age_gender_models
+git cherry-pick 411049d7ecb3c2f66010cd9636ab3c0c51c3c0a6
+git status
+git cherry-pick --abort
+git help cherry-pick
+git cherry-pick --strategy=theirs 411049d7ecb3c2f66010cd9636ab3c0c51c3c0a6
+git help mrge
+git help merge
+git cherry-pick -Xtheirs 411049d7ecb3c2f66010cd9636ab3c0c51c3c0a6
+git log
+cd ..
+git status
+git commit -a
+git push
+git push -u origin gs/update-age_gender_models 
+cd _build/
+make -j9
+cmake -DBUILD_DEVELOPER_MODE=OFF -DWITH_CAFFE=OFF ..
+make -j9
+ls bin
+vim ../examples/faceDetect/
+./bin/faceDetect -h
+./bin/faceDetect -m ../models/ -i ~/data/datatang/StreetSubway\ Video\ with\ Pedestrian\ Tracing\ Annotation/data/Video\ Data/Subway_Ticket/labeled/TaiyanggongA_TicketEntrance_Fewer.avi --size 48 --out ~/test/Data/Subway_Ticket/labeled/TaiyanggongA_TicketEntrance_Fewer.avi.yml
+./bin/faceDetect -m ../models/ -i ~/data/datatang/StreetSubway\ Video\ with\ Pedestrian\ Tracing\ Annotation/data/Video\ Data/Subway_Ticket/labeled/TaiyanggongA_TicketEntrance_Fewer.avi --size 48 --out ~/test/TaiyanggongA_TicketEntrance_Fewer.avi.yml
+./bin/faceDetect -m ../models/ -i ~/data/datatang/StreetSubway\ Video\ with\ Pedestrian\ Tracing\ Annotation/data/Video\ Data/Subway_Ticket/unlabeled/Songjiazhuang_TicketExit_Fewer.avi --size 48 --out ~/test/Songjiazhuang_TicketExit_Fewer.avi.yml
+git branch
+cd ..
+git checkout master
+git checkout Facense-Release 
+cd _build/
+make clean
+rm -rf CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+make -j9
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+make -j9
+./bin/faceDetect -m ../models/ -i ~/data/datatang/StreetSubway\ Video\ with\ Pedestrian\ Tracing\ Annotation/data/Video\ Data/Subway_Ticket/unlabeled/Songjiazhuang_TicketExit_Fewer.avi --size 48 --show 1
+rm -rf CMake*
+make clean
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DWITH_CAFFE=ON ..
+make -j9
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DWITH_CAFFE=ON -DBUILD_DEVELOPER_MODE=ON ..
+make -j9
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DWITH_CAFFE=OFF -DBUILD_DEVELOPER_MODE=ON ..
+make -j9
+git status
+cd ..
+git branch
+git checkout -b gs/allow-developer-mode-with-dl-sdk
+git commit -a
+git checkout Facense-Release 
+vim README.md 
+git diff
+vim README.md 
+git commit -a
+git push
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+cd _build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .-- -j9
+cmake --build . -- -j9
+src/scripts/age_gender_test.py /mnt/age_gender_test_data/test/age_images.txt /mnt/age_gender_test_data/test/age_labels.txt /mnt/age_gender_test_data/test/gender_test_ims.txt /mnt/age_gender_test_data/test/gender_test_lbls.txt /home/jenkins/workspace/Facense/Facense-Release/src/models /home/jenkins/workspace/Facense/Facense-Release/src/tests/age-gender-test/ref_res /home/jenkins/workspace/Facense/Facense-Release/build /home/jenkins/workspace/Facense/Facense-Release/AgeGenderReport/age-gender.html
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+ls age-gender.html 
+vim age-gender.html 
+cd ..
+vim scripts/age_gender_test.py 
+cd _build/
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+git status
+git commit -a
+git push
+vim ../scripts/age_gender_test.py 
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+git commit -a --amend
+git push -f
+git fetch
+git log origin/master 
+git log Facense-Release 
+git rebase Facense-Release master 
+git stash
+git checkout Facense-Release 
+git rebase origin/master 
+git push
+git push -f
+git checkout gs/face-origin 
+git rebase Facense-Release 
+git stash pop
+git submdoule update --init --recursive
+git status
+git stash
+git checkout Facense-Release 
+git status
+git diff HEAD^
+git checkout HEAD^
+git checkout -b Facense-Release-MR
+git log
+git commit -a
+git push -u origin Facense-Release-MR 
+git checkout gs/update-age_gender_models 
+git rebase Facense-Release-MR 
+git push -f
+git checkout gs/face-origin 
+git stash pop
+git status
+git reset HEAD 5~../modules/face_detector/test/nms_test.cpp
+git reset HEAD ../modules/face_detector/test/nms_test.cpp
+git diff
+cd ..
+git rm 3rdparty/gtest
+git rm -r 3rdparty/gtest
+git status
+git commit -a
+git push -u origin gs/face-origin:gs/switch-to-ptest
+git checkout gs/update-age_gender_models 
+git checkout Facense-Release-MR 
+rm modules/face_detector/test/nms_test.cpp 
+git status
+git commit -a
+git push
+git checkout gs/update-age_gender_models 
+git rebase Facense-Release-MR 
+git push -f
+git checkout gs/face-origin 
+git grog
+git rebase Facense-Release-MR 
+git rebase Facense-Release
+git grog
+git checkout Facense-Release
+git branch -D gs/face-origin 
+git checkout gs/switch-to-ptest 
+git grog
+git rebase --onto-Facense-Release-MR gs/switch-to-ptest Facense-Release
+git rebase --onto=Facense-Release-MR gs/switch-to-ptest Facense-Release
+git grog
+git help rebase
+git branch
+git grog
+git checkout Facense-Release-MR 
+git branch -D Facense-Release
+git checkout Facense-Release
+git grog
+git checkout gs/switch-to-ptest 
+git rebase --onto=Facense-Release-MR Facense-Release
+git grog
+git push -f
+git diff
+git fetch
+git checkout yg/good_test_mr 
+vim scripts/age_gender_test.py 
+git commit -a
+git push
+git branch
+git checkout Facense-Release-MR 
+git pull
+git checkout -b gs/face-origin
+cd ..
+git clone git@gitlab-icv.inn.intel.com:algo/fcf_cascade.git
+cd fcf_cascade/
+git pull
+git submodule update --init --recursive
+git checkout develop
+cd ../facense
+cd modules/fcf_cascade/
+git branch
+git log
+cd ..
+cd ../../fcf_
+cd ../../
+cd fcf_cascade/
+git checkout develop
+git pull
+git log
+git checkout -b gs/nms-average-preserve-cascade-id
+cd ../facense
+git branch
+git checkout yg/good_test_mr 
+git diff
+git commit -a
+git push
+vim scripts/age_gender_test.py 
+git commit -a
+git push
+git submodule
+cd ../fcf_cascade
+git submdoule
+git submodule
+git status
+ls modules/
+ls modules/fpb/
+cd modules/fpb/
+git submodule
+cd external/perf-test/
+git fetch
+git checkout 5ceed09bdf962270ad2d98dc2b5fb72ddc0d0aa5
+cd ..
+cd modules/fpb/
+git submodule status
+git submodule update --init --recursive
+cd external/perf-test/
+git checkout +5ceed09bdf962270ad2d98dc2b5fb72ddc0d0aa5
+git checkout 5ceed09bdf962270ad2d98dc2b5fb72ddc0d0aa5
+cd ../..
+cd ..
+git submodule update --init
+git status
+cd ..
+git status
+git submodule update --init
+cd _build/
+ctest -V
+cmake ..
+make -j9
+ctest -V
+ls
+ls bin
+./bin/test_cascade 
+cd ../../facense/_build/
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/f_imgs.txt /media/share/DSS/Age_Gender_Recognition/age_lbls.txt /media/share/DSS/Age_Gender_Recognition/gender_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+make
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/f_imgs.txt /media/share/DSS/Age_Gender_Recognition/age_lbls.txt /media/share/DSS/Age_Gender_Recognition/gender_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+ls 5~/media/share/DSS/Age_Gender_Recognition/f_imgs.txt
+ls /media/share/DSS/Age_Gender_Recognition/f_imgs.txt
+ls /media/share/DSS/Age_Gender_Recognition/f_imgs 
+cd ../../fcf_cascade/_build/bin/
+ls
+cd ../.
+cd ..
+git branch
+git diff
+git branch
+git commit -a
+cd modules/fpb/
+git branch
+git status
+git diff
+cd ..
+git diff
+git status
+cd ..
+git status
+cd modules/fpb/
+git status
+cd ..
+git commit -a
+git push -u origin gs/nms-average-preserve-cascade-id 
+# ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/f_imgs.txt /media/share/DSS/Age_Gender_Recognition/age_lbls.txt /media/share/DSS/Age_Gender_Recognition/gender_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+cd ../../facense
+cd _build/
+# ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/f_imgs.txt /media/share/DSS/Age_Gender_Recognition/f_age_lbls.txt /media/share/DSS/Age_Gender_Recognition/f_gender_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/f_imgs.txt /media/share/DSS/Age_Gender_Recognition/f_age_lbls.txt /media/share/DSS/Age_Gender_Recognition/f_gender_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+git diff
+git checkout HEAD -- ../tests/age-gender-test/main.cpp
+git diff
+git commit -a
+git push
+git pull
+git status
+git reset --hard HEAD
+git rebase origin/yg/good_test_mr 
+git push
+git diff
+git checkout -b gs/test-extended-output
+git commit -a
+git push -u origin gs/test-extended-output 
+git commit -a
+git push
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=OFF ..
+make -j9
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/f_imgs.txt /media/share/DSS/Age_Gender_Recognition/f_age_lbls.txt /media/share/DSS/Age_Gender_Recognition/f_gender_lbls.txt ../models ../tests/age-gender-test/ref_res $(pwd) ./age-gender.html
+git branch
+git checkout yg/good_test_mr 
+git merge gs/test-extended-output 
+git push
+git checkout master
+git pull
+git submodule update --init --recursive
+make -j9
+cmake -DBUILD_DEVELOPER_MODE=OFF ..
+make -j9
+cmake -DBUILD_DEVELOPER_MODE=ON ..
+make -j9
+git checkout -b gs/fix-gtest-errors
+vim ../modules/face_detector/test/main.cpp 
+vim ../tests/accuracy/test_main.cpp 
+make -j9
+git commit 0a
+git commit -a
+git commit -a --amend
+git push -u origin gs/fix-gtest-errors 
+make clean
+make -j9
+git checkout master
+git pull
+rm -rf ./CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=OFF ..
+make -j9
+make clean
+rm -rf ./CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=OFF ..
+make -j9
+make clean
+rm -rf ./CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=OFF ..
+make -j9
+make clean 
+rm -rf CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=ON ..
+make -j9
+make clean 
+rm -rf CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=ON ..
+make -j9
+make clean 
+rm -rf CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=OFF ..
+make -j9
+git checkout -b gs/fix-ptest-include
+git diff
+git add ../CMakeLists.txt
+git status
+git commit
+git push
+git push -u origin gs/fix-ptest-include 
+git checkout master
+git reset --hard HEAD
+git pull
+git checkout -b gs/rename-age-gender-gold-results
+cd ..
+git branch
+git checkout master
+git branch -D gs/rename-age-gender-gold-results 
+git checkout -b gs/fix-facedetect-test-params
+git diff
+git commit -a
+git push -u origin gs/fix-facedetect-test-params 
+gti checkout master
+git checkout master
+cd ..
+cd fddb-evaluation-tools/
+vim fddb_evaluate.sh
+cd ../
+cd facense
+git checkout -b gs/print-file-name-from-fddb-test
+git diff
+git commit -a
+git push -u origin gs/print-file-name-from-fddb-test 
+git checkout master
+git pull
+cd modules/fcf_cascade/
+git branch
+gi tpull
+git pull
+git log origin/develop 
+git checkout 840bc9ab6c6a5d5d811219b2ac0446e330777800
+git submdoule update --init --recursive
+cd ..
+cd _build/
+make clean
+rm -rf CMake*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release -DBUILD_DEVELOPER_MODE=OFF ..
+make -j9
+git branch
+git status
+git checkout -b gs/update-fcf-cascade
+git branch -d gs/update-fcf-cascade 
+git checkout -b gs/update-fcf-cascade
+git diff modules/fcf_cascade/
+git submodule status
+git add modules/fcf_cascade/
+git status
+cd ..
+git add modules/fcf_cascade/
+git status
+git commit
+git push -u origin gs/update-fcf-cascade 
+git checkout master
+git pull
+cd _build/
+cd ..
+git submodule update --init --recursive
+cd _build/
+make -j9
+ctest -V
+git branch
+git checkout -b gs/valgrind-age-gender-test
+git checkout master 
+git checkout -b gs/valgrind-tests
+git branch -D gs/valgrind-age-gender-test 
+git checkout master
+git checkout -b gs/measure-reading-time
+ps aux|grep keyfreq
+sudo kill -9 21142
+sudo kill -9 21144
+sudo kill -9 21166
+ps aux|fzf logactive
+source ~/.bashrc
+ps aux|fzf logactive
+ps aux|fzf
+kill -9 21200
+cd ../..
+ls
+mkdir face_detector
+mc
+cd face_detector/
+mkdir _build
+cd _build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+ls
+make
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+make
+make clean
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+make
+ctest -V
+ls
+ls bin/
+ls lib
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+make -j9
+ls lib
+ldd lib/libface_detector.so 
+ls /etc/fstab
+cat /etc/fstab
+cd ../..
+cd fcf_cascade/
+git pull
+git checkout develop 
+git pull
+vim include/cascade_api.hpp 
+git checkout -b gs/fix-missing-exports
+git commit -a
+git push -u origin gs/fix-missing-exports 
+cd ../facense/modules/
+;s
+cd perf-test/
+git branch
+git fetch
+git log origin/master
+meld
+git diff origin/master 
+ls /mnt/
+ls /media/
+ls /media/share/
+ls /media/share/DSS
+ls /media/share/DSS/FDDB_dataset/
+ls /media/share/DSS/FDDB_dataset/2002
+ls /media/share/DSS/FDDB_dataset/2002/07
+ls /media/share/DSS/FDDB_dataset/2002/07/19
+ls /media/share/DSS/FDDB_dataset/2002/07/19/big
+feh ls /media/share/DSS/FDDB_dataset/2002/07/19/big
+cd ../..
+git status
+git checkout master
+git pull
+git log
+cd _build/
+make -j9
+cp /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_test_images.txt
+cp /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt
+cp /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt
+mv /media/share/DSS/Age_Gender_Recognition/valgrind_test_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt
+vim -O /media/share/DSS/Age_Gender_Recognition/valgrind*
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+COMMAND_PREFIX='valgrind' ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+AGE_GENDER_COMMAND_PREFIX='valgrind' ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+AGE_GENDER_COMMAND_PREFIX='valgrind --tool=memcheck --leak-check=full --undef-value-errors=yes --track-origins=yes --child-silent-after-fork=no --trace-children=yes --gen-suppressions=all --demangle=yes --suppressions=/home/gserebry/dev/facense/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/fcf_cascade/modules/fpb/external/perf-test/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/perf-test/devtools/valgrind.supp' ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+ls ../modules/fcf_cascade/modules/fpb/external/perf-test/devtools/
+cd ..
+git submdoule update --init --recursive
+cd _build/
+AGE_GENDER_COMMAND_PREFIX='valgrind --tool=memcheck --leak-check=full --undef-value-errors=yes --track-origins=yes --child-silent-after-fork=no --trace-children=yes --gen-suppressions=all --demangle=yes --suppressions=/home/gserebry/dev/facense/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/fcf_cascade/modules/fpb/external/perf-test/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/perf-test/devtools/valgrind.supp' ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+cmake -DBUILD_DEVELOPER_MODE=ON ..
+make -j9
+AGE_GENDER_COMMAND_PREFIX='valgrind --tool=memcheck --leak-check=full --undef-value-errors=yes --track-origins=yes --child-silent-after-fork=no --trace-children=yes --gen-suppressions=all --demangle=yes --suppressions=/home/gserebry/dev/facense/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/fcf_cascade/modules/fpb/external/perf-test/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/perf-test/devtools/valgrind.supp' ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+cmake -DBUILD_DEVELOPER_MODE=ON -DCMAKE_CXX_FLAGS='-g' ..
+make -j9
+AGE_GENDER_COMMAND_PREFIX='valgrind --tool=memcheck --leak-check=full --undef-value-errors=yes --track-origins=yes --child-silent-after-fork=no --trace-children=yes --gen-suppressions=all --demangle=yes --suppressions=/home/gserebry/dev/facense/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/fcf_cascade/modules/fpb/external/perf-test/devtools/valgrind.supp --suppressions=/home/gserebry/dev/facense/modules/perf-test/devtools/valgrind.supp' ../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+cd ..
+git blame ./tests/age-gender-test/main.cpp
+git log 2e5381d1
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+cd _build/
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/valgrind_images.txt /media/share/DSS/Age_Gender_Recognition/valgrind_age_labels.txt /media/share/DSS/Age_Gender_Recognition/valgrind_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+ls
+ls res
+ls res/errors/
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/ ../tests/age-gender-test/mini_res `pwd` age-gender.html
+urxvtecho $?
+echo $?
+ls res
+ls res/errors/
+ls
+vim age-gender.html 
+cd ..
+git submdouel update --init --recursive
+cd _build/
+cd ..
+git diff
+ls
+ls scripts/
+ls -lht
+cd _build/
+ls
+ls bin
+make
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/ ../tests/age-gender-test/mini_res `pwd` age-gender.html
+ls res/errors/
+cat res_bad_images.txt 
+ls pic
+ls
+make
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/ ../tests/age-gender-test/mini_res `pwd` age-gender.html
+ls res/errors/
+ls res/
+ls
+rm ./*.jpg
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/ ../tests/age-gender-test/mini_res `pwd` age-gender.html
+ls res
+ls errors
+ls
+make
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/ ../tests/age-gender-test/mini_res `pwd` age-gender.html
+ls errors
+cat res_bad_images.txt 
+git branch
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/full_test_images.txt /media/share/DSS/Age_Gender_Recognition/full_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/full_test_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+nls
+ls
+cat out.log 
+ls
+ls bin
+ls ../scripts/
+ls -lht
+ls errors
+vim ~/.bashrc
+source ~/.bashrc 
+ulimit -a
+make -j9
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/full_test_images.txt /media/share/DSS/Age_Gender_Recognition/full_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/full_test_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+cmake -DCMAKE_CXX_FLAGS='-g' ..
+man gcc
+cmake -DCMAKE_CXX_FLAGS='-ggdb3' ..
+make -j9
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/full_test_images.txt /media/share/DSS/Age_Gender_Recognition/full_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/full_test_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+ls
+ls bin/
+ls ..
+cd ..
+find . -name 'core*'
+ls /media/share/
+ls /media/share/DSS/Age_Gender_Recognition/
+ls -lh /media/share/DSS/Age_Gender_Recognition/
+vim /media/share/DSS/Age_Gender_Recognition/core 
+cd _build/bin/
+ls
+gdb age-gender-test /media/share/DSS/Age_Gender_Recognition/core 
+cd ..
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/full_test_images.txt /media/share/DSS/Age_Gender_Recognition/full_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/full_test_gender_labels.txt ../models/ ../tests/age-gender-test/ref_res `pwd` age-gender.html
+ls /media/share/
+ls /media/share/DSS/
+feh /media/share/DSS/Age_Gender_Recognition/pic/
+git diff
+ls errors
+du -h errors
+cd ..
+git diff
+git branch
+git checkout -b gs/fix-age-gender-test
+git add -i
+git commit
+cd _build/
+git push -u origin gs/fix-age-gender-test 
+git diff
+git reset --hard HEAD
+git status
+git checkout master
+git pull
+git branch -r
+cd ..
+git checkout origin/yg/good_test_mr 
+git rebase master
+git status
+cd _build/
+make -j9
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/ ../tests/age-gender-test/mini_res `pwd` age-gender.html
+echo $?
+firefox age-gender.html 
+git diff master 
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/ ../tests/age-gender-test/mini_res `pwd` age-gender.html
+echo $?
+git diff
+git commit -a
+git push -u origin 
+git push 
+git branch
+git branch -D yg/good_test_mr 
+git checkout -b yg/good_test_mr
+git log
+git push
+git push -u origin yg/good_test_mr 
+git push -f -u origin yg/good_test_mr 
+vim ../tests/age-gender-test/ref_res_age_avg_error.txt
+git branch
+git diff
+git checkout gs/fix-age-gender-test 
+git diff
+make
+git commit -a --amend
+git diff
+git diff HEAD^
+git commit -a --amend
+git push -f
+git branch
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ -DCMAKE_BUILD_TYPE=Release ..
+gti diff
+git diff
+git branch
+git log
+git commit -a
+git push
+skype
+skype --secondary&
+git bracnh
+git branch
+git pull
+nake -j9
+[3~mnake -j9
+make -j9
+cd ~/dev/fcf_train/
+git branch
+git diff
+git log
+git pull -p
+git checkout develop 
+git pull
+git log
+cd _build/
+make clean
+make -j5
+git submodule update --init --recursive
+make -j5
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make -j5
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make
+ctest -V
+ls
+./fcftrain -h
+cmake -GNinja
+cmake -GNinja ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja ..
+ninja
+cd ../..
+cd dwell-time/
+git pull -p
+. ~/.bashrc 
+git diff develop 
+cd ..
+cd dwell-time/
+git branch -r
+git checkout at/sdl_req 
+git log
+git branch -r
+git checkout develop
+git pull
+git log
+git branch -D gs/update-fd-fa
+git checkout -b gs/update-fd-fa
+cd modules/face_analyzer/
+git pull -p
+git log
+cd ../face_detector/
+git pull -p
+git checkout gs/reimplement-crt-secure-fix 
+cd modules/fcf_cascade/
+git pull -p
+git checkout develop 
+git pull -p
+git submodule update --init --recursive
+cd ,,
+cd ..
+cd _build/
+cmake ..
+cd ..
+cd cmake/cmake-scripts/
+git submodule update --init
+cd ..
+cd modules/face_detector/
+git checkout HEAD@{1}
+git checkout gs/reimplement-crt-secure-fix 
+cd modules/fcf_cascade/
+cd ..
+git pull -p
+git submodule update --init --recursive
+cd ..
+cd _
+cd ../_build/
+cmake ..
+cmake -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+cd modules/face_analyzer/
+git submodule update --init --recursive
+cd ../..
+cd ..
+cd modules/face_detector/
+git checkout gs/reimplement-crt-secure-fix 
+git submodule update modules/fcf_cascade/
+cd ../
+cd ..
+cd modules/face_analyzer/
+cd ..
+cd ../_build/
+cmake ..
+ninja
+ctest -V
+. /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/bin/setvars.sh 
+ctest -V
+cd ../modules/face_detector/
+git chechkout master
+git pull -p
+git status
+git submodule update --init --recursive
+git status
+rm -rf cmake/cmake_utils/
+cd ..
+git status
+ls
+cd perf-test/
+git checkout master
+git pull
+cd ..
+cd modules/face_analyzer/
+git pull
+git checkout develop 
+git pull
+cd ..
+;s
+ls
+ls cmake/
+cd cmake/
+cd cmake-scripts/
+git pull
+git checkout master
+git pull
+cd ..
+git status
+git commit -a -m'Update submodules'
+cd _build/
+cmake ..
+cd ../modules/
+cd face_detector/
+git checkout master
+git pull -p
+cd ../face_analyzer/
+git pull -p
+cd ..
+git status
+git log
+git commit -a -m 'update FD, FA'
+git push -u origin gs/update-fd-fa 
+git push -f -u origin gs/update-fd-fa 
+git checkout develop
+git submodule update --init --recursive
+cd modules/face_analyzer/
+git reset --hard HEAD
+cd ../face_detector/
+git reset --hard HEAD
+cd ..
+git status
+git submodule update --init --recursive
+cd _build/
+ninja
+git status
+cd modules/face_detector/
+git diff
+git status
+cd ../../../
+cd modules/face_detector/
+git diff
+git status
+rm -rf cmake/cmake_utils/
+cd ../..
+git status
+git diff
+git diff -h
+git help dif
+git diff -b
+git commit -a -m'use minimal needed opencv includes'
+git git checkout -b gs/use-minimal-opencv-includes
+git checkout -b gs/use-minimal-opencv-includes
+git fetch
+git rebase origin/develop 
+git log
+git push -u origin gs/use-minimal-opencv-includes 
+cd ../tampering_detection/
+git pull -p
+git checkout asid/fix_openvx_cmake
+git diff master
+git grog
+git checkout master
+git pull -p
+git checkout asid/fix_openvx_cmake
+git diff master
+less /etc/fstab
+git submodule update --init --recursive
+cd _build/
+ninja =v
+ninja -h
+ninja -j 1 -v
+ninja clean
+ninja -j 1 -v
+ninja
+git diff
+cmake .
+ninja
+ninja -j1 -v
+less build.ninja 
+vim build.ninja 
+git diff]
+vim build.ninja 
+git diff
+ninja
+cpack
+mc
+unzip CameraTampering-1.0.0-Linux.zip 
+ls
+cd CameraTampering-1.0.0-Linux/
+ls
+./bin/camera_tampering_demo 
+ldd ./bin/camera_tampering_demo 
+ldd ./lib/libcamera_tampering_detector_public.so
+sudo ldd ./bin/camera_tampering_demo 
+sudo -s
+ldd ./lib/libcamera_tampering_detector_public.so
+sudo ldd ./bin/camera_tampering_demo 
+sudo ldd ./bin/ctd_example 
+git diff
+git commit -a -m'Fix CMake error on non-exported static library'
+git push
+git diff
+ctest -V
+cd ..
+ctest -V
+git diff
+git commit -a -m'Fix missing compile definitions from internal targets'
+git push
+ninja
+cpack
+unzip CameraTampering-1.0.0-Linux
+cd CameraTampering-1.0.0-Linux/
+ls
+ldd bin/ctd_example |less
+ldd bin/camera_tampering_demo |less
+ldd lib/libcamera_tampering_detector_public.so |less
+cd ..
+cpack
+unzip CameraTampering-1.0.0-Linux
+ldd CameraTampering-1.0.0-Linux/bin/ctd_example |less
+ls
+rm -rf CameraTampering_documentation/
+unzip CameraTampering-1.0.0-Linux
+ls
+git diff
+git commit -a -m'Remove full paths to the dynamic libraries from packaged binaries'
+git push
+ldd bin/ctd_example |less
+cpack
+unzip CameraTampering-1.0.0-Linux.zip 
+ldd CameraTampering-1.0.0-Linux/bin/ctd_example |less
+git diff
+git reset --hard HEAD^
+git push -f
+cd ../../dwell-time/
+vim tests/regression/CMakeLists.txt 
+vim tests/validation/CMakeLists.txt 
+vim tests/age-gender-quality/CMakeLists.txt 
+vim ../face-detector/tests/CMakeLists.txt 
+vim ../face_analyzer/tests/CMakeLists.txt 
+git pull -p
+git diff
+git diff -h
+git help diff
+git diff
+git branch
+git pull -p
+git branch -r
+git checkout at/age_gender_test_with_caffe 
+git pull -p
+git submodule update --init --recursive
+git status
+git reset --hard HEAD
+cd modules/face_analyzer/
+git pull -p
+git checkout develop
+git pull
+git log master
+git grog
+git diff
+git submodule update --init --recursive
+git diff
+git checkout -b gs/fix-internal-api-include-dirs
+git commit -a -m'allow the users of the internal api to have correct include directories from the face_analyzer_internal target'
+git push -u origin gs/fix-internal-api-include-dirs 
+cd ..
+git status
+git diff
+git commit -a -m'WIP: wait for the merge to develop in FA. Fixed include directories for the face_analyzer_internal'
+git push
+git pull -p
+git checkout develop
+git submodule update --init --recursive
+cd modules/face_detector/
+git pull
+git checkout v1.0.0 
+git submodule update --init --recursive
+cd ..
+ls
+cd face_analyzer/
+git fetch
+git pull
+git remote
+git branch -r
+git checkout master
+git pull -p
+git log
+git checkout -b test
+git log
+git commit -a -m'test commit'
+git reset HEAD^
+git status
+git grog
+cd ..
+git pull -p
+git submodule update --init --recursive
+git checkout at/add_readme 
+git submodule update --init --recursive
+ls
+cd ..
+ls
+vim tests/age-gender-quality/CMakeLists.txt 
+vim tests/regression/CMakeLists.txt 
+git branch
+git checkout at/age_gender_test_with_caffe 
+git submodule update --init --recursive
+cd modules/face_analyzer/
+git pull
+git checkout master
+git pull -p
+cd ..
+git status
+git log
+git commit -a -m'Update face analyzer to its master'
+git push
+sudo apt install filezilla
+htop

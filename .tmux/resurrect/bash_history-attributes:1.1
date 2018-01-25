@@ -1,0 +1,1000 @@
+ssh nnlicv088
+sudo dpkg -i /home/gserebry/Downloads/slack-desktop-2.8.1-amd64.deb 
+man sshfs
+nvidia-smi
+sudo prime-select query
+sudo prime-select nvidia
+sudo service lightdm restart
+cd ../..
+cd ../person_attributes
+. ~/dev/python2-env/bin/activate
+python train.py config_test_vis.py 
+ls
+python train.py config_test_vis.py 
+cp parse_market_wider_peta_train/test.prototxt parse_market_wider_peta_train_reduced/
+python test.py config_sigmoid_crossentropy_reduced.py
+vim parse_market_wider_peta_train_reduced/test.prototxt 
+python test.py config_sigmoid_crossentropy_reduced.py
+nvidia-smi
+ssh nnlicv088
+tmux
+tmux a -t'attributes'
+htop
+tmux
+watch -n0,1 nvidia-smi
+nvidia-smi 
+sudo prime-select nvidia
+sudo service lightdm restart
+tmux a -t'attributes'
+git commit -a -m'WIP: try to train is_male attrib only'
+ls
+. ~/dev/python2-env/bin/activate
+python train.py config_softmax_weighted.py &> softmax_weighted/train.log
+bg
+tail -f softmax_weighted/train.log 
+python train.py config_softmax_weighted.py &> softmax_weighted/train.log &
+tail -f softmax_weighted/train.log 
+fg
+ls
+cat run_train.sh 
+mkdir softmax_weighted_by_freq
+#ython train.py ./config_softmax_weighted_by_freq.py &> softmax_weighted_by_freq/train.log &
+python train.py ./config_softmax_weighted_by_freq.py &> softmax_weighted_by_freq/train.log &
+tail -f softmax_weighted_by_freq/train.log 
+fg
+python train.py ./config_softmax_weighted_by_freq.py &> softmax_weighted_by_freq/train.log &
+tail -f softmax_weighted_by_freq/train.log 
+cat run_train.sh 
+mkdir softmax_weighted_by_freq_reduced
+python train.py ./config_softmax_weighted_by_freq_reduced.py &> softmax_weighted_by_freq_reduced/train.log &
+tail -f softmax_weighted_by_freq_reduced/train.log
+fg
+vim models/resnet-10/train_val_multihead_softmax_weighted_reduced.proto 
+vim models/resnet-10/train_val_multihead_softmax_weighted.proto 
+python train.py ./config_softmax_weighted_by_freq_reduced.py &> softmax_weighted_by_freq_reduced/train.log &
+tail -f softmax_weighted_by_freq_reduced/train.log
+ls
+ls -lht
+cp config_softmax_weighted_by_freq.py config_softmax_weighted_by_freq_nonzero_mean_subtract.py
+vim config_softmax_weighted_by_freq_nonzero_mean_subtract.py
+mkdir config_softmax_weighted_by_freq_nonzero_mean_subtract
+vim config_softmax_weighted_by_freq_nonzero_mean_subtract.py
+python train.py ./config_softmax_weighted_by_freq_nonzero_mean_subtract.py &> config_softmax_weighted_by_freq_nonzero_mean_subtract/train.log &
+tail -f config_softmax_weighted_by_freq_nonzero_mean_subtract/train.log 
+fg
+vim ./config_softmax_weighted_by_freq_nonzero_mean_subtract.py
+vim config_sigmoid_crossentropy.py
+vim config_sigmoid_crossentropy_reduced.py
+python train.py config_sigmoid_crossentropy_reduced.py &> sigmoid_with_stripes/train_start_lr_1e-2.log &
+tail -f sigmoid_with_stripes/train_start_lr_1e-2.log
+fg
+vim config_sigmoid_crossentropy_reduced.py
+python train.py config_sigmoid_crossentropy_reduced.py &> sigmoid_with_stripes/train_start_lr_1e-2.log &
+tail -f sigmoid_with_stripes/train_start_lr_1e-2.log
+fg
+python train.py config_sigmoid_crossentropy_reduced.py &> sigmoid_with_stripes/train_start_lr_1e-2_2.log &
+tail -f sigmoid_with_stripes/train_start_lr_1e-2_2.log
+python train.py config_sigmoid_crossentropy_reduced.py &> sigmoid_with_stripes/train_start_lr_1e-2_2.log &
+ls
+ls -lht
+ls
+vim parse_market_wider_peta_train/test.prototxt 
+vim fixed_labels/test.proto 
+#cp fixed_labels/test.proto ~/dev/model-zoo/intel/
+mkdir -p ~/dev/model-zoo/intel/crossroad/person_attributes/multi_path
+mkdir -p ~/dev/model-zoo/intel/crossroad/person_attributes/single_path
+cp count_samples/ ~/dev/model-zoo/intel/crossroad/person_attributes/single_path/
+cd ~/.vim_runtime/
+git status
+cd sources_non_forked/
+git submodule add https://github.com/sheerun/vim-polyglot
+ls
+cd
+calc
+ipython
+cd ~/dev/person_attributes
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted/train_fix_bs_128.log ./softmax_weighted_by_freq_reduced/train_bs_128.log
+cd ~/dev//caffe-s
+cd ~/dev//caffe-sugar/
+git branch
+git stash list
+git log stash@{0}
+git stash apply
+git diff
+cd -
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted/train_fix_bs_128.log ./softmax_weighted_by_freq_reduced/train_bs_128.log
+tmux
+git status
+git diff
+git add test.py 
+git status
+git commit -m'Re-write test for the better support of both softmax and sigmoid crossentropy answers'
+git add data/attributes_datalayer.py 
+git add augmenter.py 
+git commit -m'use imgaug for data augmentation'
+git push
+git diff gs/face-detection-metrics -- face-detection-benchmark/requirements.txt
+sudo docker run hello-world
+htop
+nvidia-smi 
+git diff
+htop
+git lfs fetch
+sudo service lightdm restart
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./sigmoid_with_stripes/train.log 
+vim test/config.py
+ls test
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./test/bs_128.log ./test/imgaug_128_64.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq_reduced/train.log 
+pushd ~/dev/caffe-sugar/scripts/
+git checkout feature/pdruzhkov/more_caffe_related_stuff
+popd
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq_reduced/train.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq/train.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted/train.log 
+sudo service lightdm restart
+python scripts/count_flop.py --caffe ~/dev/caffe-shared/python/ --proto ~/dev/model-zoo/intel/crossroad/person_attributes/multi_path/test.proto
+cd ~/dev/person_attributes
+ls
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./test/imgaug.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./test/imgaug.log ./test/imgaug_step_after_30k.log 
+vim test/config.py
+python train.py test/config.py &> test/imgaug_128_64.log &
+tail -f test/imgaug_128_64.log 
+. ~/dev/python2-env/bin/activate
+python train.py test/config.py &> test/imgaug_128_64.log &
+tail -f test/imgaug_128_64.log 
+vim test/train_val_reduced_all_datasets.proto 
+vim test/config.py
+python train.py test/config.py &> test/imgaug_128_64.log &
+tail -f test/imgaug_128_64.log 
+vim test/config.py
+python train.py test/config.py &> test/imgaug_128_64.log &
+tail -f test/imgaug_128_64.log 
+vim config_softmax_weighted_by_freq_reduced.py
+vim models/resnet-10/train_val_multihead_softmax_weighted_reduced.proto
+python train.py config_softmax_weighted_by_freq_reduced.py &> ./softmax_weighted_by_freq_reduced/train_bs_128.log
+bg
+tail -f ./softmax_weighted_by_freq_reduced/train_bs_128.log
+fg
+vim config_softmax_weighted_by_freq_reduced.py
+python train.py config_softmax_weighted_by_freq_reduced.py &> ./softmax_weighted_by_freq_reduced/train_bs_128.log &
+tail -f ./softmax_weighted_by_freq_reduced/train_bs_128.log
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py sigmoid_with_stripes/train_start_lr_1e-2.log sigmoid_with_stripes/train_start_lr_1e-2_2.log 
+. ~/dev/python2-env/
+. ~/dev/python2-env/bin/activate
+vim test/config.py
+python train.py test/config.py &> test/imgaug_step_after_30k.log &
+tail -f test/imgaug_step_after_30k.log
+fg
+vim test/config.py
+python train.py test/config.py &> test/imgaug_step_after_30k.log &
+tail -f test/imgaug_step_after_30k.log
+fg
+docker run hello_world
+cd ~/dev/person_attributes
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq/train_fix_bs_128.log ./softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq/train_fix_bs_128.log ./softmax_weighted_by_freq/train_fix_bs_128_step_50000.log ./resnet10_reduced_hyperfeature/train.log 
+tmux
+watch -n0,1 nvidia-smi
+htop
+tmux
+ls
+git submodule update --init --recursive
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq/train_fix_bs_128.log ./softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./sigmoid_with_stripes/train.log 
+sudo iotop
+htop
+nvidia-smi 
+python scripts/count_flop.py --caffe ~/dev/caffe-shared/python/ --proto ~/dev/model-zoo/intel/crossroad/person_attributes/multi_path/test.proto
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/resnet10_reduced_hyperfeature/train_bs_32.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/resnet10_reduced_hyperfeature/train.log ~/dev/person_attributes/resnet10_reduced_hyperfeature/train_bs_32.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/resnet10_reduced_hyperfeature/train.log ~/dev/person_attributes/resnet10_reduced_hyperfeature/train_bs_32.log ~/dev/person_attributes/resnet10_reduced_hyperfeature/train_bs_16.log
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py sigmoid_with_stripes/train_start_lr_1e-2.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py sigmoid_with_stripes/train_start_lr_1e-2.log sigmoid_with_stripes/train_start_lr_1e-2_2.log 
+vim test//resnet_10_reduced_init_all_datasets_bs_128_config.py 
+mkdir resnet_10_hyperfeature
+vim test//resnet_10_reduced_init_all_datasets_bs_128_config.py 
+mkdir resnet10_reduced_hyperfeature
+vim test//resnet_10_reduced_init_all_datasets_bs_128_config.py 
+cp test//resnet_10_reduced_init_all_datasets_bs_128_config.py resnet10_reduced_hyperfeature/
+rmdir resnet_10_hyperfeature
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py 
+. ~/dev/python2-env/bin/activate
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py &> resnet10_reduced_hyperfeature/train.log &
+tail -f resnet10_reduced_hyperfeature/train.log
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py &> resnet10_reduced_hyperfeature/train.log &
+tail -f resnet10_reduced_hyperfeature/train.log
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py &> resnet10_reduced_hyperfeature/train.log &
+tail -f resnet10_reduced_hyperfeature/train.log
+fg
+deactivate
+source ~/dev/python2-env/bin/activate
+virtualenv -h
+python --help
+pip --help
+pip freeze > requirements.txt
+vim requirements.txt 
+deactivate
+virtualenv -h
+virtualenv -p ~/intel/intelpython2/bin/python ~/dev/intel_python2
+. ~/dev/intel_python2/bin/activate
+pip install -r ./requirements.txt 
+ls ~/dev/python2-env/lib/python2.7/site-packages/
+ls ~/dev/python2-env/lib/python2.7/site-packages/cv2
+ls -l ~/dev/python2-env/lib/python2.7/site-packages/cv2
+cp -r ~/dev/python2-env/lib/python2.7/site-packages/cv2 ~/dev/intel_python2/lib/python2.7/site-packages/
+ls -l  ~/dev/intel_python2/lib/python2.7/site-packages/
+ls -l  ~/dev/intel_python2/lib/python2.7/site-packages/cv2
+vim ./requirements.txt 
+pip install -r ./requirements.txt 
+deactivate 
+. ~/dev/intel_python2/bin/activate
+python
+pip install numpy
+vim ./requirements.txt 
+pip install -r ./requirements.txt 
+vim ./requirements.txt 
+pip install -r ./requirements.txt 
+vim ./requirements.txt 
+pip install -r ./requirements.txt 
+pip3 --no-cache-dir uninstall -y pillow &&     CC="cc -mavx2" pip3 --no-cache-dir install -U --force-reinstall pillow-simd
+pip --no-cache-dir uninstall -y pillow && CC="cc -mavx2" pip install -U --force-reinstall pillow-simd; 
+vim ./requirements.txt 
+pip install imgaug
+pip --no-cache-dir uninstall -y pillow && CC="cc -mavx2" pip install -U --force-reinstall pillow-simd
+ls
+ls resnet10_reduced_hyperfeature/
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py 
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py &>> resnet10_reduced_hyperfeature/train.log &
+tail -f resnet10_reduced_hyperfeature/train.log
+fg
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py 
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py &>> resnet10_reduced_hyperfeature/train.log &
+tail -f resnet10_reduced_hyperfeature/train.log
+fg
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py 
+cp resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py  resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+cp resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py  resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_32_config.py
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_32_config.py 
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py &>> resnet10_reduced_hyperfeature/train_bs_32.log &
+tail -f resnet10_reduced_hyperfeature/train_bs_32.log 
+fg
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_hyperfeature/train_bs_32.log &
+tail -f resnet10_reduced_hyperfeature/train_bs_32.log 
+fg
+cp resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_32_config.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_16_config.py
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_16_config.py
+python train.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_16_config.py &> resnet10_reduced_hyperfeature/train_bs_16.log &
+tail -f resnet10_reduced_hyperfeature/train_bs_16.log 
+fg
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_32_config.py
+python test.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_32_config.py
+mkdir resnet10_use_mixup
+cd resnet10_
+cd resnet10_use_mixup/
+vim config.py 
+python train.py ./config.py &> train.log &
+tail -f train.log 
+cd ..
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+calc
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+calc
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+fg
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+fg
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+fg
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+fg
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+fg
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+fg
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log &
+tail -f resnet10_use_mixup/train.log 
+fg
+python train.py ./resnet10_use_mixup/config.py
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log 
+bg
+tail -f resnet10_use_mixup/train.log
+fg
+python train.py ./resnet10_use_mixup/config.py &> resnet10_use_mixup/train.log 
+bg
+tail -f resnet10_use_mixup/train.log
+fg
+python train.py ./resnet10_use_mixup/config.py 2>&1 | tee resnet10_use_mixup/train.log 
+vim resnet10_use_mixup/config.py
+python train.py ./resnet10_use_mixup/config.py 2>&1 | tee resnet10_use_mixup/train.log 
+cp resnet10_reduced_balanced/test_all_datasets.proto ./resnet10_use_mixup/test.proto
+vim ./resnet10_use_mixup/test.proto
+vim ./resnet10_use_mixup/config.py
+python test.py ./resnet10_use_mixup/config.py
+vim ./resnet10_use_mixup/config.py
+python test.py ./resnet10_use_mixup/config.py
+Accuracy for class has_hat: 93.20% (3029/3250)
+Accuracy for class has_longpants: 88.73% (1173/1322)
+Accuracy for class is_male: 78.63% (2212/2813)
+Accuracy for class has_longsleeves: 82.83% (2494/3011)
+Accuracy for class has_longhair: 83.18% (1953/2348)
+vim ../accuracy/fddbDetect/main.cpp 
+./bin/pycharm.sh &
+sudo ls /var/cache/apt/archives/
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./resnet10_reduced_hyperfeature/train.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./resnet10_reduced_balanced/train.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./resnet10_reduced_balanced/train_blob_160x80.log &
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./resnet10_use_mixup/train.log &
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./resnet10_reduced_balanced/train_blob_160x80.log &
+git status
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./sigmoid_with_stripes/train.log 
+vim softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py
+. ~/dev/python2-env/bin/activate
+python train.py softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py &> softmax_weighted_by_freq/train_fix_bs_128_step_50000.log &
+tail -f softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+fg
+vim softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py
+python train.py softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py &> softmax_weighted_by_freq/train_fix_bs_128_step_50000.log &
+tail -f softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+python train.py softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py &> softmax_weighted_by_freq/train_fix_bs_128_step_50000.log &
+tail -f softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+vim softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py
+cp /home/gserebry/dev/person_attributes/softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_iter_30000.caffemodel /home/gserebry/dev/person_attributes/softmax_weighted/resnet_10_imagenet_init_fix_bs_128_iter_30000.caffemodel
+python train.py softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py &> softmax_weighted_by_freq/train_fix_bs_128_step_50000.log &
+tail -f softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+vim softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py
+python train.py softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py &> softmax_weighted_by_freq/train_fix_bs_128_step_50000.log &
+tail -f softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+vim softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py
+python test.py softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+ls resnet10_reduced_hyperfeature/|grep proto
+cp resnet10_reduced_hyperfeature/train_val_reduced_hyperfeature.proto resnet10_reduced_hyperfeature/test.proto
+vim -O ./test/test_all_datasets.proto ./resnet10_reduced_hyperfeature/test.proto 
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+python test.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+vim -O ./test/test_all_datasets.proto ./resnet10_reduced_hyperfeature/test.proto 
+python test.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+vim -O ./test/test_all_datasets.proto ./resnet10_reduced_hyperfeature/test.proto 
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+python test.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+vim -O ./test/test_all_datasets.proto ./resnet10_reduced_hyperfeature/test.proto 
+python test.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+vim softmax_weighted_by_freq/resnet_10_imagenet_init_fix_bs_128_config.py
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+python test.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+vim resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+python test.py resnet10_reduced_hyperfeature/resnet_10_reduced_init_all_datasets_bs_128_config.py
+git status
+git diff
+git commit -a -m'Mirror: ignore some possible exceptions'
+git stash list
+git log
+git stash list
+git diff stash@{0}
+git stash -h
+git stash branch gs/balanced_batch stash@{0}
+git add -i
+git commit -m'WIP: balancing labels in batch using half of the samples to improve distribution'
+ls
+mkdir resnet10_reduced_balanced
+cp test/resnet_10_reduced_init_all_datasets_bs_128_config.py ./resnet10_reduced_balanced/
+cp test/test_all_datasets.proto ./resnet10_reduced_balanced/
+vim resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_128_config.py 
+deactivate 
+. ~/dev/intel_python2/bin/activate
+python train~/dev/intel_python2/bin/activat
+ls resnet10_reduced_balanced/
+mv resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_128_config.py resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py 
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train.log &
+tail -f resnet10_reduced_balanced/train.log
+vim resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py 
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train.log &
+tail -f resnet10_reduced_balanced/train.log
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train.log &
+tail -f resnet10_reduced_balanced/train.log
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+vim models/resnet-10/train_val_reduced.proto
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+vim train.py 
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+vim train.py 
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train.log &
+tail -f resnet10_reduced_balanced/train.log
+fg
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train.log &
+tail -f resnet10_reduced_balanced/train.log
+fg
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train.log &
+tail -f resnet10_reduced_balanced/train.log
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train.log &
+tail -f resnet10_reduced_balanced/train.log
+fg
+vim ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+cp ./train_resnet10_with_zmey_net_params/test_all_datasets.proto ./resnet10_reduced_balanced/test.proto
+vim resnet10_reduced_balanced/test.proto 
+python test.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+vim resnet10_reduced_balanced/test.proto 
+vim ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+python test.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+vim ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+python test.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+cp ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_blob_160x80_config.py
+vim 
+vim ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_blob_160x80_config.py
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train_blob_160x80.log &
+tail -f resnet10_reduced_balanced/train_blob_160x80.log
+fg
+vim ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_blob_160x80_config.py
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py &> resnet10_reduced_balanced/train_blob_160x80.log &
+tail -f resnet10_reduced_balanced/train_blob_160x80.log
+vim ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+ls
+ls resnet10_reduced_balanced
+vim -O ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_blob_160x80_config.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_config.py
+#python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_blob_160x80_config.py &> resnet10_reduced_balanced/train_blob_160x80.log &
+vim ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_blob_160x80_config.py 
+python train.py ./resnet10_reduced_balanced/resnet_10_reduced_init_all_datasets_bs_32_blob_160x80_config.py &> resnet10_reduced_balanced/train_blob_160x80.log &
+tail -f resnet10_reduced_balanced/train_blob_160x80.log 
+vim ./resnet10_rgit lfs fetch
+sudo docker run hello-world
+htop
+git diff gs/face-detection-metrics -- face-detection-benchmark/requirements.txt
+nvidia-smi
+ls /dev/nvidia*
+dpkg -l | grep nvidia 
+history
+history|grep nvidia
+sudo prime-select nvidia
+history > history.log
+mc
+git status
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/resnet10_reduced_hyperfeature/train.log ~/dev/person_attributes/resnet10_reduced_hyperfeature/train_bs_32.log ~/dev/person_attributes/resnet10_reduced_hyperfeature/train_bs_16.log
+fg
+htop
+cd ~/dev/person_attributes/experiments/pvanet/
+. ~/dev/python2-env/bin/activate
+python ../../train.py ./config_160_80.py &> ./config_160_80_train.log &
+tail -f ./config_160_80_train.log 
+vim config_160_80.py
+cp config_128_64.py config_128_64_no_incpetion.py
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train.log &
+tail -f ./config_128_64_no_incpetion_train.log
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train.log &
+tail -f ./config_128_64_no_incpetion_train.log
+fg
+git diff
+git log
+git stash
+git checkout 0aa7976132cae4c1000455a60abb031d52bbaa02
+git stash pop
+git mergetool
+ls
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train.log &
+tail -f ./config_128_64_no_incpetion_train.log
+fg
+vim  config_128_64_no_incpetion.py
+ls|grep no_incpetion
+ls|grep no_inception
+ls|grep no_inception|sort -n
+ls|grep no_inception|sort -hn
+ls|grep no_inception|sort -h
+man sort
+ls|grep no_inception|sort -n
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_continue.log &
+tail -f ./config_128_64_no_incpetion_train_continue.log 
+fg
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_adam_preheat.log &
+tail -f ./config_128_64_no_incpetion_train_continue.log 
+tail -f ./config_128_64_no_incpetion_train_adam_preheat.log 
+fg
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_adam_preheat.log &
+tail -f ./config_128_64_no_incpetion_train_adam_preheat.log 
+fg
+less ./config_128_64_no_incpetion_train_adam_preheat.log 
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_adam_preheat.log &
+tail -f ./config_128_64_no_incpetion_train_adam_preheat.log 
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_adam_preheat.log &
+tail -f ./config_128_64_no_incpetion_train_adam_preheat.log 
+fg
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_sgd_preheat.log &
+tail -f ./config_128_64_no_incpetion_train_sgd_preheat.log 
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_sgd_preheat_drop_lr_on_40k.log &
+tail -f ./config_128_64_no_incpetion_train_sgd_preheat_drop_lr_on_40k.log 
+vim  config_128_64_no_incpetion.py
+python ../../train.py ./config_128_64_no_incpetion.py &> ./config_128_64_no_incpetion_train_sgd_preheat_drop_lr_on_40k.log &
+tail -f ./config_128_64_no_incpetion_train_sgd_preheat_drop_lr_on_40k.log 
+python ../../test.py ./config_128_64.py
+vim config_128_64.py
+python ../../test.py ./config_128_64.py
+ipython
+pushd ~/dev/crossroad_extra/scripts/DSS16China/
+ls
+python ./to_vatic.py --image-dir ~/data/DSS16China/JPEGImages/ --anno-dir ~/data/DSS16China/Annotations/ --output ./vatic_anno.xml
+cd ..
+ls
+cd ..
+ls
+cd scripts/
+python ./DSS16China/to_vatic.py --image-dir ~/data/DSS16China/JPEGImages/ --anno-dir ~/data/DSS16China/Annotations/ --output ./vatic_anno.xml
+cd ..
+python ./scripts/DSS16China/to_vatic.py --image-dir ~/data/DSS16China/JPEGImages/ --anno-dir ~/data/DSS16China/Annotations/ --output ./vatic_anno.xml
+ls
+cd scripts/
+python DSS16China/to_vatic.py --image-dir ~/data/DSS16China/JPEGImages/ --anno-dir ~/data/DSS16China/Annotations/ --output ./vatic_anno.xml
+less ./__init__.py 
+ls 
+python DSS16China/to_vatic.py --image-dir ~/data/DSS16China/JPEGImages/ --anno-dir ~/data/DSS16China/Annotations/ --output ./vatic_anno.xml
+cd ..
+touch __init__.py
+python scripts/DSS16China/to_vatic.py --image-dir ~/data/DSS16China/JPEGImages/ --anno-dir ~/data/DSS16China/Annotations/ --output ./vatic_anno.xml
+sudo mount -a
+sudo mount -o remount,rw /media/external_share/
+tmux a
+tmux
+htop
+htop
+mc
+vim ../accuracy/fddbDetect/main.cpp 
+htop
+git diff gs/face-detection-metrics -- face-detection-benchmark/requirements.txt
+watch -n01, nvidia-smi
+sudo dmidecode -t 3
+sudo dmidecode -t 2
+nvidia-smi
+tmux
+history -r '/home/gserebry/.tmux/resurrect/bash_history-6:0.0'; clear
+cd ../resnet10_reduced
+. ~/dev/python2-env/bin/activate
+python ../../train.py ./config_aggressive_aug.py &> train_aggressive_aug.log &
+tail -f train_aggressive_aug.log 
+fg
+python ../../train.py ./config_aggressive_aug.py &> train_aggressive_aug.log &
+tail -f train_aggressive_aug.log 
+cp ../../augmenter_aggressive.py ../../augmenter.py
+vim config_aggressive_aug.py
+python ../../train.py ./config_aggressive_aug.py &> train_aggressive_aug.log &
+tail -f train_aggressive_aug.log 
+ls
+htop
+calc
+docker run hello_world
+git submodule update --init --recursive
+git diff
+git grog
+git diff 0aa7976
+cd ../resnet10_reduced
+. ~/dev/python2-env/bin/activate
+python ../../train.py ./config.py &> ./train_with_mean_subtracted.log &
+tail -f train_with_mean_subtracted.log 
+git branch
+git commit -a -m'WIP'
+git grog
+git checkout 0aa7976
+python ../../train.py ./config.py &> ./train_with_mean_subtracted.log &
+tail -f train_with_mean_subtracted.log 
+fg
+vim ../../train.py
+python ../../train.py ./config.py &> ./train_with_mean_subtracted.log &
+tail -f train_with_mean_subtracted.log 
+fg
+vim config.py
+python ../../train.py ./config.py &> ./train_with_mean_subtracted.log &
+tail -f train_with_mean_subtracted.log 
+vim config.py
+python ../../train.py ./config.py &> ./train_with_mean_subtracted.log &
+vim config.py
+fg
+vim config.py
+python ../../train.py ./config.py &> ./train_with_mean_subtracted.log &
+tail -f train_with_mean_subtracted.log 
+fg
+vim config.py
+ls
+vim config.py
+python ../../train.py ./config.py &> ./train_with_mean_subtracted_continue.log &
+tail -f ./train_with_mean_subtracted_continue.log
+fg
+git diff
+git stash ../../augmenter.py
+mv ../../augmenter.py ../../augmenter_aggressive.py
+git checkout -- ../../augmenter.pyc
+git checkout -- ../../augmenter.py
+git diff
+vim config.py
+python ../../train.py ./config.py &> ./train_with_mean_subtracted_continue_from_6k.log &
+tail -f ./train_with_mean_subtracted_continue_from_6k.log 
+fg
+vim config.py
+python ../../train.py ./config.py &> ./train_with_mean_subtracted_128x64.log &
+tail -f ./train_with_mean_subtracted_128x64.log
+fg
+git checkout -- ../../augmenter.py
+vim ../../augmenter.py
+vim config.py
+vim config_aggressive_aug.py
+vim config.py
+python ../../train.py ./config.py &> ./train.log &
+tail -f ./train.log
+pushd /tmp/person_attributes_test/
+python test.py config.py 
+touch __init__.py
+touch data/__init__.py
+python test.py config.py 
+ls
+vim config.py
+vim test.py 
+python test.py config.py 
+vim test.py 
+python test.py config.py 
+vim test.py 
+python test.py config.py 
+vim test.py 
+python test.py config.py 
+vim test.py 
+python test.py config.py 
+vim test.py 
+python test.py config.py 
+vim test.py 
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+ls /home/gserebry/dev/person_attributes/experiments/test/t
+ls /home/gserebry/dev/person_attributes/experiments/test/
+cp /home/gserebry/dev/person_attributes/experiments/test/test.proto /home/gserebry/dev/person_attributes/experiments/test/test.prototxt
+cp /home/gserebry/dev/person_attributes/experiments/test/test_all_datasets.proto /home/gserebry/dev/person_attributes/experiments/test/test_all_datasets.prototxt
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+vim ~/dev/person_attributes/experiments/test/config.py
+vim ~/dev/person_attributes/experiments/test/resnet_10_reduced_init_all_datasets_bs_128_config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+vim config.py
+python test.py config.py 
+cd ..
+tar -crzf person_attributes_test.tgz ./person_attributes_test/
+tar -czf person_attributes_test.tgz ./person_attributes_test/*
+ls
+ls -lht
+du -h --max-depth=1 ./person_attributes_test
+du -h --max-depth=1 ./person_attributes_test/
+cd ./person_attributes_test/
+ls
+ll
+rm core 
+rm *.pyc
+ls
+cd ..
+tar -czf person_attributes_test.tgz ./person_attributes_test/*
+cd person_attributes_test/
+python test.py config.py 
+pipreqs `pwd`
+vim requirements.txt 
+ls
+rm *.pyc
+cd ..
+rm ./person_attributes_test.tgz 
+tar -czf person_attributes_test.tgz ./person_attributes_test/*
+tar -t person_attributes_test.tgz 
+tar -tvf person_attributes_test.tgz 
+rm ./person_attributes_test.tgz 
+find ./person_attributes_test/ -name '*.pyc' --rm \;
+find ./person_attributes_test/ -name '*.pyc' --delete \;
+find ./person_attributes_test/ -name '*.pyc' -delete \;
+find ./person_attributes_test/ -name '*.pyc' -delete {} \;
+find ./person_attributes_test/ -name '*.pyc' -delete
+tar -czf person_attributes_test.tgz person_attributes_test/*
+tar -tvf person_attributes_test.tgz 
+cd person_attributes_test/
+python test.py config.py &> test.log
+ls ~/dev/caffe-shared/_build
+pushd ~/dev/caffe-shared/
+ninja
+cd _build/
+ls
+ninja runtest
+./test/test.testbin -h
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*
+ninja
+make
+ninja
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja
+ls
+ninja
+ninja test
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixelLossLayerTest/*|less
+ninja
+./test/test.testbin --gtest_filter=SigmoidCrossEntropy*/*|less
+./test/test.testbin --gtest_filter=SigmoidCrossEntropy*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropy*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+ninja runtest 
+less test.out 
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+ninja runtest 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+pwgen
+ninja test.testbin 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+git diff
+ninja test.testbin 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+ninja test.testbin 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+ninja test.testbin 
+./test/test.testbin --gtest_filter=SigmoidCrossEntropyPixel*/* > test.out
+less test.out 
+popd
+cd ..
+mkdir loss_maxpooling_resnet10
+cp resnet10_reduced/config.py loss_maxpooling_resnet10/
+cp resnet10_reduced/test.prototxt loss_maxpooling_resnet10/
+cd ..
+ls
+git diff
+ls
+mv augmenter.py _augmenter.py
+mv augmenter_aggressive.py augmenter.py
+cd experiments/loss_maxpooling_resnet10/
+ls
+vim config.py 
+sudo dpkg -i /home/gserebry/Downloads/code_1.19.2-1515599945_amd64.deb 
+cp ../../models/resnet-10/train_val_reduced.proto ../../models/resnet-10/train_val_reduced_loss_max_pooling.prototxt
+vim config.py 
+python ../../train.py config.py 
+vim config.py 
+python ../../train.py config.py 
+python ../../train.py config.py 2>&1 > train.log &
+fg
+python ../../train.py config.py &> train.log &
+tail -f train.log 
+fg
+vim config.py 
+python ../../train.py config.py &> train.log &
+tail -f train.log 
+fg
+python ../../train.py config.py &> train.log &
+tail -f train.log 
+sudo docker run hello-world
+cat FDDB-folds/FDDB-fold-{01-10}.txt > /tmp/FDDB-fold-all.txt
+cd ~/study/
+ls
+git clone https://github.com/ElmoAI/elmo-ai.git
+watch -n0,1 nvidia-smi
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq/train_fix_bs_128.log ./softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+history -r '/home/gserebry/.tmux/resurrect/bash_history-attributes:0.1'; clear
+git difftool gs/debug-metrics 
+cd ../resnet10_reduced
+ls
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train_with_mean_subtracted.log
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train_with_mean_subtracted.log ./train_with_mean_subtracted_continue.log
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train_with_mean_subtracted.log ./train_with_mean_subtracted_continue.log ./train_with_mean_subtracted_continue_from_6k.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train_with_mean_subtracted_128x64.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train.log 
+ls
+ls|grep test
+mv test_all_datasets.proto test.proto
+mv test.proto test.prototxt
+ls ../loss_maxpooling_resnet10/
+ls ../loss_max_pooling/
+rm ../loss_max_pooling/
+rm -rf ../loss_max_pooling/
+cd ../loss_maxpooling_resnet10/
+ls
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train.log 
+ls
+docker run hello_world
+sudo dpkg -i /home/gserebry/Downloads/teamviewer_13.0.6634_amd64.deb 
+sudo apt-get install -f
+cd ../resnet10_reduced
+vim config_aggressive_aug.py 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train_aggressive_aug.log 
+bg
+ls
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./train_aggressive_aug.log 
+vim config_aggressive_aug.py
+htop
+git diff
+git diff gs/face-detection-metrics -- face-detection-benchmark/requirements.txt
+htop
+sudo service lightdm restart
+mc
+cd ~/dev/person_attributes
+ls
+mkdir /tmp/person_attributes_test
+mkdir /tmp/person_attributes_test/data
+cp ./data/duke_reid_reader.py /tmp/person_attributes_test/data/
+cp ./data/berkley_reader.py /tmp/person_attributes_test/data/
+cp ./data/dataset.py /tmp/person_attributes_test/data/
+cp ./map_calc.py ./test.py /tmp/person_attributes_test/
+cp data/image_transformer.py /tmp/person_attributes_test/data/
+cp config.py /tmp/person_attributes_test/
+git diff
+git diff gs/face-detection-metrics -- face-detection-benchmark/requirements.txt
+git lfs fetch
+sudo service lightdm restart
+./bin/pycharm.sh &
+ls
+mc
+docker run hello_world
+cat FDDB-folds/FDDB-fold-{01-10}.txt > /tmp/FDDB-fold-all.txt
+htop
+ls
+cd study/elmo-ai/
+git checkout feature/detection_metrics 
+git pull
+ls
+cd quality_metrics/protos/
+protoc ./*.proto ---python_output=.
+protoc ./*.proto --python_output=.
+protoc ./*.proto --python_out=.
+ls
+. ~/dev/py2-tensorflow/bin/activate
+ls
+cd ...
+cd ..
+tmux
+vim ../accuracy/fddbDetect/main.cpp 
+htop
+git submodule update --init --recursive
+sudo service lightdm restart
+docker run hello_world
+sudo docker run hello-world
+docker run hello_world
+htop
+history -r '/home/gserebry/.tmux/resurrect/bash_history-6:0.0'; clear
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ./softmax_weighted_by_freq/train_fix_bs_128.log ./softmax_weighted_by_freq/train_fix_bs_128_step_50000.log
+cd ../loss_maxpooling_resnet10/
+. ~/dev/python2-env/bin/activate
+cd ../resnet10_reduced_balanced/
+vim resnet_10_reduced_init_all_datasets_bs_32_config.py
+history -r '/home/gserebry/.tmux/resurrect/bash_history-attributes:0.1'; clear
+cd ../resnet10_reduced
+ls
+cd ..
+ks
+ls
+loss_maxpooling_resnet10/
+cd loss_maxpooling_resnet10/
+ls
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py train.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ../resnet10_reduced_balanced/train.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ../resnet10_reduced_balanced/train_blob_160x80.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ../resnet10_reduced_balanced/train.log 
+sudo apt update
+apt list --upgradable
+uname -a
+sudo apt update
+sudo apt dist-upgrade
+apt search linux-image
+uname -a
+apt search linux-image
+apt search linux-image|grep 109
+apt list --upgradable
+sudo apt dist-upgrade
+uname -a
+sudo apt autoremove
+nvidia-smi
+sudo reboot -h now

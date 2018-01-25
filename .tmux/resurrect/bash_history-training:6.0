@@ -1,0 +1,1000 @@
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh -h
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --help
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --prefix=/usr/local/bin/
+cmake
+sudo rm -rf /usr/local/bin/cmake-3.8.2-Linux-x86_64/
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --prefix=/usr/local/
+cmake
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --prefix=/usr
+git branch
+pushd ~/dev/face_analyzer/
+git status
+cat models/CMakeLists.txt 
+git branch
+git checkout master
+git checkout develop
+git branch -D master
+git pull -p
+git checkout master
+git branch -D develop
+git branch -D develop-lfs 
+git checkout master
+git log
+ls
+scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt models/caffe/ ~/dev/face-detector/models/ ~/dev/facense/tests/age-gender-test/mini_res . age_gender_mini.html
+sudo killall fuser
+cd ../face-detector-repo/
+git branch
+git checkout master
+git submodule update --init --recursive
+git pull -p
+git submodule update --init --recursive
+cd _build/
+cmake ..
+ninja
+ls ../accuracy/
+vim ../.gitmodules 
+cd ../../dwell-time/
+git pull -p
+git checkout develop
+git pull -p
+git submodule update --init --recursive
+git checkout at/fa_regr_test 
+git submodule update --init --recursive
+git pull -p
+git checkout develop
+git submodule update --init --recursive
+git merge --no-ff 5096f8601ab485df2a75bd2007cb3bb35dcfe9d2
+git merge --abort
+git checkout at/fa_regr_test 
+git lfs pull origin
+ls -a ~
+vim ~/.tmux
+vim ~/.tmux.conf 
+git help clone
+cd ..
+cd CI-Pipeline/
+gi tpull -p
+git pull -p
+git checkout master
+git pull -p
+cd ../face-detector-repo/
+git branch
+git add README.
+git add README.md 
+git commit -a -m'Describe windows build procedure'
+git push -u origin gs/windows-build-documentation 
+git checkout gs/fix-yocto
+git checkout master
+git checkout -b gs/fix-yocto
+git pull -p
+git checkout master 
+git pull -p
+git checkout -b gs/fix-yocto
+cd _build/
+ninja
+git grog
+cd ..
+git submodule update --init --recursive
+git diff
+git branch
+git checkout gs/fix-yocto
+git remote -v
+git fetch
+git pull
+git checkout master
+git pull
+vim accuracy/main.cpp 
+git checkout gs/fix-yocto 
+git rebase master
+vim accuracy/main.cpp 
+cd ../face=devtools/
+cd ../face-detector
+git brnch
+git diff
+git checkout -b gs/fix-yocto
+git commit -a -m 'remove experimental/filesystem usage to support yocto build'
+git checkout master
+git pull -p
+git submodule update --init --recursive
+git checkout gs/fix-yocto 
+git rebase master
+git push -u origin gs/fix-yocto 
+cd ../CI-Pipeline/
+ls
+#gvim face_detector_ubuntu16.groovy 
+git checkout ad/refactor 
+git pull -p
+gvim face_detector_ubuntu16.groovy 
+vim face_detector_ubuntu16.groovy 
+ls
+vim face_detector/face_detector_ubuntu16.groovy 
+ls face_detector/
+vim face_detector/ubuntu16.groovy 
+git branch
+git checkout -b gs/update-fd-accuracy-scripts
+git commit -a
+git push -u origin gs/update-fd-accuracy-scripts 
+cd ..
+cd fddb-evaluation-tools/
+git branch
+vim evaluate_py/requirements.txt 
+git commit -a -m'downgrade the version of numpy'
+git push
+cd ../CI-Pipeline/
+cd face_detector/
+vim ubuntu16.groovy 
+git commit -a -m'make pip user install'
+git push
+cd ../..
+cd face-detector
+cd ../fddb-evaluation-tools/
+vim evaluate_py/evaluate.py 
+git commit -a -m'remove unneeded output'
+git push
+cd ../CI-Pipeline/
+vim face_detector/ubuntu16.groovy 
+grep -rinH archiveArtifacts ./*
+vim common.groovy 
+git status
+git commit -a -m'archive all artifacts from the new fd accuracy script'
+git push
+diff -h
+diff --help
+cd ../face_de
+cd ../face-detector
+git branch
+git checkout master 
+git checkout -b gs/add-evaluation-tools
+ls
+cd accuracy/
+ls
+mkdir fddbDetect
+touch CMakeLists.txt
+mkdir evaluate
+cd evaluate/
+cp -r ~/dev/fddb-evaluation-tools/evaluate_py/*.py ./
+cp -r ~/dev/fddb-evaluation-tools/evaluate_py/requirements.txt ./
+ls
+cd ..
+mkdir gt_data
+git mv fddbDetect/f
+ls
+git mv CMakeLists.txt fddbDetect/
+git mv main.cpp fddbDetect/
+cat CMa
+la
+ls
+ls fddbDetect/
+cat fddbDetect/CMakeLists.txt 
+touch CMakeLists.txt
+git mv facedetect_gt.txt gt_data/
+ls
+git status
+vim CMakeLists.txt 
+cp ~/dev/fddb-evaluation-tools/_detect_data.txt ./gt_data/ubuntu16_detect_data.txt
+cp ~/dev/fddb-evaluation-tools/stats.pickle ./gt_data/ubuntu16_stats.pickle
+du -h ./gt_data/
+du -h ./gt_data/*
+git status
+git add CMakeLists.txt 
+git add evaluate/*.py
+git add evaluate/requirements.txt 
+git status
+git add gt_data/
+git status
+cp /media/share/users/gserebry/_detect_data.txt ./gt_data/windows_detect_data.txt
+cp /media/share/users/gserebry/stats.pickle ./gt_data/windows_stats.pickle
+git add gt_data/
+git status
+git branch
+git commit -a -m'add python srcipts for evaluation on FDDB'
+git push -u orign gs/add-evaluation-tools 
+git remote -v
+git push -u origin gs/add-evaluation-tools 
+cd ..
+cd CI-Pipeline/
+vim face_detector/ubuntu16.groovy 
+git diff
+git commit -a -m'use evaluation scripts shipped with fd repo, not external ones'
+git push
+cd ../face-detector
+git branch
+git status
+git diff
+git add accuracy/fddbDetect/CMakeLists.txt 
+git status
+ls accuracy/gt_data/
+ls -lh accuracy/gt_data/
+chmod '-rw-rw-r--' accuracy/gt_data/windows_detect_data.txt 
+ls -lh accuracy/gt_data/
+chmod '+rw+rw+r' accuracy/gt_data/windows_detect_data.txt 
+ls -lh accuracy/gt_data/
+chmod '-x-x-x' accuracy/gt_data/windows_detect_data.txt 
+ls -lh accuracy/gt_data/
+chmod '-x-x-x' accuracy/gt_data/windows_stats.pickle 
+ls -lh accuracy/gt_data/
+chmod '+w+w' accuracy/gt_data/windows_stats.pickle 
+ls -lh accuracy/gt_data/
+git statis
+git status
+git commit -a
+git push
+ls /var/cache/apt/archives/|grep nvidia
+apt search nvidia-375
+cd ../CI-Pipeline/
+vim face_detector/ubuntu16.groovy 
+git branch
+git diff
+git diff HEAD^
+git commit -a -m'fix misprint'
+git push
+cd ../face-detector/accuracy/evaluate/
+vim eval.py
+git diff
+vim eval.py
+git diff
+git commit -a
+git push
+cd ~/dev/CI-Pipeline/
+git branch
+vim face_detector/ubuntu16.groovy 
+git diff
+git commit -a
+git push
+man rsync
+cd ../face-detector
+git branch
+git log
+git rebase -i 82dbd79b5253de9da74725fa18334b028e12e971
+git status
+git lfs track '*.pickle'
+git lfs add accuracy/gt_data/*.pickle
+git lfs -h accuracy/gt_data/*.pickle
+git lfs --help accuracy/gt_data/*.pickle
+git lfs status
+git diff HEAD^
+git add accuracy/gt_data/*.pickle
+git status
+git commit -a --amend
+git status
+git rebase --continue
+git lfs status
+git rebase --continue
+git lfs status
+git rebase --continue
+git log
+git push -f
+git lfs ls-files
+git pull -p
+git checkout master
+git pull
+git checkout gs/add-evaluation-tools 
+git rebase master
+git mergetool
+git status
+vim accuracy/fddbDetect/CMakeLists.txt 
+git status
+git add accuracy/fddbDetect/
+git add accuracy/fddbDetect/CMakeLists.txt 
+git status
+git rebase --continue
+git mergetool
+git status
+git rebase --continue
+git status
+git push -f
+grep -E 'model|stepping' /proc/cpuinfo | sort -u
+dmesg | grep "microcode updated early to"
+journalctl -b -k | grep "microcode updated early to"
+zgrep "microcode updated early to" /var/log/kern.log*
+cat /proc/cpuinfo|grep microcode
+apt show intel-microcode 
+sudo vim /etc/apt/apt.conf
+gvim /etc/apt/apt.conf
+apt search zim
+sudo apt install zim
+git pull -p
+git branch
+git checkout master
+git branch
+git pull -p
+git checkout gs/reimplement-crt-secure-fix
+git checkout -b gs/reimplement-crt-secure-fix
+git checkout master
+git log
+cd ../dwell-time/
+git checkout master
+git submdoule update --init --recursive
+git checkout master
+gi tpull -p
+git pull -p
+git submdoule update --init --recursive
+cd ../face-detector
+git grog
+cd ../dwell-time/
+git branch
+git checkout -b gs/update-face-detector
+git branch -D gs/update-face-detector 
+git checkout -b gs/update-face-detector
+git submodule update --init --recursive
+git status
+cd modules/face_detector/
+git status
+cd modules/fcf_cascade/
+git status
+cd modules/perf-test/
+git status
+cd ..
+git submodule update --init --recursive
+git status
+rm -rf perf-test/
+cd ..
+git status
+cd ..
+git status
+git pull -p
+git checkout master
+git pul
+git pull
+cd ..
+git status
+git submodule update --init --recursive
+cd modules/
+ls
+rm -rf face_analyzer/
+cd face_detector/
+git checkout master
+git submodule update --init --recursive
+cd ..
+git status
+git branch
+git add modules/face_detector/
+git status
+git commit
+git push -u origin gs/update-face-detector 
+git grog
+git checkout develop
+git pull -p
+git submodule update --init --recursive
+git rebase --onto=develop master gs/update-face-detector 
+git status
+git log
+git branch
+git submodule update --init --recursive
+cd modules/face_detector/
+git pull -p
+git checkout master
+git pull -p
+cd ..
+git status
+git push -f
+cd ../CI-Pipeline/
+git pull -p
+git branch
+git checkout ad/refactor 
+git pull
+vim dwell_time/valgrind.groovy 
+ls
+cd ..
+git clone git@gitlab-icv.inn.intel.com:dss/Infra.git
+cd Infra/
+git branch
+git checkout -b gs/dwell-time-valgrind-use-dl-libs
+ls
+cd docker
+ls
+cp -r caffe_ubuntu16/ caffe_valgrind
+cd caffe_valgrind/
+ls
+vim Dockerfile 
+cd ../..
+cd ../dwell-time/
+git branch
+git pull -p
+git checkout develop 
+git pull
+git checkout gs/update-face-detector 
+git rebase develop
+git log
+git status
+git push -f
+c++filt ZTVN4adas3fpb21FeaturePyramidBuilderE
+c++filt _ZTVN4adas3fpb21FeaturePyramidBuilderE
+cd ../face-detector-repo/
+git branch
+git log
+git pull -p
+git checkout master
+git pull -p
+git branch
+git checkout master
+git pull -p
+git branch
+git branch -r
+cd ../face-detector
+git branch
+git diff
+git status
+git add accuracy/evaluate/compare_stat_curves.py
+git commit -m 'add support for plotting points on roc graphs'
+git checkout gs/reimplement-crt-secure-fix 
+git submodule update --init --recursive
+git status
+cd modules/fcf_cascade/
+git status
+cd modules/fpb/
+git status
+rm include/feature_pyramid_builder_api.hpp.autosave 
+cd ..
+git status
+vf ../../CI-Pipeline/
+ls
+cd ../../CI-Pipeline/
+ls
+cd face_detector/
+. ~/.bashrc
+git pull -p
+git branch -r
+cd ..
+ls
+git checkout gs/update-fd-accuracy-scripts 
+git pull
+ls
+vim face_detector/ubuntu16.groovy 
+git commit -a -m'use doxygen image'
+git push
+vlc ~/dev/dwell-time/tests/testdata/*.avi
+cd ../Infra/
+git status
+git diff
+git commit -a --amend
+git push -f
+git diff
+git log
+cd ..
+cd face-detector-repo/
+git status
+cd cmake/cmake-scripts/
+git branch
+git pull -p
+git checkout -b gs/doxygen-packages
+vim sdl/README.md 
+git commit -a -m'add missing items to the list of the packages needed for documentation build'
+git push -u origin gs/doxygen-packages 
+pushd ~/.vim_runtime/
+git status
+cd sources_non_forked/
+git submodule add https://github.com/junegunn/seoul256.vim.git 
+git status
+cd clang-format/
+git status
+rm -rf doc/tags 
+cd ../vim-vebugger/
+git status
+rm -rf doc/tags 
+cd ../YouCompleteMe/
+git status
+cd ..
+git status
+ls vim-misc/
+ls -a vim-misc/
+git submodule add https://github.com/xolox/vim-misc.git
+git status
+git diff
+git status
+git add ../my_configs.vim ../vimrcs/
+git status
+git commit -a -m 'Multiple improvements: tmux, airline, fonts configs'
+git push
+git log
+git push
+popd
+vim ~/.bashrc
+. ~/.bashrc
+cd ../..
+git diff
+git branch
+cd ../face-detector
+git diff
+git log
+ls
+cat include/facedetect_api.hpp 
+ls
+touch include/opencv_no_warnings.hpp
+git diff
+git add include/opencv_no_warnings.hpp 
+git status
+cd )
+cd _build/
+make clean
+ninja clean
+cmake ..
+ninja
+git commit -a -m'implement including opencv without warnings on windows'
+git push
+git push -u origin gs/reimplement-crt-secure-fix 
+git commit -a --amend -m'implement including opencv without warnings on windows'
+git push -f
+cmake ..
+make VERBOSE=1
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make VERBOSE=1
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make VERBOSE=1|grep CRT
+cmake ..
+make VERBOSE=1|grep CRT
+cmake ,,
+cmake ..
+make VERBOSE=1|grep CRT
+cmake ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make VERBOSE=1|grep CRT
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make VERBOSE=1|grep CRT
+git diff
+git checkout -- src/CMakeFiles/
+git checkout -- ../src/CMakeLists.txt
+git diff
+git commit -a --amend
+git push -f
+cd ..
+man ag
+ag 'FACEDETECT_API' --ignore-dir _build/
+vim CMakeLists.txt
+git checkout master
+git branch -D gs/reimplement-crt-secure-fix 
+git checkout master
+git pull -p
+git checkout gs/reimplement-crt-secure-fix
+git pull -p
+cd _build/
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make -j
+git checkout master
+git pull -p
+git checkout -b gs/fix-klocwork
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja ..
+ninja
+git diff
+git commit -a -m 'add assignment operator for the DetectedFaceEx class'
+git push
+git push -u origin gs/fix-klocwork
+cd ..
+git pull -p
+git checkout master
+git pull -p
+cd ../dwell-time/
+git pull -p
+git submodule status
+cd modules/face_analyzer/
+git pull
+git pull -p
+git fetch -p
+git branch -r
+git checkout develop 
+git pull
+git log
+cd ..
+cd face_detector/
+git fetch
+git checkout master
+git pull
+git log
+cd ..
+git ststua
+git diff
+git checkout -- example/main.cpp
+git ststua
+git checkout -b gs/update-fd-fa
+git commit -a -m'Update FD and FA to fix yocto build'
+git push -u origin gs/update-fd-fa 
+cd ..
+cd cmake-scripts/
+git pull -p
+git remote -v
+git remote -g
+git remote set-url git@gitlab-icv.inn.intel.com:ICV-integration/cmake-scripts.git
+git remote set-url origin git@gitlab-icv.inn.intel.com:ICV-integration/cmake-scripts.git
+git pull -p
+git branch
+git checkout master
+git pull -p
+git branch -D gs/fix-ie-finder 
+git checkout -b gs/correct-cpp11-14-flags-for-icc
+ls ~/Downloads/|grep compiler
+pushd ~/Downloads/
+aria2c -x7 -s5 -j7 http://registrationcenter-download.intel.com/akdlm/irc_nas/emb/11671/system_studio_2017.3.049.tgz
+popd
+git diff
+git commit -a -m'Set correct flags for C++11/14 for ICC"
+git commit -a -m'Set correct flags for C++11/14 for ICC'
+git checkout master
+git pull 
+git log
+cd ../face-detector
+git pull -p
+git checkout gs/use-cmake-scripts 
+cd cmake/cmake-scripts/
+git pull -p
+git checkout master
+git submodule update --init --recursive
+cd ..
+git submodule update --init --recursive
+git checkout gs/use-cmake-scripts 
+git submodule update --init --recursive
+cd cmake-scripts/
+git pull -p
+git log
+cd ..
+git status
+cd _build/
+ninja clean
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja ..
+cmake --help-policy CMP0063
+vim ../cmake/cmake-scripts/sdl/scripts/SDL385_Remove_Software_Debug_Access.cmake 
+ninja
+cd ../modules/fcf_cascade/
+git pull -p
+git checkout master
+git pull
+git submodule update --init --recursive
+git log
+git diff
+cd ..
+git diff
+cd modules/fcf_cascade/
+git status
+rm -rf modules/perf-test/
+cd ..
+git status
+git diff
+git status
+git checkout -b gs/update-copyright-for-public
+git add examples/CMakeLists.txt 
+git add include/facedetect_api.hpp 
+git status
+git add examples/fd-demo/main.cpp
+git commit -m 'use correct copyright for public code'
+git checkout master
+git reset --hard HEAD
+git submodule update --init --recursive
+git rebase --onto=develop gs/use-cmake-scripts gs/update-copyright-for-public 
+git rebase --onto=master gs/use-cmake-scripts gs/update-copyright-for-public 
+git grog
+git push -u origin gs/update-copyright-for-public 
+pushd ~/Downloads/
+ls
+find ~ -name parallel_studio_xe_2017
+./parallel_studio_xe_2017/
+./parallel_studio_xe_2017/install_GUI.sh 
+cd ~/dev/face-detector
+git submodule status
+cd modules/fcf_cascade/
+git grog
+cd ..
+git diff
+git checkout master
+git submodule update --init --recursive
+cd modules/fcf_cascade/
+git grog
+cat /etc/fstab
+git diff master
+cd ../..
+git diff master
+cd modules/fcf_cascade/
+git diff 721667f9689885705fb2e9c1d3deed734091d455 ca5bb2cdd3b52785721a3950e1e81af1f206206a
+vim src/detector_invoker.cpp 
+git commit -a --amend
+cd ..
+cd fcf_cascade/
+git push -f
+cd ../..
+git commit -a --amend
+git push -f
+sudo umount /media/external_share
+cd modules/fcf_cascade/
+git diff ca5bb2cdd3b52785721a3950e1e81af1f206206a
+git checkout develop 
+git pull -p
+git diff gs/check-cascade-detection-fix 
+cd ..
+git log
+git checkout master
+git checkout 261587da1f12a0649ff27b95a63554b5ffa8da4b
+git checkout -b gs/check-prev-version
+git submodule update --init --recursive
+git push -u origin gs/check-prev-version 
+git log
+git grog
+git reset --hard 9e5ae8a
+git push -f
+git log origin/gs/check-prev-version 
+git grog
+git log
+git grog
+git reset --hard 261587d
+git push -f
+git diff HEAD@{1}
+git master
+git diff master
+cd fcf_cascade/
+git log
+git diff 
+git diff 721667f9689885705fb2e9c1d3deed734091d455 6324905cac614ddff3856edca52f73d0165fa4fa
+cd modules/fpb/
+git diff 
+git diff 5d176282412cd7c75500e81f294ccacfc3e714bf 4826ee23d79fe04960a0755c65ffc2c48ef27d8e
+vf ../..
+cd ../..
+cd modules/fcf_cascade/
+git pull -p
+git checkout nk/rollback_cascadedetection_check   
+cd ..
+git checkout gs/reimplement-crt-secure-fix 
+cd modules/fcf_cascade/
+cd ..
+cd //
+cd ~/dev/face-detector/mod
+cd ~/dev/face-detector/modules/
+git branch -D gs/check-fcf-cascade 
+git checkout -b gs/check-fcf-cascade
+git commit -a -m'use fcf cascade with allowed negative x,y origin of the detection'
+git push -f
+git push -f -u origin gs/check-fcf-cascade
+cd ../../face_analyzer/
+git diff
+git commit -a -m'Fix accuracy test'
+git push
+cd ../face-detector
+gitk
+git reset --hard HEAD
+git checkout gs/reimplement-crt-secure-fix 
+cd _build/
+ninja
+ls ../tests/
+git status
+git grog
+git pull -p
+git checkout master
+git pull master
+git pull
+git checkout gs/reimplement-crt-secure-fix 
+git grog
+git status
+git submodule update --init --recursive
+cd modules/fcf_cascade/
+git status
+git log
+cd ../..
+cd ..
+cd modules/fcf_cascade/
+cd ../perf-test/
+cd ..
+git status
+git rebase master
+cd _build/
+cmake ..
+ctest -V
+ninja
+git commit -a -m'fix build'
+cd ../modules/perf-test/
+git pull -p
+git branch -r
+git log origin/master 
+git checkout master 
+git pull -p
+cd ..
+git commit -a
+cd _build/
+cmake ..
+git push -f
+vim ../.gitmodules 
+vim ../CMakeLists.txt
+git diff
+git commit -a -m'specify correct flags for intel compiler'
+git push -f
+ninja
+ctest -V
+git commit -a -m'Fix SDL tests'
+git push
+sudo umount /media/share 
+cd ..
+cd cmake/cmake-scripts/
+git pull
+git checkout master 
+git pull
+cd ..
+git status
+git checkout master
+git pull
+git status
+git checkout -b gs/update-cmake-scripts
+git commit -a -m'update cmake-scripts'
+git push -u origin gs/update-cmake-scripts 
+cd cmake/cmake-scripts/
+git pull -p
+cd ..
+git status]
+git commit -a --amend
+git push -f
+git checkout master
+git pull -p
+git branch -d gs/update-cmake-scripts 
+ag cmake_minimum_required
+vim CMakeLists.txt
+cd cmake/cmake-scripts/
+vim sdl/scripts/SDL385_Remove_Software_Debug_Access.cmake 
+git checkout -b gs/set-default-value-for-policy-63
+git commit -a -m'It seems the default value via variable should be set in addition to set_policy'
+git push -u origin gs/set-default-value-for-policy-63 
+git checkout master
+git branch -D gs/set-default-value-for-policy-63 
+cd ../..
+git diff
+git reset --hard HEAD
+cd _build/
+cpack
+ls
+mc
+vim ../CMakeLists.txt
+git branch
+git checkout gs/add-packaging 
+cmake .
+cpack
+ninja
+cpack
+mv
+mc
+unzip face_detector-1.0.0-Linux.zip 
+cd face_detector-1.0.0-Linux/
+ls
+ldd lib/libface_detector.so
+ls lib
+git status
+git submodule status
+git submodule update --init --recursive
+git branch
+git checkout gs/add-packaging 
+git checkout -b gs/improve-accuracy-evaluation-and-visualization
+git commit -a -m'Sample points for accuracy curves in a log space, plot table for the topmost part of ROC curve, auto-set range for plots'
+git push -u origin gs/improve-accuracy-evaluation-and-visualization 
+git checkout gs/add-packaging 
+git rebase master
+git status
+git add ../../models/cascade_multi.xml 
+cd ..
+git status
+git rebase --continue
+ls
+ls models
+git lfs ls-files
+git branch -r
+git checkout origin/mz/new-multy-model-add 
+git lfs pull
+git lfs ls-files
+git lfs fetch
+git pull
+git lfs fetch
+git lfs ls-files
+git pull
+git fetch
+git branch -r
+less ./.gitattributes 
+git checkout mz/new-multy-model-add 
+rm models/cascade_multi_*
+git checkout mz/new-multy-model-add 
+git lfs ls-files
+git checkout gs/add-packaging 
+git checkout master
+gvim CMake
+git checkout gs/add-packaging 
+gvim CMakeLists.txt
+vim CMakeLists.txt
+cd _build/
+git checkout gs/add-packaging 
+ninja cleam
+ninja clean
+ls
+rm ./FaceDetector*
+rm -rf ./FaceDetector*
+cmake ..
+ninja
+ls
+less FaceDetectorTargets.cmake 
+rm CMakeCache.txt 
+rm -rf ./FaceDetector*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja ..
+ninja
+git checkout master
+git pull 
+git branch
+git checkout gs/wider-face 
+git pull
+ls accuracy/
+cd ..
+ls accuracy/
+ls accuracy/evaluate/
+cd _build/
+ctest -h
+ctest -N
+ctest -h
+ctest -N --print-labels
+ctest --print-labels
+git checkout develop 
+git diff
+git status
+git diff ../accuracy/evaluate/
+git diff ../accuracy/evaluate/dataset.py
+git add ../accuracy/evaluate/dataset.py
+git add ../accuracy/evaluate/eval.py
+git status
+git commit -m'Make comparison witbh the gold results to be non-required'
+git checkout devleop
+git checkout develop 
+git pull -p
+git submodule update --init --recursive
+git pull -p
+git grog
+cd ../cmake/cmake-scripts/
+git pull -p
+git branch -r
+git checkout master
+git pull
+git log
+git checkout develop 
+git pull
+git log
+cd ..
+git checkout -b gs/update cmake-scripts/
+git checkout -b gs/update cmake-scripts
+git checkout -b gs/update-cmake-scripts
+git status
+git commit -a -m'Update cmake-scripts'
+git push -u origin gs/update-cmake-scripts 
+cd ../modules/fcf_cascade/
+git checkout master
+git pull -p
+git submodule update --init --recursive
+git log
+cd ..
+git status
+git checkout -b gs/update-fcf-cascade
+git commit -a -m'Update FCF cascade to master'
+git branch -d gs/update-fcf-cascade 
+git checkout -b gs/update-fcf-cascade
+git push -u origin gs/update-fcf-cascade 
+it help tag
+git help tag
+git pull -p
+git pull
+git checkout master
+git pull
+git status
+git tag -h
+git tag v1.0.0
+git push
+cd ..
+ls
+ls include/
+ls -lht
+ls -lhR
+ls -ltR
+man ls
+man tree
+ls -R
+ls src
+git ls-tree
+git ls-tree --full-name master
+git ls-tree -r --full-name master
+ipython
+git pull -p
+git checkout asmorkal/export 
+git submodule update --init --recursive

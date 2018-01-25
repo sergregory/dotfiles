@@ -1,0 +1,1000 @@
+git remote -v
+git remote -h
+git remote set-url origin git@gitlab-icv.inn.intel.com:algo/face-detector.git
+git status
+git push -u origin
+git push -u origin gs/allow-disable-tests 
+cd ../..
+git status
+git branch
+git commit -a
+git push -u origin gs/rename-targets 
+cd modules/face_detector/
+gtui checkout master
+git checkout master 
+git pull
+cd ../..
+cd _build/
+make clean
+ninja -h
+ninja -t
+ninja -t list
+ninja -t clean
+ninja
+ctest -V
+git diff
+git commit -a --amend
+git push -f
+cd ../../face_analyzer/
+git checkout develop
+git checkout nk/caffe_shared 
+git diff develop 
+ls /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/
+cd ../dwell-time/_build/
+ctest -v
+ctest -V
+cd ../../face_analyzer/
+cd _build/
+ls
+./tools/test_network -h
+./tools/test_network --caffe_models ../models/caffe/ --dlsdk_models ../models/dlsdk/ --dataset_age /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt --dataset_gender /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt
+. /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/bin/setvars.sh 
+./tools/test_network --caffe_models ../models/caffe/ --dlsdk_models ../models/dlsdk/ --dataset_age /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt --dataset_gender /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt
+./tools/test_network  --dataset_age /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt --dataset_gender /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt
+./tools/test_network --caffe_models  --dataset_age /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt --dataset_gender /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt
+./tools/test_network --caffe_models=../models/caffe/ --dlsdk_models=../models/dlsdk/ --dataset_age=/media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt --dataset_gender=/media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt
+ls /media/share/DSS/Age_Gender_Recognition/
+cd ../../dwell-time/_build/
+ctest -h
+ctest -V -N
+ctest -V -R dwell_time_regression_test_valgrind
+ctest -V -R '*_valgrind'
+ctest -V -R '.*_valgrind'
+cd ../..
+cd face-detector/
+ls
+cd _build/
+make -j
+ninja]
+ninja
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make -j9
+ctest -V
+ls
+tmux
+tmux a -t 'training'
+cd 
+cd dev
+git clone git@gitlab-icv.inn.intel.com:algo/face-detector.git ./face-detector-experiment
+cd face-detector-experiment/
+git checkout -f ba066efcc494343dd4ad139038df1dd21ac57a1d
+cd ../
+rm -rf face-detector-experiment/
+make -j9
+cd ~/dev/face-detector/
+ls
+cd _build/
+ls
+rm -rf ./*
+cmake -GNinja -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+ninja
+cd ~/data/WIDER_Face/
+aria2c -x7 -s7 -j7 https://drive.google.com/uc?export=download&confirm=0X6s&id=0B6eKvaijfFUDQUUwd21EckhUbWs
+apt search hardening
+apt show hardening-wrapper
+tmux a -t 'training'
+sudo dpkg -h
+man dpkf
+man dpkg
+sudo dpkg -P
+ls ~/Downloads
+sudo dpkg -P libcudnn6
+sudo dpkg -P libcudnn6-dev
+sudo dpkg -P libcudnn6
+tmux a -t 'training'
+apt search clang-tidy
+sudo apt-get install clang-tidy
+clang-tidy -h
+clang-tidy -list-checks
+wget -O - http://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
+apt-get update
+sudo apt-get update
+sudo vim /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install clang-tidy-4.0 
+clang-tidy -list-checks
+clang-tidy --version
+clang-tidy-4.0 -list-checks
+7z a 03.zip $(find 03 -name '*.jpg')
+tmux a -t 'training'
+vim
+tmux new -s 'training'
+tmux a -t 'training'
+sudo shutdown -h now
+ls
+cd ..
+ls
+ls -lh face_datatang_83k
+ls -lh face_datatang_83k|grep xml
+ls
+ls face_dt_orientation/
+ls datatang_83k_obj48x48_win60x60_fix_forehead
+ls -lht ~/dev/facense/models
+ls face_dt_ip/
+ls face_datatang_83k_merge_orientations/
+ls face_datatang_83k
+ls -lht face_datatang_83k/face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead.xml
+ls -lht face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml
+md5sum face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml
+md5sum ~/dev/face-detector/models/cascade_frontal.xml 
+ls face_datatang_83k|grep frontal
+ls face_datatang_83k|grep frontal|grep xml
+ls -lht ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml
+mkd5sum ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml
+md5sum ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml
+md5sum ~/dev/face-detector/models/cascade_frontal.xml 
+md5sum ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml
+ls face_datatang_83k/|grep yml|grep fix_forehead
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml_config.yml
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml
+vim face_datatang_83k/frontal_config.yml 
+#mkdir retrain_fcf_casade
+date
+date -h
+date --help
+date -I
+date -I=hours
+date -Ihours
+mkdir retrain_fcf_casade_$(date -I)
+ls
+cp face_datatang_83k/frontal_config.yml retrain_fcf_casade_2017-06-07/
+cp face_datatang_83k/left_config.yml retrain_fcf_casade_2017-06-07/
+cp face_datatang_83k/right_config.yml retrain_fcf_casade_2017-06-07/
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml retrain_fcf_casade_2017-06-07/
+cp face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml retrain_fcf_casade_2017-06-07/
+cd retrain_fcf_casade_2017-06-07/
+ls
+vim -O frontal_config.yml face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml 
+cp face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml ./
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml ./
+ls
+rm face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml
+ls
+vim -O frontal_config.yml face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead.xml_config.yml 
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml_config.yml ./
+vim -O frontal_config.yml face_obj\=48x48_win\=60x60_9000_features_frontal_fix_forehead.xml_config.yml 
+ls
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml ./
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix_forehead.xml_config.yml ./
+vim -O left_config.yml face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead.xml_config.yml 
+ls
+cat frontal_config.yml 
+vim -O right_config.yml face_obj\=48x48_win\=60x60_9000_features_right_fix_forehead.xml_config.yml 
+ls
+cp ../face_dt_ip/run.sh ./
+vim run.sh 
+ls
+bash run.sh 
+cat left.log 
+vim left_config.yml 
+vim right_config.yml 
+vim frontal_config.yml 
+vim right_config.yml 
+head -n 5 right_config.yml 
+feh -r /home/gserebry/train/datatang_83k_obj48x48_win60x60_fix_forehead/
+bash run.sh 
+bg
+disown "%bash" 
+tail -f left.log 
+tail -f right.log 
+tail -f frontal.log 
+ls
+ninja 
+killall gcc
+killall ninja
+cd ../face-detector-repo/modules/fcf_cascade/cmake/
+ls
+vim ProjectCommonDef.cmake 
+cd ..
+grep -rinh 'libsc++'
+grep -rinh 'libsc++' .
+ag -rinh 'libsc++' .
+ag 'libsc++' .
+ag 'libc++' .
+ag 'libc\+\+' .
+bim
+vim modules/fcf_cascade/modules/fpb/cmake/AddExtraCompilerOptions.cmake
+ps aux|grep doublecmd
+sudo kill -9 16691
+git status
+cd ..
+cd face-detector/
+git status
+git checkout master
+git submodule update --init --recursive
+cd _build/
+ninja
+cd ../../face_analyzer/
+cd _build/
+ninja
+cmake -DFaceDetector_DIR=/home/gserebry/dev/face-detector/_build ..
+ninja
+ls
+git branch
+../scripts/age_gender_test.py -h
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/caffe/ ~/dev/face-detector/models/ ~/dev/facense/tests/age-gender-test/mini_res_ . age_gender_mini
+ls
+ls test/models/
+ls
+ls src
+ls tools/
+ls ..
+ls ../test
+ls ~/dev/facense/tests/age-gender-test/
+ls ..
+ls ../test
+ls
+cat ../scripts/age_gender_test.py 
+../scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt ../models/caffe/ ~/dev/face-detector/models/ ~/dev/facense/tests/age-gender-test/mini_res . age_gender_mini.html
+ls -a ~
+ls -a ~/.config
+find ~ -name '*format*'
+find ~ -name 'clang'
+find ~ -name 'clang*'
+cat /home/gserebry/.config/QtProject/qtcreator/beautifier/clangformat
+cat /home/gserebry/.config/QtProject/qtcreator/beautifier/clangformat/My.clang-format 
+find ~ -name 'My'
+find ~ -name 'My*'
+ls /home/gserebry/.config/QtProject/qtcreator/beautifier/clangformat/My.clang-format
+ls /home/gserebry/.config/QtProject/qtcreator/beautifier/clangformat/
+ls -a ~
+clang-format-diff -h
+clang-format-diff -style Mozilla ~/dev/face-detector/src/detector.cpp 
+vim /home/gserebry/.vim_runtime/.clang-format
+cd ~/dev/face_annotation_tool/
+cd _build/
+feh work/02/nm1443502_rm166120448_1979-2-21_2014.jpg
+cd ~/dev/face_an
+cd ~/dev/face_analyzer/
+git branch
+git log
+ls
+git checkout master
+git pull
+git checkout -b gs/add-missing-suppressions-lists
+cp -r ~/dev/face-detector/devtools/ ./
+git status
+cat models/CMakeLists.txt 
+cat devtools/
+git add devtools/
+git status
+git commit
+git push -u origin gs/add-missing-suppressions-lists 
+git rebase --onto=develop gs/add-missing-suppressions-lists master
+git checkout develop
+git rebase --onto=develop gs/add-missing-suppressions-lists master
+git grog
+git push -f
+git grog
+git rebase --onto=develop gs/add-missing-suppressions-lists origin/master
+git grog
+git rebase --onto=develop origin/master gs/add-missing-suppressions-lists
+git grog
+git push -f
+vim devtools/cppcheck.supp 
+git commit -a --amend
+git push -f
+vim src/face_analyzer_ie.cpp 
+vim tools/main.cpp
+git diff
+git commit -a
+git push
+cd ../dwell-time/
+git pull -p
+git status
+git checkout master
+git pull
+git checkout -b gs/fix-cppcheck
+vim devtools/cppcheck.supp 
+git commit 
+git commit -a
+vim src/tools/demo_dwell_time_pipeline.cpp 
+vim src/tracking/src/tracker_median_flow.cpp 
+vim src/API/ds.cpp 
+git status
+git reset --hard HEAD
+git status
+git log
+git branch
+git push -u origin gs/fix-cppcheck 
+ls ~/.vim_runtime/sources_non_forked/
+pushd ~/.vim_runtime
+ls
+cd vimrcs
+ag 'airline'
+vim plugins_config.vim 
+vim basic.vim 
+vim extended.vim 
+cd ../sources_non_forked/
+ls
+git submodule add git clone https://github.com/powerline/fonts.git
+cd //
+cd ~/.vim_runtime/sources_non_forked/
+cd ..
+git submodule add git clone https://github.com/powerline/fonts.git ./sources_non_forked/fonts
+cd sources_non_forked/
+git submodule add https://github.com/powerline/fonts.git
+cd fonts/
+./install.sh 
+cd ..
+du -h fonts/
+vim
+echo LC_ALL
+echo $LC_ALL
+vim
+vim ../vimrcs/extended.vim 
+vim
+popd
+find . -name '*.json'
+cd ../face-detector/
+git branch
+git pull -p
+cd _build/
+rm -rf ./*
+ninja
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja ..
+ninja
+git remote -v
+cd //
+cd ~/dev/
+git clone git@gitlab-icv.inn.intel.com:algo/face-detector.git face-detector-repo
+cd face-detector-repo/
+gti checkout master
+git checkout master
+cd ../face-detector
+cd ../face-detector-repo/
+mkdir _build
+cd _build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+git submodule update --init --recursive
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make -j9
+cd ../face-de
+cd ../../face-detector
+git branch
+git checkout gs/configure-clang-tidy-cia-cmake 
+cd _build/
+make
+ninja
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make VERBOSE=1
+cmake --version
+apt search cmake
+apt search cmake|less
+sudo apt remove cmake
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh
+vim ~/Downloads/cmake-3.8.2-Linux-x86_64.sh
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh -h
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --help
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --prefix=/usr/local/bin/
+cmake
+sudo rm -rf /usr/local/bin/cmake-3.8.2-Linux-x86_64/
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --prefix=/usr/local/
+cmake
+sudo bash ~/Downloads/cmake-3.8.2-Linux-x86_64.sh --prefix=/usr
+git branch
+gnuplot script.dat 
+feh fddb_rocs.gif 
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector/_build/bin/fddbDetect -m ~/dev/face-detector/models -g ~/dev/face-detector/accuracy/facedetect_gt.txt
+ls
+ls -lht
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector/_build/bin/fddbDetect -m ~/dev/face-detector/models -g ~/dev/face-detector/accuracy/facedetect_gt.txt
+ls -lh _detect_data.txt 
+cp _detect_data.txt ~/dev/face-detector/tests/regression/gt_detect_data.txt
+git branch
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector/_build/bin/fddbDetect -m "/home/gserebry/train/retrain_fcf_casade_2017-06-07/frontal.xml -m ~/train/retrain_fcf_casade_2017-06-07/left.xml -m ~/train/retrain_fcf_casade_2017-06-07/right.xml" -g ~/dev/face-detector/accuracy/facedetect_gt.txt -p'retrain'
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector-repo/_build/bin/fddbDetect -m "/home/gserebry/train/retrain_fcf_casade_2017-06-07/frontal.xml -m ~/train/retrain_fcf_casade_2017-06-07/left.xml -m ~/train/retrain_fcf_casade_2017-06-07/right.xml" -g ~/dev/face-detector/accuracy/facedetect_gt.txt -p'retrain'
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector-repo/_build/bin/fddbDetect -m "/home/gserebry/train/retrain_fcf_casade_2017-06-07/frontal.xml -m ~/train/retrain_fcf_casade_2017-06-07/left.xml -m ~/train/retrain_fcf_casade_2017-06-07/right.xml" -g ~/dev/face-detector/accuracy/facedetect_gt.txt -p'retrain_fcf_cascade_develop'
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim retrain_fcf_cascade_developDiscROC.txt 
+vim evaluation_tool/evaluate.cpp 
+git branch
+git log
+git log HEAD@{1}
+git show HEAD@
+git show HEAD
+git stash list
+cd ..
+ls
+cd fddb-evaluation-tools/evaluation_tool/
+ls
+vim RectanglesSingleImage.
+vim RectanglesSingleImage.cpp 
+cd _build/
+make
+cd ../..
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim retrain_fcf_cascade_developDiscROC.txt 
+git stash
+git branch
+git checkout master
+git stash pop
+git diff
+ls
+vim -O masterDiscROC.txt retrain_fcf_cascade_developDiscROC.txt 
+vim ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O masterDiscROC.txt retrain_fcf_cascade_developDiscROC.txt 
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 2 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 1 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master_official
+vim -O master_officialDiscROC.txt 
+vim -O master_officialDiscROC.txt retrain_fcf_cascade_developDiscROC.txt
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation_symmetric_border
+sudo dhclient -d
+sudo ifconfig enp5s0
+sudo ifconfig enp5s0 down
+sudo ifconfig enp5s0 up
+sudo ifconfig enp5s0
+cd dev/face-detector-repo/
+git branch
+cd ../face-detector
+git branch
+git diff
+git stash
+git checkout master
+git pull -p
+git submodule update --init --recursive
+cd _build/
+git checkout yg/add_find_face_util 
+git checkout master
+git branch -D yg/add_find_face_util 
+git checkout yg/add_find_face_util 
+git gtog
+git help rebase
+git rebase --onto=master 09c3429 yg/add_find_face_util 
+git mergetool
+git mergetool -t meld
+git diff HEAD^ ../CMakeLists.txt
+vim ../CMakeLists.txt
+git diff master ../CMakeLists.txt
+git diff yg/add_find_face_util  ../CMakeLists.txt
+git diff yg/add_find_face_util ../CMakeLists.txt
+git diff master ../CMakeLists.txt
+git diff HEAD@{1} ../CMakeLists.txt
+git diff HEAD@{2} ../CMakeLists.txt
+git diff HEAD@{3} ../CMakeLists.txt
+git diff origin/gs/update-fcf-cascade  ../CMakeLists.txt
+git status
+cd ../
+git status
+git push -f
+tmux new -S 'training'
+tmux new -s 'training'
+ls
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation_symmetric_border
+git branch
+pushd ~/dev/face_analyzer/
+git status
+cat models/CMakeLists.txt 
+git branch
+git checkout master
+git checkout develop
+git branch -D master
+git pull -p
+git checkout master
+git branch -D develop
+git branch -D develop-lfs 
+git checkout master
+git log
+ls
+scripts/age_gender_test.py /media/share/DSS/Age_Gender_Recognition/smoke_test_images.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_age_labels.txt /media/share/DSS/Age_Gender_Recognition/smoke_test_gender_labels.txt models/caffe/ ~/dev/face-detector/models/ ~/dev/facense/tests/age-gender-test/mini_res . age_gender_mini.html
+wc -l /media/share/DSS/Age_Gender_Recognition/full_test_images.txt 
+less
+git checkout gs/update-fcf-cascade 
+git rebase master
+git grog
+git pull
+git checkout master
+git pull
+git checkout gs/update-fcf-cascade 
+git rebase master
+git mergetool
+git rebase --continue
+git grog
+git status
+make clean
+make -j7
+cd ~/dev/face_analyzer/
+git checkout master
+git pull
+git blame include/face_analyzer_api.hpp
+cd ~/dev/face_analyzer/
+git grog master
+nvidia-smi
+sudo prime-select nvidia
+sudo prime-select intel
+nvidia-smi
+sudo prime-select intel
+sudo prime-select nvidia
+nvidia-smi
+sudo prime-select intel
+nvidia-smi
+sudo prime-select nvidia
+nvidia-smi
+sudo shutdown -h now
+sudo service lightdm stop
+sudo prime-select intel
+sudo service lightdm start
+sudo service lightdm stop
+sudo prime-select intel
+sudo rm -rf ./.Xauthority 
+sudo service lightdm start
+sudo service lightdm stop
+rm ./.Xauthority 
+sudo prime-select nvidia
+nvidia-smi
+sudo prime-select nvidia
+nvidia-smi
+lsmod|grep nvidia
+nvidia-smi
+apt search nvidia
+apt search nvidia-375
+apt-cache search nvidia-375
+apt-cache search nvidia-
+sudo apt-get install nvidia-375
+vim Documents/Install-Nvidia-Ubuntu.
+vim Documents/Install-Nvidia-Ubuntu.md 
+ubuntu-drivers  devices
+sudo apt-get install nvidia-375
+lsmod|grep nouveau
+vim Documents/Install-Nvidia-Ubuntu.md 
+sudo mv /usr/lib/nvidia-375/libGLdispatch.so.0 /usr/lib/nvidia-375/disable_libGLdispatch.so.0
+sudo mv /usr/lib/nvidia-375/libGL.so /usr/lib/nvidia-375/disable_libGL.so
+sudo mv /usr/lib/nvidia-375/libGLX.so /usr/lib/nvidia-375/disable_libGLX.so
+sudo prime-select intel
+sudo prime-select nvidia
+nvidia-smi 
+lsmod|grep nvidia
+sudo prime-select intel
+sudo reboot -h now
+sudo service lightdm stop
+sudo prime-select intel
+sudo service lightdm start
+cd ~/data
+du -h --max-depth=1 CelebFaceA/
+du -h --max-depth=1 MS-CELEB-1M/
+du -h --max-depth=1 WIDER_Face/
+sudo mount -a
+nvidia-smi
+ldd nvidia-smi
+ldd $(which nvidia-smi)
+lsmod|grep nvidia
+sudo rmmod nvidia_drm
+sudo rmmod nvidia
+sudo rmmod nvidia_modeset 
+sudo rmmod nvidia_uvm 
+sudo rmmod nvidia_drm 
+sudo prime-select intel
+sudo rmmod nvidia_drm 
+sudo rmmod nvidia_modeset 
+sudo rmmod drm_kms_helper 
+sudo rmmod i915_bpo 
+nvidia-smi 
+apt search nvidia-smi
+apt search nvidia
+cd ~/Downloads/
+ls
+sudo ./cuda_8.0.44_linux.run --no-opengl-libs
+cat $LD_LIBRARY_PATH
+ubuntu-drivers devices
+ubuntu-drivers -h
+ubuntu-drivers list
+sudo apt-get install nvidia-375
+ls /var/cache/apt/archives/
+ls /var/cache/apt/archives/|grep nvidia
+sudo rm /var/cache/apt/archives/nvidia-375_375.66-0ubuntu0.16.04.1_amd64.deb 
+sudo dpkg -i /var/cache/apt/archives/nvidia-375_375.39-0ubuntu0.16.04.1_amd64.deb 
+sudo prime-select nvidia
+nvidia-smi
+sudo /usr/local/cuda-8.0/bin/uninstall_cuda_8.0.pl
+sudo /usr/bin/nvidia-uninstall
+sudo apt-get --purge remove nvidia-*
+systemctl daemon-reload'
+systemctl daemon-reload
+lspci | grep -i nvidia
+sudo apt-get install linux-headers-$(uname -r)
+sudo apt-get install nvidia-375
+lsmod|grep nvidia
+nvidia-smi
+apt-file search nvidia-smi
+sudo prime-select intel
+sudo reboot -h now
+nvidia-smi 
+cd ~/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery
+make
+cd ~/Downloads/
+sudo ./cuda_8.0.44_linux.run --no-opengl-libs
+cd ~/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery
+make
+./deviceQuery
+sudo prime-select nvidia
+./deviceQuery
+ldpci|grep nvidia
+lspci|
+ldpci|grep 
+ldpci|fzf
+lspci|fzf
+less /var/log/syslog
+inxi -GS
+lsmod|grep nvidia
+apt search nouveau
+vim /etc/modprobe.d/nouveau-kms.conf 
+vim /etc/modprobe.d/blacklist-nouveau.conf 
+inxi -GS
+nvidia-settings -v
+vim /etc/init/gpu-manager.conf 
+vim /var/log/gpu-manager.log 
+sudo apt-get install bbswitch
+sudo apt search bbswitch
+sudo apt remove bbswitch-dkms 
+ksmod|grep nvidia
+lsmod|grep nvidia
+sudo reboot -h now
+sudo prime-select intel
+sudo service lightdm stop
+nvidia-smi
+tmux nes -s 'training'
+tmux new -s 'training'
+vim cmake/FaceDetectorConfig.cmake.in 
+cd ../face-detector-repo/
+git branch
+vim cmake/FaceDetectorConfig.cmake.in 
+git diff
+git commit -a --amend
+git push -f
+ls -a
+mc
+cd
+source dev/py2-tensorflow/bin/activate
+pip -h
+pip install -h
+mc
+htop
+cd dev/CI-Pipeline/
+git branch
+. ~/.bash
+. ~/.bashrc 
+git branch
+git checkout gs/fix-face-analyzer-caffe-builder
+git grog
+git pull -p
+git checkout master
+git pull
+git grog
+git rebase --onto=master ad/refactor gs/fix-face-analyzer-caffe-builder
+git grog
+git diff master
+git push -f
+git grog
+git branch -D ad/refactor 
+git pull -p
+git rebase master
+git pull -p
+git log
+git grog
+git checkout master
+git pull
+git checkout gs/fix-face-analyzer-caffe-builder 
+git rebase master
+vim face_analyzer/precommit_caffe_ubuntu16.groovy
+vim face_analyzer/caffe_ubuntu16.groovy
+git commit -a -m'add missing comma'
+git push
+git pull -p
+git checkout master
+git pull -p
+git branch -d gs/fix-face-analyzer-caffe-builder 
+sudo mount -a
+git 
+git pull -p
+git diff
+git reset --hard HEAD
+git pull -p
+git log
+git branch 0r
+git branch -r
+git log origin/asmorkal/windows 
+git checkout asmorkal/windows 
+git pull
+cd ..
+ls
+cd Infra/
+git pull -p
+git checkout master
+gi tpull
+git pull
+git branch -r
+git log master 
+ls
+ls docker/
+cd ../CI-Pipeline/
+ls
+git checkout gs/update-fd-accuracy-scripts 
+git rebase master 
+git rebase --abort master
+git rebase --abort
+git grog
+git rebase --onto=master fdada54 gs/update-fd-accuracy-scripts  
+git mergetool
+git status
+git rebase --continue
+git rebase --abort
+git rebase --onto=master fdada54 gs/update-fd-accuracy-scripts  
+git mergetool
+git rebase --continue
+git rebase --skip
+git grog
+git push -f
+git diff
+git commit -a -m'Do not autoinstall python packages on the fly'
+git push
+cd ~/dev/face-detector
+cd modules/
+git pull -p
+git merge --abort
+ls
+cd fcf_cascade/
+git pull -p
+git branch
+git checkout master 
+git pull
+git submodule update --init --recursive
+vim CMakeLists.txt 
+vim modules/fpb/CMakeLists.txt 
+cd ..
+cd cmake/
+ls
+cd cmake_utils/
+git pull -p
+git remote -v
+cd ..
+cd cmake_utils/
+cd ../cmake-scripts/
+git pull -p
+cd ..
+cd _build/
+rm CMakeCache.txt 
+ls
+rm CPack*
+cmake ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cpack
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cpack
+ninja
+git diff master
+cd ../modules/fcf_cascade/
+git checkout develop
+git pull
+vim CMakeLists.txt 
+cd ../../_build/
+ninja
+ninja clean
+cmake ..
+ninja
+cd modules/fcf_cascade/
+cd ../../
+cd ../modules/fcf_cascade/
+git submodule update
+git submodule update --init --recursive
+cd ..
+cd ../_build/
+cmake ..
+ninja
+ninja clean
+ninja
+less ../modules/fcf_cascade/modules/fpb/include/feature_pyramid_builder_api.hpp
+less ../modules/fcf_cascade/modules/fpb/CMakeLists.txt 
+less ../modules/fcf_cascade/modules/fpb/src/CMakeLists.txt 
+git status
+cd ../modules/
+git status
+git checkout -- fcf_cascade/
+git status
+git submodule update --init --recursive fcf_cascade/
+cd ../_build/
+ninja
+cpack
+unzip FaceDetector-1.0.0-Linux.zip 
+cd FaceDetector-1.0.0-Linux/
+ls
+ls cmake/
+ls lib/
+ls models/
+ls include/
+ls cmake/FaceDetectorConfig.cmake 
+less cmake/FaceDetectorConfig.cmake 
+ls ..
+less ../FaceDetectorLibs.cmake 
+less ../FaceDetectorConfig.cmake 
+ls -lht ..
+cd ..
+rm FaceDetector*
+ls
+rm CMake*
+rm -rf CMake*
+rm -rf CPack*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+ninja
+ls
+ls -lht
+cmake ..
+ninja
+ls
+less FaceDetectorTargets.cmake 
+cmake ..
+less FaceDetectorTargets.cmake 
+ninja
+less FaceDetectorTargets.cmake 
+git diff
+ninja clean
+rm -rf CMake*
+rm -rf FaceDetector*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+ninja
+cpack
+less FaceDetectorConfig
+less FaceDetectorConfig.cmake 
+less FaceDetectorConfigVersion.cmake 
+less FaceDetectorTargets.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorTargets.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cpack
+unzip FaceDetector-1.0.0-Linux.zip 
+less FaceDetector-1.0.0-Linux/cmake/FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cpack
+unzip FaceDetector-1.0.0-Linux.zip 
+less FaceDetector-1.0.0-Linux/cmake/FaceDetectorConfig.cmake 
+less FaceDetector-1.0.0-Linux/
+ls FaceDetector-1.0.0-Linux/
+ninja clean
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig
+less FaceDetectorConfig.cmake 
+less cpack/FaceDetectorConfig.cmake 
+cpack
+q
+unzip FaceDetector-1.0.0-Linux.zip 
+less FaceDetector-1.0.0-Linux/cmake/FaceDetectorConfig.cmake 
+ls 
+ls FaceDetector-1.0.0-Linu
+less FaceDetectorTargets.cmake 
+less FaceDetectorConfig
+less FaceDetectorConfig.cmake 
+ls
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+rm FaceDetectorConfig
+rm FaceDetectorConfig*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+less FaceDetectorConfig.cmake 
+less FaceDetectorTargets.cmake 
+cpack
+git diff
+git commit -a -m 'Fix review comments & update cmake-scripts'
+git push -f
+git rm ../cpack
+git rm ../cpack/*
+less ../cmake/FaceDetectorConfig.cmake.in 
+git commit -a --amend
+git push -f
+cmake ..
+ninja
+git diff
+git commit -a -m'Fix review comments'
+git push
+git diff master
+cd
+cd ~/dev/
+git clone git@gitlab-icv.inn.intel.com:annotation/datasets.git
+cd datasets/
+ls
+git checkout -b gs/face-detection-metrics
+ls
+mkdir fddb
+ls
+less README.md 
+less detrac/
+less detrac/README.md 
+cd fddb/
+ls
+mkdir loader
+ls
+rm loader/
+cd ..
+mkdir face-detection-benchmark
+cd  face-detection-benchmark/
+ls
+cp -r ~/dev/face-detector/accuracy/evaluate/* ./
+;s
+ls
+rm *.png
+rm *.pyc
+rm __pycache__/
+rm -rf __pycache__
+ls
+rm tags
+cat requirements.txt 
+vim requirements.txt 
+less match.py 
+vim requirements.txt 
+ls
+mkdir evaluate
+ls
+mv *.py evaluate/
+ls
+touch README>md
+touch README.md
+ls
+rm README
+ls
+rm md 
+ls
+vim README.md 
+pushd ~/dev/CI-Pipeline/
+git pull -p
+git checkout master 
+git pull -p
+popd
+vim README.md 
+git status
+ls
+git add evaluate/ README.md  requirements.txt 
+git commit -a -m'WIP: writing readme'
+git push -u origin gs/face-detection-metrics 
+git branch
+git checkout master -- requirements.txt
+git checkout master -- 
+git checkout gs/face-detection-metrics
+ls
+cd ..
+git checkout gs/face-detection-metrics -- face-detection-benchmark/requirements.txt
+ls
+ls face-detection-benchmark
+git diff gs/face-detection-metrics -- face-detection-benchmark/requirements.txt

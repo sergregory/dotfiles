@@ -1,0 +1,1000 @@
+apt search tqdm
+virtualenv -h
+git branch
+git status
+git diff
+git commit -a
+git status
+git commit -a
+git checkout master
+./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+git status
+./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+dmesg|tail
+ls /media/share/DSS/FDDB_dataset/
+ls /media/share/DSS/FDDB_dataset/2002
+ls /media/share/DSS/FDDB_dataset/2002/08/29/big
+feh /media/share/DSS/FDDB_dataset/2002/08/29/big/img_18993.jpg 
+man parallel
+parallel -j echo 'test'
+man parallel
+man cachegrind
+man vargring
+man valgring
+man valgrind
+valgrind ./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+valgrind --leak-check=full ./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+valgrind --leak-check=full --show-leak-kinds=all ./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+man massif
+man valgrind
+massif ./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+valgrind --tool=massif --leak-check=full --show-leak-kinds=all ./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+valgrind --tool=massif ./_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB//2002/08/29/big/img_18993.jpg
+ls
+vim massif.out.5710 
+ms_print massif.out.5710 
+git branch
+git diff
+git checkout -b gs/fix-pic-option
+vim CMakeLists.txt
+grep -rin  'PIC'
+grep -rinH  'PIC'
+man grep
+grep -rnH  'PIC'
+grep -rnH  '\<PIC\>'
+ag -rnH  '\<PIC\>'
+ag  '\<PIC\>'
+man ag
+ag -rnH  'PIC'
+ag -rinH  'PIC'
+ag -rinH  'PIC' ./*
+ag -rnH  'PIC' ./*
+ag -rnH  'PIC\>' ./*
+ag -rnH  'PIC ' ./*
+ag -rnH  'PIC ' '*.txt'
+ag -rnH  'PIC ' *.txt
+ag -rnH  'PIC ' *
+grep -rnH  '\<PIC\>'
+git diff
+git commit -a
+git push -u origin gs/fix-pic-option 
+git checkout master
+git pull
+git checkout gs/fix-pic-option 
+git rebase master
+git push -f
+man adduser
+sudo adduser yury
+ls /home/
+git branch
+git checkout master
+git diff gs/fix-pic-option 
+git log
+git pull
+git merge -v --ff-only 
+git help merge
+git merge -v --ff-only --no-commit
+git merge -v --ff-only --no-commit gs/fix-pic-option 
+git status
+git checkout gs/fix-pic-option 
+git log
+git push -f origin 
+nvidia-smi 
+sudo -h
+sudo -U yury
+sudo -su yury
+ifconfig
+ls -lh ~/data
+sudo yury
+sudo su yury
+git branch
+git checkout origin/master
+git checkout 0f origin/master
+git checkout -f origin/master
+git merge --ff --no-commit 9a5a15b93b9ff900fecc7b5c9a67d7766fab38bc
+git branch
+git checkout gs/faceDetect 
+cd _build/
+make -j
+cd ..
+git branch
+git diff
+git checkout master
+git log
+git checkout gs/demo
+git branch -D master 
+git checkout master
+git pull
+git branch
+git log
+git submodule update --init --recursive
+git branch
+git checkout -b gs/use-48x48-cascade-as-default
+git diff
+git status
+git submodule update --init --recursive
+git status
+git commit -a
+git push -u origin gs/use-48x48-cascade-as-default 
+git commit -a --amend
+git push -f -u origin gs/use-48x48-cascade-as-default 
+ls _build/
+ls _build/b
+ls _build/bin/
+_build/bin/faceDetect -h
+git branch
+git checkout gs/faceDetect 
+git rebase master
+git rebase --abort
+git log
+git status
+git submodule update --init --recursive
+git grog
+git rebase master
+git mergetool
+git mergetool -k diffuse
+git mergetool --tool=diffuse
+git status
+git rebase --continue
+git mergetool --tool=diffuse
+git mergetool
+git rebase --continue
+git log
+git grog
+cd ~/dev/opencv
+git branch
+git checkout 3.2.0
+git checkout v3.2.0
+git tag 
+git fetch
+git checkout 3.2.0
+cd _
+cd ../opencv_master_build/
+cmake-gui 
+make -j9
+rm -rf ./*
+cmake-gui 
+make -j9
+cmake-gui 
+bg
+apt search openblas
+sudo apt install libopenblas-dev
+sudo apt install li
+apt search lapack
+sudo apt install liblapacke-dev
+sudo apt install liblapack-dev
+make -j9
+cd ../facense/_build/
+cmake -DOpenCV_DIR=~/dev/opencv-master_build ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv-master_build ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+mak e-j5
+make -j9
+git submodule
+cd ..
+git status
+git submodule update --init --recursive
+git status
+git submodule
+git checkout master
+git diff
+git commit -a
+git checkout master
+git submodule status
+git submodule
+git checkout gs/faceDetect 
+git submodule
+cd modules/fcf_cascade/
+git submodule
+cd ..
+git checkout master
+cd fcf_cascade/
+git submodule 
+cd ../
+git checkout gs/faceDetect 
+cd ..
+./_build/bin/faceDetect -h
+git branch
+git merge master
+git diff -- master:models/cascade_frontal.xml models/cascade_frontal.xml
+git diff master:models/cascade_frontal.xml models/cascade_frontal.xml
+vim models/cascade_frontal.xml 
+git checkout master
+git checkout gs/faceDetect 
+git diff -- master:models/cascade_frontal.xml models/cascade_frontal.xml
+git merge master
+vim models/cascade_frontal.xml 
+sudo iotop
+echo $TERM
+urxvt
+cd ~/dev/facense_extra/scripts/facedetect_training/
+ls
+vim ./accepted_ms_coco_fp.txt
+sudo dhclient -d
+htop
+ls
+git branch
+ls
+rm gui_objects_controller 
+sudo mount -a
+sudo mount
+sudo umount /media/share 
+sudo umount /media/share
+sudo umount /media/external_share 
+sudo mount
+sudo mount -a
+apt search python3
+sudo apt install pyt
+apt search numpy
+sudo apt install python3-numpy
+apt search libpython
+sudo apt install libpython3-dev
+xrdb -h
+xrdb -I$HOME -merge ~/.Xdefaults 
+~/tools/pycharm-community-2016.3.1/bin/pycharm.sh 
+ps aux|grep python
+kill -9 14299
+kill -9 14229
+cd ~/dev/fddb-evaluation-tools/
+source env/bin/activate
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+gedit
+gedit -h
+gedit -s
+gedit --display $DISPLAY
+gedit --display :0
+0
+1
+[0] [] [] 1
+2002/07/19/big/img_269
+0
+1
+[0] [] [] 1
+2002/07/19/big/img_278
+0
+1
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+tmux a -t 'training'
+autocutsel &
+disown "%autocutsel" 
+echo $DISPLAY
+showkey --scancodes
+showkey
+man showkey
+[7~ [8~
+cat /etc/inputrc 
+vim ~/.Xdefaults 
+xrdb -merge ~/.Xdefaults 
+tmux a -t 'training'
+cd data
+mkdir INRIA
+cd INRIA/
+aria2c -x7 -j7 -s7 ftp://ftp.inrialpes.fr/pub/lear/douze/data/INRIAPerson.tar
+gimp
+echo $DISPLAY
+man gimp
+gimp
+xcb -h
+echo $DISPLAY
+man gimp
+gimp --no-splash
+gimp --no-cpu-accel
+man gimp
+gimp --no-cpu-accel --no-splash --no-shm --verbose
+apt search intel
+qsudo apt install intel-opencl
+sudo apt install intel-opencl
+sudo apt install  --reinstall intel-opencl
+sudo apt update
+sudo apt install  --reinstall intel-opencl
+sudo apt remove intel-opencl
+gimp
+tmux a -t 'training'
+cd ..
+feh left/
+tmux a -t 'training'
+cd ~/data
+mkdir hand_datasets
+cd hand_dataset
+aria2c -x5 -j5 -s5 http://horatio.cs.nyu.edu/mit/tompson/nyu_hand_dataset_v2.zip
+aria2c -x15 -j15 -s15 -c -k http://horatio.cs.nyu.edu/mit/tompson/nyu_hand_dataset_v2.zip
+aria2c -x15 -j15 -s15 -c http://horatio.cs.nyu.edu/mit/tompson/nyu_hand_dataset_v2.zip
+cd ..
+aria2c -x5 -j5 -s5 https://doc-0s-84-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/iug4o50hq8mv0tc27ulvf8hh8s4nmjmr/1492610400000/13182073909007362810/*/0B7EVK8r0v71pZjFTYXZWM3FlRnM?e=download
+cd ~/data
+mkdir GRAZ
+cd GRAZ
+vim links.txt
+aria2c -x5 -j5 -s5 -i links.txt 
+ls
+ls -l
+unzip no_bike_no_person.zip 
+unzip none
+unzip none.zip 
+feh none/
+feh no_bike_no_person/
+feh none
+cd ..
+ls
+aria2c -x5 -j5 -s5 https://storage.googleapis.com/drive-bulk-export-anonymous/20170419T140044Z/4133399871716478688/8ddacaed-1676-4674-a7b1-224cd1d0d644/1/78d18418-0550-4c7d-aa44-bde9914c7d7b?authuser
+mc
+skype 
+ps aux|grep skype
+kill -9 9520
+ps aux|grep sky
+kill -9 27004
+tmux a -t 'training'
+cd  ~/dev/facense_extra/scripts
+cd facedetect_training/
+source ../bin/activate
+python ./show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --image_dir ~/data/FDDB/
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic
+cd ~/data/IN
+cd ~/data/INRIA/
+ls
+tar -xvf ./INRIAPerson.tar 
+ls
+rm INRIAPerson.tar 
+cd INRIAPerson/
+ls
+ls Train/
+ls Train/annotations
+ls
+ls 70X134H96/
+ls Train/
+ls Train/pos
+feh Train/pos
+ls Train/
+vim Train/annotations.lst 
+vim Train/annotations/crop001054.txt 
+ls train_64x128_H96/
+ls train_64x128_H96/pos
+ls
+ls -l
+ls -lR
+ls -lR|less
+ls
+cd Train/
+ls
+find . -name '*.yml'
+find . -name '*.yml'|ls -l
+find . -name '*.yml' -exec ls -l {} \;
+feh ./pos/crop001128.png
+cd
+cd ~/data/MSCOCO/
+ls
+cd detections_full_cascade/
+ls
+cp ~/dev/facense_extra/scripts/facedetect_training/accepted_ms_coco_fp.txt ./
+vim accepted_ms_coco_fp.txt 
+cd
+cd ~/data/CelebFaceA/
+ls
+vim README.txt 
+unzip img_celeba.7z-20170419T140044Z-007.zip 
+ls
+7z -h
+7z x img_celeba.7z
+sudo chmod +w ../CelebFaceA/
+7z x img_celeba.7z
+ls
+ls -la
+sudo chmod -R +w ../CelebFaceA/
+7z x img_celeba.7z
+mc
+ls
+rm -rf img_celeba.7z*
+touch links.txt
+vim links.txt 
+aria2c -x25 -j25 -s25 -i links.txt 
+aria2c -x14 -j14 -s14 -i links.txt 
+vim links.txt 
+aria2c -x14 -j14 -s14 -i links.txt 
+aria2c -x10 -j10 -s10 -i links.txt 
+aria2c -x10 -j10 -s10 -c -i links.txt 
+ls
+rename 's/(7z\.\d+)\.\d/\1/g' ./*
+ls
+7z x img_celeba.7z
+7z x img_celeba
+7z x img_celeba.7z.001
+df -h
+xrdb -merge ~/.Xdefaults
+tmux a -t 'training'
+cd ~/dev/facense_extra/scripts/facedetect_training/
+source ../bin/activate
+python ./classify_nonstandard_faces.py -h
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+python ./show_landmarks_stats.py -h
+python ./show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+python ./show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ -v
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ -v
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+feh ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/pic8/87572.jpg 
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+feh ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/pic8/87572.jpg 
+feh ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/pic8/87589.jpg 
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+vim attributes_fixed.txt 
+pushd ~/train/
+feh datatang_83k_obj48x48_win60x60_fix_forehead_orientation/left/
+vim face_datatang_83k/frontal_config.yml 
+vim face_datatang_83k/frontal_config_forehead.yml.yml 
+vim face_datatang_83k/frontal_config_forehead.yml
+vim face_datatang_83k/frontal_config_9000.yml
+vim face_datatang_83k/run.sh 
+vim face_datatang_83k/left_config_forehead.yml
+vim face_datatang_83k/frontal_config_forehead.yml
+rm -rf datatang_83k_obj48x48_win60x60_fix_forehead_orientation/
+popd
+python ./show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt
+python ./classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt -i ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+c -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/frontalimgs.txt
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/frontalimgs.txt
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/frontal_up/imgs.txt
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/frontal_up/*.txt
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/frontal_up/imgs.txt 
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/left/imgs.txt 
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/right/imgs.txt 
+feh ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/right/
+python ./show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ./attributes_fixed_2.txt 
+python ./show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ./attributes_fixed.txt 
+feh ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/left/
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/left/imgs.txt 
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/frontal_up/imgs.txt 
+vim ~O ~/train/face_datatang_83k/frontal_config_forehead.yml ~/train/face_datatang_83k/left_config_forehead.yml ~/train/face_datatang_83k/right_config_forehead.yml 
+vim -O ~/train/face_datatang_83k/frontal_config_forehead.yml ~/train/face_datatang_83k/left_config_forehead.yml ~/train/face_datatang_83k/right_config_forehead.yml 
+feh ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/left/
+feh ~/train/datatang_83k_obj48x48_win60x60_fix_forehead/left/
+tmux a -t 'training'
+cd ~/dev/facense_extra/scripts
+source bin/activate
+cd facedetect_training/
+history
+python show_landmarks_stats.py -h
+python show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt  --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt 
+python classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt  --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+python show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt  --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt 
+python classify_nonstandard_faces.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt  --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/
+htop
+wc -l ./frontal_up/imgs.txt 
+calc
+wc -l ./left/imgs.txt 
+wc -l ../neg/neg_filtered_subset_nicta_a_b_c_d.txt 
+cd ..
+ls
+cd face_datatang_83k/
+ls
+vim left_config_9000.yml 
+vim left_config_9000_same_neg_as_front.yml 
+wc -l ../neg/neg_filtered_subset_nicta_a_b_c_d.txt
+wc -l ./left/imgs.txt 
+wc -l ../datatang_83k_obj36x36_win48x48/left/imgs.txt 
+wc -l ../datatang_83k_obj36x36_win48x48/right/imgs.txt 
+wc -l ../datatang_83k_obj36x36_win48x48/frontal_up/imgs.txt 
+history|grep faceDetect
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P8 -0 -I{} ./_build/bin/faceDetect -m models/right.xml -m models/left.xml -m models/frontal.xml -i {} --show 0 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P8 -0 -I{} ~/dev/facense/_build/bin/faceDetect -m models/right.xml -m models/left.xml -m models/frontal.xml -i {} --show 0 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P1 -0 -I{} ~/dev/facense/_build/bin/faceDetect -m models/cascade_right.xml -m models/cascade_left.xml -m models/cascade_frontal.xml -i {} --show 0 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P1 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /homne/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 0 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P1 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 0 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P1 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P8 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 0 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P16 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 0 --out {}.yml
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P16 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print #0 | xargs -n1 -P16 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48
+echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P16 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48
+ls /home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg
+ls -l /home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg
+vim ~/dev/facense/examples/faceDetect/main.cpp
+make -C ~/dev/facense/_build/
+sudo apt install urxvt
+apt search rxvt
+sudo apt install rxvt-unicode-256color
+echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P16 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48
+echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P1 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48
+ls -l /home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg
+cat "echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P1 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48" > /tmp/command
+echo "echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P1 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48" > /tmp/command
+echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P1 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48
+echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P1 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 1 --out {}.yml --size=48
+echo '/home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg' | xargs -n1 -P1 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 0 --out {}.yml --size=48
+vim /home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg.yml 
+ls -lh /home/gserebry/data/MSCOCO/train2014/COCO_train2014_000000548690.jpg.yml 
+find /home/gserebry/data/MSCOCO/ -name '*.png' -or -name '*.jpg' -print0 | xargs -n1 -P16 -0 -I{} /home/gserebry/dev/facense/_build/bin/faceDetect -m /home/gserebry/dev/facense/models/cascade_right.xml -m /home/gserebry/dev/facense/models/cascade_left.xml -m /home/gserebry/dev/facense/models/cascade_frontal.xml -i {} --show 0 --out {}.yml --size=48
+ls ~/data/MSCOCO/train2014
+ls -lht ~/data/MSCOCO/train2014|less
+ls
+vim frontal_config_9000.yml 
+vim left_config_9000.yml 
+vim left_config_9000_same_neg_as_front.yml 
+vim right_config_9000_same_neg_as_front.yml 
+vim run.sh 
+bash run.sh &
+fg
+vim run.sh 
+vim left_config_9000_same_neg_as_front.yml right_config_9000_same_neg_as_front.yml 
+bash run.sh &
+ls
+ll
+la
+htop
+ls
+[A
+vim left_config_9000_same_neg_as_front.yml right_config_9000_same_neg_as_front.yml [B
+bash run.sh &
+fg
+bash run.sh &
+htop
+ps aux|grep doublecmd
+killall doublecmd
+ps aux|grep doublecmd
+htop
+vim frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim frontal_config_9000.yml left_config_9000_same_neg_as_front.yml right_config_9000_same_neg_as_front.yml 
+vim run.sh 
+bash run.sh &
+tail -f frontal_9000_forehead.log 
+less frontal_9000_forehead.log 
+tail -f frontal_9000_forehead.log 
+less frontal_9000_forehead.log 
+tail -f frontal_9000_forehead.log 
+vim run.sh 
+vim left_config_9000_same_neg_as_front.yml 
+vim right_config_9000_same_neg_as_front.yml 
+ls ..
+vim run.sh 
+bash run.sh 
+bg
+disown "%bash" 
+git help config
+htop
+vim left_config_9000_same_neg_as_front.yml 
+vim left_config_9000_same_neg_as_front.yml right_config_9000_same_neg_as_front.yml frontal_config_9000.yml 
+pushd ~/dev/facense
+git status
+git diff
+git branch
+git checkout master 
+git submodule update --init --recursive
+git status
+cd modules/fcf_cascade/
+git status
+git reset
+git reset --hard HEAD
+cd ..
+git status
+git checkout -b gs/frontal_cascade_with_forehead
+vim models/config.xml 
+git status
+git commit -a
+git push -u origin gs/frontal_cascade_with_forehead 
+git add models/face_obj\=48x54_win\=60x66_9000_features_frontal.xml 
+git commit -a --amend
+git push -f
+popd
+vim frontal_config_9000.yml 
+ps aux|grep python
+kill -9 28053
+vim frontal_config_9000.yml 
+vim run.sh 
+bash run.sh 
+bg
+tail -f frontal_9000_forehead.log 
+less frontal_9000_forehead.log 
+tail -f frontal_9000_forehead.log 
+vim frontal_config_9000.yml left_config_9000_same_neg_as_front.yml right_config_9000_same_neg_as_front.yml 
+cp frontal_config_9000.yml frontal_config_forehead.yml
+cp left_config_9000_same_neg_as_front.yml left_config_forehead.yml
+cp right_config_9000_same_neg_as_front.yml right_config_forehead.yml
+cp frontal_config_9000.yml frontal_config.yml
+cp left_config_9000_same_neg_as_front.yml left_config.yml
+cp right_config_9000_same_neg_as_front.yml right_config.yml
+vim frontal_config_forehead.yml left_config_forehead.yml right_config_forehead.yml 
+vim frontal_config.yml left_config.yml right_config.yml 
+vim run.sh 
+bash run.sh &
+htop
+vim run.sh 
+tail -f left_fix_forehead.log 
+htop
+vim frontal_config_forehead.yml left_config_forehead.yml right_config_forehead.yml 
+vim run.sh 
+vim frontal_config_forehead.yml left_config_forehead.yml right_config_forehead.yml 
+ls |grep frontal_fix_forehead
+bash run.sh &
+tail -f frontal_fix_forehead.log 
+tail -f left_fix_forehead.log 
+vim frontal_config_forehead.yml
+htop
+glxinfo |grep string
+sudo dpkg -i /home/gserebry/Downloads/intel-graphics-update-tool_2.0.4_amd64.deb 
+sudo dpkg install -a
+sudo apt-get install -a
+sudo apt-get install -f
+sudo dpkg -i /home/gserebry/Downloads/intel-graphics-update-tool_2.0.4_amd64.deb 
+5~sudo apt install libpackagekit-glib2-18
+sudo apt install libpackagekit-glib2-18
+sudo apt install libpackagekit-glib2-16
+sudo apt-get -f install
+uname -a
+cat /proc/version
+sudo apt-get update
+sudo dpkg -i /home/gserebry/Downloads/intel-graphics-update-tool_2.0.2_amd64.deb 
+htop
+tail -f left_fix_forehead.log 
+tail -f right_fix_forehead.log 
+vim run.sh 
+vim frontal_config_forehead.yml 
+bash run.sh 
+bg
+tail -f frontal_fix_forehead_orientation.log 
+cd ~/dev/facense
+git branch
+git diff
+git commit -a
+git checkout -b gs/soft-nms
+htop
+cd ~/dev/facense_extra/
+vim
+git status
+sudo apt-get install gtk2-engines-murrine:i386 gtk2-engines-pixbuf:i386
+ls
+cd scripts/
+ls
+cd facedetect_training/
+ls
+cd ~/dev/facense
+git branch
+git diff
+git reet --hard HEAD
+git checkout gs/master-prepare-for-regression 
+git checkout master
+git status
+git submodule update --init --recursive
+git branch
+git checkout gs/faceDetect 
+df -h
+htop
+git status
+git diff
+git branch
+git diff master
+git checkout -b gs/fix-face-size-for-training
+git diff
+cp ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_frontal_fix_forehead.xml ./models/
+cp ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead.xml ./models/
+cp ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_right_fix_forehead.xml ./models/
+vim models/config.xml 
+git add models/face_obj\=48x48_win\=60x60_9000_features_*
+git status
+git commit -a
+git branch
+git push -u origin gs/fix-face-size-for-training 
+cd train/face_datatang_83k/
+vim run.sh 
+vim left_config_9000.yml 
+bash run.sh 
+hotp
+htop
+vim left_config_9000.yml 
+vim run.sh 
+tail -f left_9000_hard_neg_shift_var2.log 
+htop
+less left_9000_hard_neg_shift_var2.log 
+vim run.sh 
+vim frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+cp left_config_9000.yml left_config_9000_same_neg_as_front.yml
+cp right_config_9000.yml right_config_9000_same_neg_as_front.yml
+vim *_same_neg_as_front.yml
+vim frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim run.sh 
+bash run.sh &
+htop
+tail -f ./frontal_9000_hard_neg_pos_to_neg_1_2.log 
+htop
+tail -f ./frontal_9000_hard_neg_pos_to_neg_1_2.log 
+ls
+ls -lht|less
+less right_9000_hard_neg_same_neg_as_front.log
+less right_9000_hard_neg.log 
+vim frontal_9000_hard_neg_pos_to_neg_1_2.log 
+vim run.sh 
+vim frontal_config_9000.yml 
+vim run.sh 
+vim frontal_config_9000.yml 
+bash run.sh &
+tail -f frontal_9000_hard_neg_test_rng.log 
+ls
+cp frontal_config_9000.yml frontal_config_9000_1.yml 
+cp frontal_config_9000.yml frontal_config_9000_2.yml 
+cp frontal_config_9000.yml frontal_config_9000_3.yml 
+cp frontal_config_9000.yml frontal_config_9000_4.yml 
+vim frontal_config_9000_*
+vim run.sh 
+bash run.sh &
+htop
+vim run.sh 
+cp frontal_config_9000.yml frontal_config_fcf_9000_sigma_1000.yml
+vim frontal_config_fcf_9000_sigma_1000.yml 
+vim run.sh 
+vim frontal_config_fcf_9000_sigma_1000.yml 
+mv frontal_config_fcf_9000_sigma_1000.yml frontal_config_fcf_9000_ss_1000.yml 
+vim run.sh 
+bash run.sh &
+htop
+vim run.sh 
+tail -f frontal_fcf_9000_ss_1000.log 
+less frontal_fcf_9000_ss_1000.log 
+vim frontal_config_fcf_9000_sigma_1000.yml 
+vim frontal_config_fcf_9000_ss_1000.yml 
+fg
+htop
+bash run.sh &
+tail -f frontal_fcf_9000_ss_1000.log 
+less frontal_fcf_9000_ss_1000.log 
+tail -f frontal_fcf_9000_ss_1000.log 
+vim -O frontal_config_fcf_9000_ss_1000.yml frontal_config_fcf_9000_sigma_1000.yml 
+vim run.sh 
+bash run.sh &
+tail -f frontal_fcf_9000_sigma_1000.log 
+htop
+cat /etc/sudoers
+sudo cat /etc/sudoers
+man users
+man adduser
+users
+sudo su
+adduser yury sudo
+sudo adduser yury sudo
+ifconfuig enp5s0
+ifconfig enp5s0
+ls
+mc
+echo $TERM
+tmux a -t 'training'
+cd ~/data/CelebFaceA/
+ls
+vim links_align.txt
+aria2c -x15 -s15 -j15 -c -i links.txt 
+aria2c -x15 -s15 -j15 -i links.txt 
+aria2c -x15 -s15 -j15 -ilinks.txt 
+wget https://doc-08-84-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/pkr7p0kifed4teijdseb9nlkqutb86jq/1492761600000/13182073909007362810/*/0B7EVK8r0v71pckZsdFFIYlJoN1k?e=download
+aria2c -x15 -s15 -j15 -i./links_align.txt 
+man aria2c
+aria2c -x15 -s15 -j15 -c -i./links_align.txt 
+aria2c -x15 -s15 -j15 -c
+aria2c -x15 -s15 -j15 -c $(cat links_align.txt|tr '\n' ' ')
+vim links_align.txt
+aria2c -x15 -s15 -j15 -c $(cat links_align.txt|tr '\n' ' ')
+aria2c -x15 -s15 -j15 -c -i./links_align.txt 
+vim links_align.txt
+aria2c -x15 -s15 -j15 -c -i./links_align.txt 
+ls
+rename 's/(7z\.\d+)\.\d/\1/g' ./*
+ls
+rename 's/(7z\.\d+)\.\d/\1/g' ./*
+ls
+7z x img_align_celeba_png.7z.*
+7z x img_align_celeba_png.7z.001
+df -h
+htop
+sudo service lightdm restart
+dmesg|tail
+man bbswitch
+bbswitch -h
+sudo -s
+sudo service lightdm restart
+htop
+apt search nvidia
+apt search nvidia|less
+sudo apt-get install --reinstall nvidia-367
+sudo service lightdm restart
+cat /var/log/syslog
+tail -f /var/log/syslog
+tail -f /var/log/Xorg.0.log
+apt search optimus
+sudo apt-get install --reinstall bumblebee-nvidia
+sudo service lightdm restart
+sudo reboot -h now
+nvidia-xconfig -h
+apt search intel
+apt search intel|less
+apt-cache search i965
+apt-cache search i917
+apt search intel|less
+apt-cache search i915
+sudo apt-get install xserver-xorg-video-intel
+sudo apt-get install i915-4.6.3-4.4.0-dkms 
+sudo apt-get install intel-opencl
+sudo apt-get remove --purge intel-opencl-devel 
+sudo apt-get remove --purge intel-opencl
+sudo service lightdm restart
+htoo
+popd
+cd ../face_datatang_83k/
+ls
+cp frontal_config_forehead.yml frontal_config_forehead_no_border.yml
+vim frontal_config_forehead_no_border.yml 
+vim run.sh 
+wc -l ../datatang_83k_obj48x48_win48x48_fix_forehead/frontal_up/imgs.txt 
+wc -l ../datatang_83k_obj48x48_win60x60_fix_forehead/frontal_up/imgs.txt 
+wc -l ../datatang_83k_obj48x48_win48x48_fix_forehead/frontal_up/imgs.txt 
+vim frontal_config_forehead_no_border.yml 
+bash run.sh &
+tail -f frontal_fix_forehead_no_border.log 
+less frontal_fix_forehead_no_border.log 
+cd ..
+ls
+mkmv obj48x48_win48x48/ obj48x48_win60x60/
+mv obj48x48_win48x48/ obj48x48_win60x60/
+mkdir face_dt_ip
+cd face_dt_ip/
+cp ../face_datatang_83k/frontal_config.yml ./
+cp ../face_datatang_83k/left_config.yml ./
+cp ../face_datatang_83k/right_config.yml ./
+ls
+vim ./*.yml
+cp ../face_datatang_83k/run.sh ./
+vim run.sh 
+bash run.sh &
+tail -f left.log 
+tail -f right.log 
+less right.log 
+vim right_config.yml 
+tail -f right.log 
+vim frontal_config.yml 
+wc -l ../obj48x48_win60x60_orientation/frontal/imgs.txt 
+vim frontal_config.yml 
+vim left_config.yml 
+vim right_config.yml 
+vim run.sh 
+bash run.sh 
+bg
+tail -f left.log 
+less left.log 
+tail -f left.log 
+tail -f right.log 
+tail -f frontal.log 
+cp frontal_config.yml frontal_config_cf.yml
+cp left_config.yml left_config_cf.yml
+cp right_config.yml right_config_cf.yml
+vim -O ./*_cf.yml
+vim run_cf.sh
+cp run.sh run_cf.sh
+vim run_cf.sh
+ls
+man parallel
+parallel --load 100% run_cf.sh 
+top
+mpstat 
+htop
+mpstat 
+mpstat 1 1
+wait_for_cpu_usage() {     current=$(mpstat 1 1 | awk '$12 ~ /[0-9.]+/ { print int(100 - $12 + 0.5) }');     while [[ "$current" -ge "$1" ]]; do         current=$(mpstat 1 1 | awk '$12 ~ /[0-9.]+/ { print int(100 - $12 + 0.5) }');         sleep 1;     done; }
+wait_for_cpu_usage 
+function wait_for_cpu_usage() {     current=$(mpstat 1 1 | awk '$12 ~ /[0-9.]+/ { print int(100 - $12 + 0.5) }');     while [[ "$current" -ge "$1" ]]; do         current=$(mpstat 1 1 | awk '$12 ~ /[0-9.]+/ { print int(100 - $12 + 0.5) }');         sleep 1;     done; }
+wait_for_cpu_usage 99
+vim run_cf.sh 
+bash run.sh 
+htop
+jobs
+bash run_cf.sh 
+htop
+vim run_cf.sh 
+mpstat 1 1
+vim run_cf.sh 
+bash run_cf.sh 
+vim run_cf.sh 
+tail -f frontal.log 
+vim run_cf.sh 
+bash run_cf.sh 
+htop
+ls
+frontal_cf.log
+less frontal_cf.log
+cd ..
+mkdir face_dt_orientation
+cp face_dt_ip/left_config.yml ./face_dt_orientation/
+cp face_dt_ip/right_config.yml ./face_dt_orientation/
+cp face_dt_ip/frontal_config.yml ./face_dt_orientation/
+cd face_dt_orientation/
+vim ./*.yml
+ls
+cp frontal_config.yml frontal_config_sym.yml
+cp left_config.yml left_config_sym.yml
+cp right_config.yml right_config_sym.yml
+vim ./*_sym.yml
+cp ../face_dt_ip/run.sh ./
+vim run.sh 
+ls
+vim run.sh 
+bash run.sh &
+tail -f left.log 
+htop
+ls
+cd ..
+ls
+ls -lh face_datatang_83k
+ls -lh face_datatang_83k|grep xml
+ls
+ls face_dt_orientation/
+ls datatang_83k_obj48x48_win60x60_fix_forehead
+ls -lht ~/dev/facense/models
+ls face_dt_ip/
+ls face_datatang_83k_merge_orientations/
+ls face_datatang_83k
+ls -lht face_datatang_83k/face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead.xml
+ls -lht face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml
+md5sum face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml
+md5sum ~/dev/face-detector/models/cascade_frontal.xml 
+ls face_datatang_83k|grep frontal
+ls face_datatang_83k|grep frontal|grep xml
+ls -lht ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml
+mkd5sum ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml
+md5sum ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml
+md5sum ~/dev/face-detector/models/cascade_frontal.xml 
+md5sum ./face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml
+ls face_datatang_83k/|grep yml|grep fix_forehead
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml_config.yml
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml
+vim face_datatang_83k/frontal_config.yml 
+#mkdir retrain_fcf_casade
+date
+date -h
+date --help
+date -I
+date -I=hours
+date -Ihours
+mkdir retrain_fcf_casade_$(date -I)
+ls
+cp face_datatang_83k/frontal_config.yml retrain_fcf_casade_2017-06-07/
+cp face_datatang_83k/left_config.yml retrain_fcf_casade_2017-06-07/
+cp face_datatang_83k/right_config.yml retrain_fcf_casade_2017-06-07/
+vim face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml retrain_fcf_casade_2017-06-07/
+cp face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml retrain_fcf_casade_2017-06-07/
+cd retrain_fcf_casade_2017-06-07/
+ls
+vim -O frontal_config.yml face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml 
+cp face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml ./
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml ./
+ls
+rm face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml_config.yml
+ls
+vim -O frontal_config.yml face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead.xml_config.yml 
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml_config.yml ./
+vim -O frontal_config.yml face_obj\=48x48_win\=60x60_9000_features_frontal_fix_forehead.xml_config.yml 
+ls
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml_config.yml ./
+cp ../face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix_forehead.xml_config.yml ./
+vim -O left_config.yml face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead.xml_config.yml 
+ls
+cat frontal_config.yml 
+vim -O right_config.yml face_obj\=48x48_win\=60x60_9000_features_right_fix_forehead.xml_config.yml 
+ls
+cp ../face_dt_ip/run.sh ./
+vim run.sh 
+ls
+bash run.sh 
+cat left.log 
+vim left_config.yml 
+vim right_config.yml 
+vim frontal_config.yml 
+vim right_config.yml 
+head -n 5 right_config.yml 
+feh -r /home/gserebry/train/datatang_83k_obj48x48_win60x60_fix_forehead/
+bash run.sh 
+bg
+disown "%bash" 
+tail -f left.log 
+tail -f right.log 
+tail -f frontal.log 
+ls

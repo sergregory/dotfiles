@@ -1,0 +1,13 @@
+pane	training	0	:evaluate	0	:	0	:/home/gserebry/dev/fddb-evaluation-tools	1	bash	:
+pane	training	1	:scripts	0	:	0	:/home/gserebry/dev/facense_extra	1	bash	:
+pane	training	2	:prepare	0	:-	0	:/home/gserebry/dev/facense_extra/scripts/facedetect_training	1	bash	:
+pane	training	3	:train	1	:*	0	:/home/gserebry/train/datatang_83k_obj36x36_win48x48	1	mc	:mc
+pane	training	4	:code	0	:	0	:/home/gserebry/dev/facense	1	bash	:
+pane	training	5	:7z	0	:	0	:/home/gserebry/data/CelebFaceA	1	7z	:/usr/lib/p7zip/7z x img_align_celeba_png.7z.001
+window	training	0	0	:	afdd,212x60,0,0,0
+window	training	1	0	:	afdf,212x60,0,0,2
+window	training	2	0	:-	afe0,212x60,0,0,3
+window	training	3	1	:*	afe1,212x60,0,0,4
+window	training	4	0	:	afe5,212x60,0,0,8
+window	training	5	0	:	5824,212x60,0,0,15
+state	training	

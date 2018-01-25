@@ -1,0 +1,1000 @@
+man dircolors
+dircolors --print-database
+man dircolors
+vim ~/.bashrc
+printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"
+printf "\033]0;%s@%s:%s\007" "a" "b" "c"
+printf "\033]0;%s@%s:%s\007\n" "a" "b" "c"
+printf "\033]_%s@%s:%s\033\\\n" "a" "b" "c"
+printf "\033]_%s@%s:%s\033\\" "a" "b" "c"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_2017-03-10-18-44-42.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -j10
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -j10
+git branch
+git checkout gs/visualize-falses 
+ls
+source env/bin/activate
+rm env/lib/python3.5/site-packages/cv2.so 
+ln -s ~/dev/opencv_master_build/lib/python3/cv2.cpython-35m-x86_64-linux-gnu.so env/lib/python3.5/site-packages/cv2.so
+python fp_vis/vis.py -h
+ls -lht
+python fp_vis/vis.py -h
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -j10 -a '-s'
+head allDiscROC.txt
+vim _detect_data.txt 
+grep -o '\d\+\.\d\+' _detect_data.txt 
+grep -Po '\d\+\.\d\+' _detect_data.txt 
+grep -P '\d\+\.\d\+' _detect_data.txt 
+pgrep -P '\d\+\.\d\+' _detect_data.txt 
+egrep -P '\d\+\.\d\+' _detect_data.txt 
+egrep -P '\d+\.\d+' _detect_data.txt 
+egrep -P '{0-9}\+.{0-9}\+' _detect_data.txt 
+man grep
+grep -P '{0-9}+\.{0-9}+' _detect_data.txt 
+vim _detect_data.txt 
+grep -P '{0-9}+\.{0-9}+$' _detect_data.txt 
+grep -P '{0-9}+' _detect_data.txt 
+grep -P '{0-9}' _detect_data.txt 
+grep -P "{0-9}" _detect_data.txt 
+grep -P "\{0-9\}" _detect_data.txt 
+grep -P "0" _detect_data.txt 
+grep -P "\d" _detect_data.txt 
+grep -P "\d+" _detect_data.txt 
+grep -P "\d+\." _detect_data.txt 
+grep -P "\d+\.\d+" _detect_data.txt 
+grep -P -o "\d+\.\d+" _detect_data.txt 
+grep -P -o "\d+\.\d+" _detect_data.txt |sort
+grep -P -o "\d+\.\d+" _detect_data.txt |sort -n
+grep -P -o "\d+\.\d+" _detect_data.txt |sort -n|less
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+make -C evaluation_tool/_build/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+apt search autocutsel
+sudo apt install autocutsel
+vim ~/.xinitrc
+rm ~/.xinitrc 
+vim ~/.xsessionrc
+5~man autocutsel
+man autocutsel
+autocutsel -f
+autocutsel -h
+autocutsel -verbose
+ps aux|grep autocutsel
+kill -9 3178
+man xclip
+echo '0.9682 0.7724 0.05 131 0.853963'|xclip
+man xclip
+echo $DISPLAY
+man xclip
+echo '0.9682 0.7724 0.05 131 0.853963'|xclip -d :1.0
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_2017-03-10-18-44-42.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+echo $TERM
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+vim allDiscROC.txt 
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+htop
+doublecmd 
+man bash
+man find
+find /home/gserebry/data/INRIA/INRIAPerson/ -type f -exec ls -l {} \;
+find /home/gserebry/data/INRIA/INRIAPerson/ -type l -exec ls -l {} \;
+find /home/gserebry/data/INRIA/INRIAPerson/ -type f -print0|xargs -I{} -n1 -P1 -0 ~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -m ~/dev/facense/models/cascade_left.xml -m ~/dev/facense/models/cascade_right.xml -i {} --size 48 --out {}.yml --show 0
+find /home/gserebry/data/INRIA/INRIAPerson/ -type f -and -name '*.png' -print0|xargs -I{} -n1 -P1 -0 ~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -m ~/dev/facense/models/cascade_left.xml -m ~/dev/facense/models/cascade_right.xml -i {} --size 48 --out {}.yml --show 0
+5~ls -l /home/gserebry/data/INRIA/INRIAPerson/Train/neg/
+ls -l /home/gserebry/data/INRIA/INRIAPerson/Train/neg/
+ls -l /home/gserebry/data/INRIA/INRIAPerson/Train/neg
+ls /home/gserebry/data/INRIA/INRIAPerson/Train/neg
+ls /home/gserebry/data/INRIA/INRIAPerson/Train/
+ll /home/gserebry/data/INRIA/INRIAPerson/Train/
+sudo chmod -R +w ~/data/INRIA
+ll /home/gserebry/data/INRIA/INRIAPerson/Train/
+find /home/gserebry/data/INRIA/INRIAPerson/ -type f -and -name '*.png' -print0|xargs -I{} -n1 -P1 -0 ~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -m ~/dev/facense/models/cascade_left.xml -m ~/dev/facense/models/cascade_right.xml -i {} --size 48 --out {}.yml --show 0
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+make -C evaluation_tool/_build/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml -m " -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml -m " -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml -m ~/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_left_same_neg_as_front.xml -m ~/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_right_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml -m /home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_left_same_neg_as_front.xml -m /home/gserebry/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_right_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k//face_obj=48x54_win=60x66_9000_features_frontal.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+python fp_vis/vis.py --det _detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+0.9685 0.7724 0.05 130 0.853963
+cp ~/train/face_datatang_83k/face_obj=48x54_win=60x66_9000_features_frontal.xml ~/dev/facense/models/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -h
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k//face_obj=48x54_win=60x66_9000_features_frontal.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k//face_obj=48x54_win=60x66_9000_features_frontal.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -h
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k//face_obj=48x54_win=60x66_9000_features_frontal.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x54_win=60x66_9000_features'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k//face_obj=48x54_win=60x66_9000_features_frontal.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x54_win=60x66_9000_features'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42'
+#~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_2017-03-10-18-44-42.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42'
+rename 's/face_obj\=48x48_win\=60x60_shrink_6_9000_features_2017-03-10-18-44-42_/face_obj\=48x48_win\=60x60_shrink_6_9000_features_equal_num_neg_/g' *.txt
+ls
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_2017-03-10-18-44-42.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_2017-03-10-18-44-42.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead'
+python fp_vis/vis.py --det         for _obj in self.image_ann:_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB --vis
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_same_neg_as_front.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_same_neg_as_front.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_frontal_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_all'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_frontal_fix_all'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_all_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_all_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_all_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_frontal_fix_all_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_fix_forehead_all'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_fix_all'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_all_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_all_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_all_detect_data.txt --format rect --border 6 6 6 6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_all_detect_data.txt --format rect --border 6 6 0 6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_all_detect_data.txt --format rect --border 6 6 0 6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+htop
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_fix_forehead_frontal'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_frontal_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_frontal_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=36x36_win=48x48_9000_features_fix_forehead_frontal'
+python fp_vis/vis.py --det face_obj=36x36_win=48x48_9000_features_fix_forehead_frontal_detect_data.txt --format rect --border 6 6 0 0 --size 36 36 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=36x36_win=48x48_9000_features_fix_forehead_frontal_detect_data.txt --format rect --border 6 6 0 0 --size 36 36 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_frontal_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=36x36_win=48x48_9000_features_fix_forehead_frontal'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_frontal_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_left_fix_forehead.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_right_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=36x36_win=48x48_9000_features_fix_forehead_multy'
+python fp_vis/vis.py --det face_obj=36x36_win=48x48_9000_features_fix_forehead_frontal_detect_data.txt --format rect --border 6 6 0 0 --size 36 36 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=36x36_win=48x48_9000_features_fix_forehead_frontal_detect_data.txt --format rect --border 6 6 0 0 --size 36 36 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=36x36_win=48x48_9000_features_fix_forehead_multy_detect_data.txt --format rect --border 6 6 0 0 --size 36 36 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead_orientation.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix_forehead_orientation.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead_orientation.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all' 
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 6 12 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 0 12 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 12 12 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 12 12 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 6 6 6 6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 6 6 0 6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_orientation_all_detect_data.txt --format rect --border 6 6 0 12 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+ps aux|grep logactivewin
+ps aux|grep keyfreq
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal'
+source ~/dev/facense_extra/scripts/bin/activate
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border -6 -6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border -6 -6 -6 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border -6 -6 -6 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border -6 -6 -6 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border -3 -3 -3 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border -3 -3 -3 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=48x48_9000_features_frontal_fix_forehead_frontal_detect_data.txt --format rect --border -6 -6 -6 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+htop
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_right_dt_ip.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_left_dt_ip.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_fix_forehead_dt_ip_multy'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_dt_ip_multy_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_dt_ip_multy_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_dt_ip_multy_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+ls
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_right_dt_ip_orientation.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_left_dt_ip_orientation.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_dt_ip_orientation_multy'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_dt_ip_orientation_multy_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_dt_ip_orientation_multy_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_dt_ip_multy_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+pushd ~/dev/facense_extra/scripts/
+git status
+git log
+git diff
+git add -i
+git commit
+git status
+git commit -a
+popd
+pushd ~/dev/facense_extra/scripts/
+git log
+popd
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_frontal_dt_ip_orientation.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_right_dt_ip_orientation.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_left_dt_ip_orientation.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_dt_ip_orientation_multy'
+ls ~/train/face_dt_ip/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_frontal_dt_orientation.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_right_dt_ip_orientation.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_left_dt_ip_orientation.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_dt_ip_orientation_multy'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_frontal_dt_orientation.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_right_dt_ip_orientation.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_left_dt_ip_orientation.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_dt_ip_orientation_multy_new_front'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_fix_forehead_dt_ip_multy_new_front_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_dt_ip_multy_new_front_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_dt_ip_orientation_multy_new_front_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_frontal_cf.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_right_cf.xml -m ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_left_cf.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_cf'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_cf_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_cf_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_frontal_dt_orientation.xml -m ~/train/face_dt_orientation/face_obj=48x48_win=60x60_9000_features_right_dt_orientation.xml -m ~/train/face_dt_orientation/face_obj=48x48_win=60x60_9000_features_left_dt_orientation.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_dt_orientation_multy_new_front'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_dt_orientation_multy_new_front_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml -m ~/train/face_dt_orientation/face_obj=48x48_win=60x60_9000_features_right_dt_orientation.xml -m ~/train/face_dt_orientation/face_obj=48x48_win=60x60_9000_features_left_dt_orientation.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_old_front_orientation_lr'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_old_front_orientation_lr_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_old_front_orientation_lr_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_old_front_orientation_lr_detect_data.txt --format rect --border 6 6 0 -3 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_old_front_orientation_lr_detect_data.txt --format rect --border 6 6 0 -3 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_old_front_orientation_lr_detect_data.txt --format rect --border 6 6 0 -6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_dt_orientation/face_obj=48x48_win=60x60_9000_features_frontal_dt_orientation_sym.xml -m ~/train/face_dt_orientation/face_obj=48x48_win=60x60_9000_features_right_dt_orientation_sym.xml -m ~/train/face_dt_orientation/face_obj=48x48_win=60x60_9000_features_left_dt_orientation_sym.xml" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'face_obj=48x48_win=60x60_9000_features_dt_orientation_sym_multy'
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_dt_orientation_sym_multy_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master'
+python fp_vis/vis.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master'
+python fp_vis/vis.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master'
+./evaluation_tool/_build/fddb_evaluation -h
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -h
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master
+ls
+cp masterDiscROC.txt ./for_report/curves/
+sh ./plot_roc_linux.sh 
+ls
+evince fddb_rocs.pdf 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_60'
+python fp_vis/vis.py --det master_fold_60_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-60-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'60' ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_60'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'60' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_60'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_60'
+python fp_vis/vis.py --det master_fold_60_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d master_fold_60_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master_fold_60 -h
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d master_fold_60_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master_fold_60
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d master_fold_60_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs.txt -r master_fold_60
+ls
+vim master_fold_60DiscROC.txt 
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master
+vim masterDiscROC.txt 
+python fp_vis/vis.py --det master_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det master_fold_60_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det master_fold_60_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det master_fold_60_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det master_fold_60_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python fp_vis/vis.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det master_fold_60_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_no_small_faces_imgs'
+python fp_vis/vis.py --det master_fold_no_small_faces_imgs_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+vim ~/dev/facense/models/config.xml 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+python fp_vis/vis.py --det facense_converted_no_small_faces_detect_data.txt --format rect --border 0 0 0 0 --size 54 54 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det facense_converted_no_small_faces_detect_data.txt --format rect --border 0 0 0 0 --size 60 60 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_face'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted'
+python fp_vis/vis.py --det facense_converted_detect_data.txt --format rect --border 0 0 0 0 --size 60 60 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det facense_converted_detect_data.txt --format rect --border 0 0 0 0 --size 60 60 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted'
+python fp_vis/vis.py --det facense_converted_detect_data.txt --format rect --border 0 0 0 0 --size 60 60 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det facense_converted_detect_data.txt --format rect --border 0 0 0 0 --size 60 60 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+ls
+ls|grep cf
+python fp_vis/vis.py --det face_obj=48x48_win=60x60_9000_features_cf_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+cp master_fold_60DiscROC.txt for_report/curves/
+bash plot_roc_linux.sh 
+evince fddb_rocs.pdf 
+make -C evaluation_tool/_build/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_60'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_60'
+python fp_vis/vis.py --det master_fold_no_small_faces_imgs_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_no_small_faces_imgs'
+rm for_report/curves/36
+rm for_report/curves/36.txt 
+rm for_report/curves/48.txt 
+rm for_report/curves/allDiscROC.txt 
+rm for_report/curves/master*
+rm for_report/curves/Facense
+rm for_report/curves/Facense*
+ls for_report/curves/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'no_small_Faces_imgs' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'no_small_faces_imgs' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'no-small-faces-imgs' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+ls|grep facense_converted
+ls|grep facense
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'no-small-faces-imgs' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+python fp_vis/vis.py --det facense_converted_no_small_faces_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+rm 5~facense_converted_no_small_faces_detect_data.txt
+rm facense_converted_no_small_faces_detect_data.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+python fp_vis/vis.py --det facense_converted_no_small_faces_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+python fp_vis/vis.py --det facense_converted_no_small_faces_detect_data.txt --format rect --border 0 0 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt --dir ~/data/FDDB
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'facense_converted_no_small_faces'
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r facense_converted
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-images-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r facense_converted_no_small_faces
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r facense_converted_no_small_faces
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d facense_converted_no_small_faces_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r facense_converted_no_small_faces
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d facense_converted_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r facense_converted
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d facense_converted_no_small_faces_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs.txt -r facense_converted_no_small_faces
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d master_fold_60_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs.txt -r master_no_small_faces
+cp master_no_small_facesDiscROC.txt ./for_report/curves/Master.txt
+cp facense_converted_no_small_facesDiscROC.txt ./for_report/curves/Itseez.txt
+bash plot_roc_linux.sh 
+evince fddb_rocs.pdf 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_60'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt -p'master_fold_no_small_faces_imgs'
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs-ellipseList.txt -d master_fold_no_small_faces_imgs_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-no-small-faces-imgs.txt -r 'master_fold_no_small_faces_imgs'
+cp master_fold_no_small_faces_imgsDiscROC.txt ./for_report/curves/Master.txt
+bash plot_roc_linux.sh 
+evince fddb_rocs.pdf 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+bash plot_settings_linux.gnuplot 
+vim plot_settings_linux.gnuplot 
+bash plot_roc_linux.sh 
+feh fddb_rocs.png 
+vim plot_settings_linux.gnuplot 
+bash plot_roc_linux.sh 
+feh fddb_rocs.png 
+vim plot_settings_linux.gnuplot 
+bash plot_roc_linux.sh 
+vim plot_settings_linux.gnuplot 
+bash plot_roc_linux.sh 
+feh fddb_rocs.png 
+calc
+htop
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+git diff
+git branch
+git log master
+git log
+git gtog
+git status
+git diff
+git checkout -- evaluation_tool/RectanglesSingleImage.cpp
+git status
+git diff
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+git branch
+git status
+git checkout -- plot_settings_linux.gnuplot
+mv for_report/curves/Master.txt for_report/curves/Facense.txt
+git status
+git diff evaluation_tool/evaluate.cpp
+git commit -a
+git mv fp_vis/ evaluate_py
+git mv evaluate_py/vis.py evaluate_py/evaluate.py
+vim fddb_evaluate.sh 
+git status
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+ls
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+pip install pipreqs
+pipreqs evaluate_py/
+python pipreqs evaluate_py/
+pip3 install pipreqs
+python pipreqs evaluate_py/
+pipreqs evaluate_py/
+ls
+ls ~/dev/facense_extra/scripts/share/python-wheels/
+pip3 install pipreqs
+pipreqs evaluate_py/
+pip install pipreqs
+python ls ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+python ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+python3 ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+python2 ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+deactivate
+source ~/dev/facense_extra/scripts/bin/activate4
+source ~/dev/facense_extra/scripts/bin/activate
+python3 ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+ls /home/gserebry/.local/lib/python3.5/site-packages/pipreqs/
+ls /home/gserebry/.local/lib/python2.7/site-packages/pipreqs/
+vim /home/gserebry/.local/lib/python2.7/site-packages/pipreqs/pipreqs.py
+python3 ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+vim ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py
+python3 ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+vim ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py
+python3 ~/.local/lib/python3.5/site-packages/pipreqs/pipreqs.py ./evaluate_py
+vim evaluate_py/requirements.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+ls evaluate_py/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+/home/gserebry/dev/facense/_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB/2003/01/14/big/img_888.jpg
+ls /home/gserebry/dev/facense/models
+/home/gserebry/dev/facense/_build/bin/fddbDetect -m /home/gserebry/dev/facense/models -i /home/gserebry/data/FDDB/2003/01/14/big/img_888.jpg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fd-test/facedetect_gt.txt
+ls ~/dev/facense/tests/fd-test/facedetect_gt.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+ls ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+cat ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+vim  ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+vim  ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+echo $?
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+echo $?
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+echo $?
+vim  ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+vim  ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+echo $?
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+echo $?
+firefox facedetect_report.html 
+vim  ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+firefox facedetect_report.html 
+vim  ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+vim facedetect_report.csv 
+git status
+git commit -a
+git branch
+git grog
+git checkout master 
+git pull
+git checkout gs/visualize-falses 
+git rebase master
+git mergetool -t diffuse
+git mergetool
+git rebase --continue
+git grog
+git push
+git push -u origin gs/visualize-falses 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+ls /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/documentation/
+ls /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/
+ls /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/model_optimizer/
+ls /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/model_optimizer/bin/
+/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/model_optimizer/bin/ModelOptimizer 
+cd /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/model_optimizer/bin/
+./ModelOptimizer 
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+./ModelOptimizer 
+./ModelOptimizer -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel 
+./ModelOptimizer -ListA
+./ModelOptimizer -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -pFP32
+./ModelOptimizer -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32
+ls
+ls Artifacts/
+./ModelOptimizer -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -*
+./ModelOptimizer -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -dm
+./ModelOptimizer -t ~/dev/facense/models/age_gender.xml -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -dm
+vim ~/dev/facense/models/age_gender.xml 
+./ModelOptimizer -b1 -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -dm
+./ModelOptimizer -b 1 -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -dm
+./ModelOptimizer -b 1 -d ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -dm
+export FRAMEWORK_HOME=/home/gserebry/dev/caffe-shared/_build/lib/
+./ModelOptimizer -b 1 -d ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -dm
+ls Artifacts/age_gender/
+ls Artifacts/age_gender/Binaries/
+./ModelOptimizer -b 1 -d ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -dm -i
+./ModelOptimizer -b 1 -d ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -i
+ls Artifacts/age_gender/Binaries/
+ls Artifacts/age_gender/
+./ModelOptimizer -b 1 -t ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -i
+./ModelOptimizer -b 1 -d ~/dev/facense/models/age_gender_net.prototxt -w ~/dev/facense/models/age_gender_net.caffemodel -p FP32 -i
+vim -O ./Artifacts/age_gender/age_gender.xml ~/dev/facense/models/age_gender.xml 
+cp ./Artifacts/age_gender/age_gender.* ~/dev/facense/models/
+cd ~/dev/fddb-evaluation-tools/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+git stash
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+git stash pop
+git diff
+git commit -a
+git push 
+git checkout master
+git pull
+git diff
+git checkout -b gs/fix-path-check
+git commit -a
+git push -u origin gs/fix-path-check 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+git checkout master 
+git pull
+git log
+git diff 5bb6c7557ebdceee516240f17cb777e952b850fc
+git log
+git diff HEAD^
+git diff HEAD
+git diff HEAD~2
+git diff HEAD~3
+git commit -a --amend
+git status
+git checkout gs/datatang_orientation 
+git branch -D master 
+git checkout master
+git checkout -b gs/fix-fddb-path-check
+git commit -a
+git push -u origin gs/fix-fddb-
+git push -u origin gs/fix-fddb-path-check 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+git diff
+git branch
+git checkout master 
+git commit -a
+git push
+git branch
+git commit -a
+git push
+sudo mount -a
+mount -a
+mount
+hotp
+htop
+git status
+git diff
+git branch
+git commit -a --amend
+git push -f
+ls ~/dev/opencv_master_build/lib/
+git commit -a --amend
+git push -f
+git diff
+git commit -a --amend
+git push -f
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+git diff
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+bash: ./src/util/src/util.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/opencv_tracker_wrapper.cc
+bash: ./src/tracking/src/opencv_tracker_wrapper.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/kuhn_munkres.cc
+bash: ./src/tracking/src/kuhn_munkres.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/detector_with_tracking.cc
+bash: ./src/tracking/src/detector_with_tracking.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/reid/src/common_descrs.cc
+bash: ./src/reid/src/common_descrs.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/reid/src/common_dists.cc
+bash: ./src/reid/src/common_dists.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/reid/src/experimental.cc
+bash: ./src/reid/src/experimental.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/core/src/core.cc
+bash: ./src/core/src/core.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/core/src/logging.cc
+bash: ./src/core/src/logging.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/detector_with_tracking.cc^C                                                                                                                                  
+gserebry@gserebry:~/dev/dwell_time$ git submodule add 
+bash: ./src/util/src/util.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/opencv_tracker_wrapper.cc
+bash: ./src/tracking/src/opencv_tracker_wrapper.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/kuhn_munkres.cc
+bash: ./src/tracking/src/kuhn_munkres.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/detector_with_tracking.cc
+bash: ./src/tracking/src/detector_with_tracking.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/reid/src/common_descrs.cc
+bash: ./src/reid/src/common_descrs.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/reid/src/common_dists.cc
+bash: ./src/reid/src/common_dists.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/reid/src/experimental.cc
+bash: ./src/reid/src/experimental.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/core/src/core.cc
+bash: ./src/core/src/core.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/core/src/logging.cc
+bash: ./src/core/src/logging.cc: No such file or directory
+gserebry@gserebry:~/dev/dwell_time$ ./src/tracking/src/detector_with_tracking.cc^C                                                                                                                                  
+gserebry@gserebry:~/dev/dwell_time$ git submodule add 
+. ~/.bashrs
+. ~/.bashrc
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/intel/computer_vision_sdk_1.0.0.050/samples/_build/samples/pvl_facedetect/pvl_facedetect_sample -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt -p 'cvsdk_measured'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n'all' -f ~/data/FDDB -w ~/intel/computer_vision_sdk_1.0.0.050/samples/_build/samples/pvl_facedetect/pvl_facedetect_sample -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt -p 'cvsdk_measured'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n'all' -f ~/data/FDDB -w ~/intel/computer_vision_sdk_1.0.0.050/samples/_build/samples/pvl_facedetect/pvl_facedetect_sample -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt -p 'cvsdk_measured'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/intel/computer_vision_sdk_1.0.0.050/samples/_build/samples/pvl_facedetect/pvl_facedetect_sample -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt -p 'cvsdk_measured_60'
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -6 -6 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+ls ~/data/FDDB/FDDB-folds
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -6 -6 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -6 -6 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -6 -6 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border 0 0 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border 0 0 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border 0 0 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r facense_converted
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+cp cvsdk_measuredDiscROC.txt ./for_report/curves/
+bash plot_roc_linux.sh 
+evince ./fddb_rocs.pdf 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+cp cvsdk_measuredDiscROC.txt ./for_report/curves/
+bash plot_roc_linux.sh 
+evince ./fddb_rocs.pdf 
+vim cvsdk_measuredDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+vim cvsdk_measuredDiscROC.txt 
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured -s
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+vim cvsdk_measuredDiscROC.txt 
+cp cvsdk_measuredDiscROC.txt ./for_report/curves/
+bash plot_roc_linux.sh 
+evince ./fddb_rocs.pdf 
+ls
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master
+vim masterDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+vim cvsdk_measuredDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+vim cvsdk_measuredDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+vim cvsdk_measuredDiscROC.txt 
+cp cvsdk_measuredDiscROC.txt for_report/curves/CV-SDK-measured.txt
+cp masterDiscROC.txt for_report/curves/Facense-all.txt
+bash plot_roc_linux.sh 
+evince ./fddb_rocs.pdf 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/intel/computer_vision_sdk_1.0.0.050/samples/_build/samples/pvl_facedetect/pvl_facedetect_sample -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt -p 'cvsdk_measured'
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+vim cvsdk_measuredDiscROC.txt 
+cp cvsdk_measuredDiscROC.txt for_report/curves/CV-SDK-measured.txt
+bash plot_roc_linux.sh 
+evince ./fddb_rocs.pdf 
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border 0 0 -6 -6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -3 -3 -6 -6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -3 -3 -6 -6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB 
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border 0 0 -6 -6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -3 -3 -6 -6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python evaluate_py/evaluate.py --det cvsdk_measured_detect_data.txt --format rect --border -3 -3 -6 -6 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d cvsdk_measured_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+rm for_report/curves/Facense.txt 
+mc
+mv for_report/curves/CV-SDK-measured.txt for_report/curves/"CV SDK (PVL) measured.txt"
+mv for_report/points/PVL-reported.txt for_report/points/"CV SDK (PVL) reported.txt"
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+vim script.dat 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+mc
+bash plot_roc_linux.sh 
+vim script.dat 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim script.dat 
+mc
+gnuplot script.dat 
+evince fddb_rocs.pdf
+git status
+mv for_report for_report_all
+git checkout -- for_report/curves/Facense.txt
+git checkout -- for_report/curves/PVL-ours.txt
+git checkout -- for_report/points/PVL-reported.txt
+ls for_report/curves/
+cd for_report/curves/
+mv PVL-ours.txt 'CV SDK (PVL) measured.txt'
+cd ../points/
+ls
+mv PVL-reported.txt 'CV SDK (PVL) reported.txt'
+cp CV\ SDK\ \(PVL\)\ reported.txt CV-SDK-\(PVL\)-reported.txt 
+cd ../curves/
+cv CV\ SDK\ \(PVL\)\ measured.txt CV-SDK-\(PVL\)-measured.txt 
+cp CV\ SDK\ \(PVL\)\ measured.txt CV-SDK-\(PVL\)-measured.txt 
+cd ../..
+bash plot_roc_linux.sh 
+vim script.dat 
+cp for_report_all/points/AIM.txt for_report/points/
+vim script.dat 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs*
+feh *.png
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+feh *.png
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/intel/computer_vision_sdk_1.0.0.050/samples/_build/samples/pvl_facedetect/pvl_facedetect_sample -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m ~/dev/facense/models -g ~/dev/facense/tests/fddbDetect/facedetect_gt.txt -p 'cvsdk_measured_minsize_32'
+python evaluate_py/evaluate.py --det cvsdk_measured_minsize_32_detect_data.txt --format rect --border 0 0 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python evaluate_py/evaluate.py --det cvsdk_measured_minsize_32_detect_data.txt --format rect --border 0 0 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python evaluate_py/evaluate.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB 
+python evaluate_py/evaluate.py --det master_detect_data.txt --format rect --border 6 6 0 0 --size 48 48 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python evaluate_py/evaluate.py --det cvsdk_measured_minsize_32_detect_data.txt --format rect --border 0 0 -6 -6 --size 32 32 --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+vim script.dat 
+cp script.dat script_60.dat
+vim script_60.dat 
+gnuplot script.dat 
+gnuplot script_60.dat 
+feh *.png
+git status
+ls for_report_all/
+ls for_report_all/curves/
+ls
+vim windows_opencv_2_4_10DiscROC.txt 
+vim opencv_2_4_13DiscROC.txt 
+cp opencv_2_4_13DiscROC.txt ./for_cvvc/curves/old.txt
+mkdir for_cvvc
+cp opencv_2_4_13DiscROC.txt ./for_cvvc/curves/old.txt
+mkdir for_cvvc/curves
+cp opencv_2_4_13DiscROC.txt ./for_cvvc/curves/old.txt
+vim master_no_small_facesDiscROC.txt 
+vim master_fold_no_small_faces_imgsDiscROC.txt 
+cp master_fold_no_small_faces_imgsDiscROC.txt for_cvvc/curves/config_2.txt
+cd for_cvvc/curves/
+ls
+mv old.txt config_2.txt
+cd ../
+cd ..
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+vim plot_roc_linux.sh 
+bash plot_roc_linux.sh 
+ls for_cvvc/
+ls for_cvvc/curves/
+cd for_cvvc/curves/
+mv config_2.txt config_1.txt 
+cd ../..
+cp master_fold_no_small_faces_imgsDiscROC.txt for_cvvc/curves/config_2.txt
+bash plot_roc_linux.sh 
+vim fddb_rocs.png 
+feh fddb_rocs.png 
+ fddb_rocs.pdf
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.png 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.png 
+vim script.dat 
+feh fddb_rocs.png 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.png 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.svg 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.gif
+vim script.dat 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.gif 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.gif 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.gif 
+vim script.dat 
+gnuplot script.dat 
+feh fddb_rocs.gif 
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector/_build/bin/fddbDetect -m ~/dev/face-detector/models -g ~/dev/face-detector/accuracy/facedetect_gt.txt
+ls
+ls -lht
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector/_build/bin/fddbDetect -m ~/dev/face-detector/models -g ~/dev/face-detector/accuracy/facedetect_gt.txt
+ls -lh _detect_data.txt 
+cp _detect_data.txt ~/dev/face-detector/tests/regression/gt_detect_data.txt
+git branch
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector/_build/bin/fddbDetect -m "/home/gserebry/train/retrain_fcf_casade_2017-06-07/frontal.xml -m ~/train/retrain_fcf_casade_2017-06-07/left.xml -m ~/train/retrain_fcf_casade_2017-06-07/right.xml" -g ~/dev/face-detector/accuracy/facedetect_gt.txt -p'retrain'
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector-repo/_build/bin/fddbDetect -m "/home/gserebry/train/retrain_fcf_casade_2017-06-07/frontal.xml -m ~/train/retrain_fcf_casade_2017-06-07/left.xml -m ~/train/retrain_fcf_casade_2017-06-07/right.xml" -g ~/dev/face-detector/accuracy/facedetect_gt.txt -p'retrain'
+./fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/face-detector-repo/_build/bin/fddbDetect -m "/home/gserebry/train/retrain_fcf_casade_2017-06-07/frontal.xml -m ~/train/retrain_fcf_casade_2017-06-07/left.xml -m ~/train/retrain_fcf_casade_2017-06-07/right.xml" -g ~/dev/face-detector/accuracy/facedetect_gt.txt -p'retrain_fcf_cascade_develop'
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r cvsdk_measured
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim retrain_fcf_cascade_developDiscROC.txt 
+vim evaluation_tool/evaluate.cpp 
+git branch
+git log
+git log HEAD@{1}
+git show HEAD@
+git show HEAD
+git stash list
+cd ..
+ls
+cd fddb-evaluation-tools/evaluation_tool/
+ls
+vim RectanglesSingleImage.
+vim RectanglesSingleImage.cpp 
+cd _build/
+make
+cd ../..
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim retrain_fcf_cascade_developDiscROC.txt 
+git stash
+git branch
+git checkout master
+git stash pop
+git diff
+ls
+vim -O masterDiscROC.txt retrain_fcf_cascade_developDiscROC.txt 
+vim ~/dev/facense/tests/fddbDetect/facedetect_gt.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O masterDiscROC.txt retrain_fcf_cascade_developDiscROC.txt 
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 2 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 1 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+make -C evaluation_tool/_build/
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d retrain_fcf_cascade_develop_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r retrain_fcf_cascade_develop
+vim -O retrain_fcf_cascade_developDiscROC.txt 
+./evaluation_tool/_build/fddb_evaluation -a ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt -d master_detect_data.txt -f 0 -i ~/data/FDDB/ -l ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt -r master_official
+vim -O master_officialDiscROC.txt 
+vim -O master_officialDiscROC.txt retrain_fcf_cascade_developDiscROC.txt
+git branch
+git --version
+sudo apt install bash-completion 
+vim ~/.bashrc
+source ~/.bashrc
+git branch
+cd ..
+cd fddb-evaluation-tools/
+vim ~/.bashrc
+source ~/.bashrc
+echo $PS1
+vim ~/.bashrc
+echo $__git_ps1
+echo $(__git_ps1)
+vim ~/.bashrc
+source ~/.bashrc
+vim ~/.bashrc
+source ~/.bashrc
+vim ~/.bashrc
+git status
+git diff
+git stash
+python ./evaluate_py/evaluate.py -h
+source ~/dev/python2-env/
+source ~/dev/python2-env/bin/activate
+python ./evaluate_py/evaluate.py -h
+pip install -r ./evaluate_py/requirements.txt 
+pip install --isolated -r ./evaluate_py/requirements.txt 
+python ./evaluate_py/evaluate.py -h
+pip install --isolated pandas
+vim evaluate_py/requirements.txt 
+python ./evaluate_py/evaluate.py -h
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool
+pip install subprocess32
+pip install --isolated subprocess32
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models
+ls
+ls -l
+vim _detect_data.txt
+vim detect_data.txt
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models
+vim detect_data.txt
+vim _detect_data.txt
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models -r
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models -r 
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -r 
+ls
+feh roc.png 
+feh pr.png 
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models
+git diff
+vim evaluate_py/requirements.txt 
+pip install -r ./evaluate_py/requirements.txt 
+pip install --isolated -r ./evaluate_py/requirements.txt 
+git branch
+git commit -a -m'pure python runner for accuracy test'
+git push -u origin gs/get-rid-of-bash 
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+git diff
+python ~/dev/face-detector/accuracy/evaluate/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+mv ~/dev/face-detector/accuracy/evaluate/evaluate.py mv ~/dev/face-detector/accuracy/evaluate/eval.py
+mv ~/dev/face-detector/accuracy/evaluate/evaluate.py ~/dev/face-detector/accuracy/evaluate/eval.py
+python ~/dev/face-detector/accuracy/evaluate/eval.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+touch ~/dev/face-detector/accuracy/evaluate/__main__.py
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+ls /home/gserebry/dev/face-detector/accuracy/evaluate/
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+ls
+feh roc.png 
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r --show
+ls
+ls -lht
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r --show
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+ls -lht
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -n'no-small-faces'
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -n'no-small-faces-imgs'
+ls
+ls -lht stats.pickle 
+cp stats.pickle ~/dev/face-detector/accuracy/gt_data/ubuntu16_no_small_faces_imgs_stats.pickle
+cd ~/dev/face-detector/_build/
+ls
+cp multi_model_detect_data.txt multi_model_detect_data.txt.backup
+ls -lht
+cp multi_modelstats.pickle multi_modelstats.pickle.backup
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate/compare_stat_curves.py ./multi_modelstats.pickle.backup 
+python ../accuracy/evaluate/compare_stat_curves.py ./multi_model
+python ../accuracy/evaluate/compare_stat_curves.py ./multi_model -h
+python ../accuracy/evaluate/compare_stat_curves.py ./multi_model --show
+ls
+ls -lht
+python ../accuracy/evaluate/compare_stat_curves.py ./multi_model ./multi_model_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_--show
+python ../accuracy/evaluate/compare_stat_curves.py ./multi_model ./multi_model_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+cp ~/Downloads/cascade_multi_with_hard_negative_mining.xml ../models/
+make -C ~/dev/opencv_master_build/
+make -j7 -C ~/dev/opencv_master_build/
+cp ~/Downloads/cascade_multi_* ../models/
+vim ../accuracy/fddbDetect/main.cpp 

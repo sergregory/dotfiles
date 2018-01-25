@@ -1,0 +1,18 @@
+[user]
+	email = grigory.serebryakov@intel.com
+	name = Grigory Serebryakov
+[push]
+	default = simple
+[alias]
+	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+	merc = merge --no-ff
+	plfs = \\!git -c filter.lfs.smudge= -c filter.lfs.required=false pull && git lfs pull
+[help]
+	autocorrect = 1
+[rerere]
+	enabled = 1
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

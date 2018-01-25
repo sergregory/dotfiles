@@ -1,0 +1,51 @@
+pane	0	0	:bash	1	:*	0	:/home/gserebry	1	bash	:
+pane	4	0	:bash	1	:*	0	:/home/gserebry	1	bash	:
+pane	5	0	:bash	1	:*	0	:/home/gserebry/dev/person_attributes	0	bash	:
+pane	5	0	:bash	1	:*	1	:/home/gserebry/dev/person_attributes	1	bash	:
+pane	6	0	:bash	1	:*	0	:/home/gserebry/dev/person_attributes	1	bash	:
+pane	6	0	:bash	1	:*	1	:/home/gserebry/dev/person_attributes	0	bash	:
+pane	attributes	0	:train-gpu-1	0	:	0	:/home/gserebry/dev/person_attributes/experiments/pvanet	1	tail	:python ../../train.py ./config_128_64.py
+tail -f ./config_128_64_train.log
+pane	attributes	0	:train-gpu-1	0	:	1	:/home/gserebry/dev/person_attributes/experiments/pvanet	0	bash	:python /home/gserebry/dev/caffe-sugar/scripts/plot_learning_curves.py ./config_128_64_train.log
+pane	attributes	1	:train-gpu-2	0	:-	0	:/home/gserebry/dev/person_attributes/experiments/pvanet	0	tail	:python ../../train.py ./config_128_64_no_incpetion.py
+tail -f ./config_128_64_no_incpetion_train.log
+pane	attributes	1	:train-gpu-2	0	:-	1	:/home/gserebry/dev/person_attributes/experiments/pvanet	1	python	:python /home/gserebry/dev/caffe-sugar/scripts/plot_learning_curves.py ./config_128_64_no_incpetion_train.log
+pane	attributes	3	:htop	1	:*	0	:/home/gserebry/dev/person_attributes	1	htop	:htop
+pane	attributes	4	:watch	0	:	0	:/home/gserebry/dev/person_attributes	1	watch	:watch -n0,1 nvidia-smi
+pane	attributes	5	:bash	0	:	0	:/home/gserebry/dev/model-zoo	1	bash	:
+pane	attributes	6	:bash	0	:	0	:/home/gserebry/dev/person-attributes-extra/dataset/DUKE_attributes	1	bash	:
+pane	automation	0	:bash	1	:*	0	:/home/gserebry	1	bash	:
+pane	training	0	:bash	0	:	0	:/home/gserebry/dev/face-detector/_build	1	bash	:
+pane	training	1	:scripts	0	:-	0	:/home/gserebry/dev/face-detector/_build	1	bash	:
+pane	training	2	:prepare	0	:	0	:/home/gserebry/dev/face-detector/modules/fcf_cascade	1	bash	:
+pane	training	3	:train	0	:	0	:/home/gserebry/train/retrain_fcf_casade_2017-06-07	1	bash	:
+pane	training	4	:dwell	0	:	0	:/home/gserebry/dev/dwell-time/modules	1	bash	:
+pane	training	5	:analyzer	0	:	0	:/home/gserebry/dev/face_analyzer	1	bash	:
+pane	training	6	:detector	1	:*	0	:/home/gserebry/dev/face-detector	1	bash	:
+pane	training	7	:CI	0	:	0	:/home/gserebry/dev/datasets	1	bash	:
+pane	training	8	:bash	0	:	0	:/home/gserebry/data/FDDB	1	bash	:
+pane	training	9	:[tmux]	0	:	0	:/home/gserebry/tools	1	htop	:htop
+pane	training	10	:bash	0	:	0	:/home/gserebry/tools/pycharm-community-2017.2.1	1	bash	:
+window	0	0	1	:*	d25e,213x59,0,0,1
+window	4	0	1	:*	d25f,213x59,0,0,2
+window	5	0	1	:*	4e54,213x59,0,0[213x29,0,0,3,213x29,0,30,4]
+window	6	0	1	:*	4e59,213x59,0,0[213x29,0,0,5,213x29,0,30,6]
+window	attributes	0	0	:	2778,213x59,0,0[213x29,0,0,7,213x29,0,30,28]
+window	attributes	1	0	:-	e775,213x59,0,0[213x29,0,0,8,213x29,0,30,31]
+window	attributes	3	1	:*	6961,213x59,0,0,12
+window	attributes	4	0	:	6962,213x59,0,0,13
+window	attributes	5	0	:	6964,213x59,0,0,15
+window	attributes	6	0	:	e968,213x59,0,0,29
+window	automation	0	1	:*	6965,213x59,0,0,16
+window	training	0	0	:	6966,213x59,0,0,17
+window	training	1	0	:-	6967,213x59,0,0,18
+window	training	2	0	:	6968,213x59,0,0,19
+window	training	3	0	:	e95f,213x59,0,0,20
+window	training	4	0	:	e960,213x59,0,0,21
+window	training	5	0	:	e961,213x59,0,0,22
+window	training	6	1	:*	e962,213x59,0,0,23
+window	training	7	0	:	e963,213x59,0,0,24
+window	training	8	0	:	e964,213x59,0,0,25
+window	training	9	0	:	e965,213x59,0,0,26
+window	training	10	0	:	e966,213x59,0,0,27
+state	attributes	automation

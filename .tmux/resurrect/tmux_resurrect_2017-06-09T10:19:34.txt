@@ -1,0 +1,15 @@
+pane	training	0	:bash	0	:	0	:/home/gserebry/dev/fddb-evaluation-tools	1	bash	:
+pane	training	1	:scripts	0	:	0	:/home/gserebry/dev/fddb-evaluation-tools	1	bash	:
+pane	training	2	:prepare	0	:	0	:/home/gserebry/dev/facense_extra/scripts/facedetect_training	1	bash	:
+pane	training	3	:train	0	:	0	:/home/gserebry/train/retrain_fcf_casade_2017-06-07	1	bash	:
+pane	training	4	:code	0	:	0	:/home/gserebry/dev/fcf_train/_build	1	bash	:
+pane	training	5	:bash	1	:*	0	:/home/gserebry/dev/face-detector-repo/_build	1	bash	:less
+pane	training	6	:bash	0	:-	0	:/home/gserebry/dev/face-detector/_build	1	bash	:
+window	training	0	0	:	d25e,213x59,0,0,1
+window	training	1	0	:	d25f,213x59,0,0,2
+window	training	2	0	:	c860,213x66,0,0,3
+window	training	3	0	:	d261,213x59,0,0,4
+window	training	4	0	:	c862,213x66,0,0,5
+window	training	5	1	:*	d263,213x59,0,0,6
+window	training	6	0	:-	d264,213x59,0,0,7
+state	training	

@@ -1,0 +1,15 @@
+pane	training	0	:evaluate	0	:	0	:/home/gserebry/dev/fddb-evaluation-tools	1	bash	:
+pane	training	1	:scripts	0	:	0	:/home/gserebry/dev/fddb-evaluation-tools	1	bash	:
+pane	training	2	:prepare	0	:	0	:/home/gserebry/dev/facense_extra/scripts/facedetect_training	1	bash	:
+pane	training	3	:train	0	:	0	:/home/gserebry/train/face_dt_orientation	1	bash	:
+pane	training	4	:code	1	:*	0	:/home/gserebry/dev/facense/_build	1	bash	:
+pane	training	5	:bash	0	:-	0	:/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/model_optimizer/bin	1	bash	:
+pane	training	6	:bash	0	:	0	:/home/gserebry/dev/cmake-scripts	1	bash	:
+window	training	0	0	:	afde,212x60,0,0,1
+window	training	1	0	:	afdf,212x60,0,0,2
+window	training	2	0	:	afe0,212x60,0,0,3
+window	training	3	0	:	afe1,212x60,0,0,4
+window	training	4	1	:*	afe2,212x60,0,0,5
+window	training	5	0	:-	afe3,212x60,0,0,6
+window	training	6	0	:	afe5,212x60,0,0,8
+state	training	

@@ -1,0 +1,50 @@
+pane	0	0	:bash	1	:*	0	:/home/gserebry	1	bash	:
+pane	4	0	:bash	1	:*	0	:/home/gserebry	1	bash	:
+pane	5	0	:bash	1	:*	0	:/home/gserebry/dev/person_attributes	0	bash	:
+pane	5	0	:bash	1	:*	1	:/home/gserebry/dev/person_attributes	1	bash	:
+pane	6	0	:bash	1	:*	0	:/home/gserebry/dev/person_attributes	1	bash	:-bash
+pane	6	0	:bash	1	:*	1	:/home/gserebry/dev/person_attributes	0	bash	:
+pane	attributes	0	:bash	0	:	0	:/home/gserebry/dev/person-attributes-extra/dataset/DUKE_attributes	1	bash	:
+pane	attributes	1	:htop	1	:*	0	:/home/gserebry/data/DUKE/camera1	1	htop	:htop
+pane	attributes	2	:caffe-shared	0	:-	0	:/home/gserebry/dev/person_attributes	1	bash	:
+pane	attributes	2	:caffe-shared	0	:-	1	:/home/gserebry/dev/caffe-sugar	0	bash	:
+pane	attributes	3	:bash	0	:	0	:/home/gserebry/dev/person_attributes	1	bash	:
+pane	attributes	3	:bash	0	:	1	:/home/gserebry/dev/person_attributes	0	bash	:
+pane	attributes	4	:watch	0	:	0	:/home/gserebry/dev/person_attributes	0	bash	:
+pane	attributes	4	:watch	0	:	1	:/home/gserebry/dev/person_attributes	1	sudo	:sudo iotop
+pane	attributes	5	:bash	0	:	0	:/home/gserebry/dev/model-zoo	1	bash	:
+pane	automation	0	:bash	1	:*	0	:/home/gserebry	1	bash	:
+pane	training	0	:bash	0	:	0	:/home/gserebry/dev/face-detector/_build	1	bash	:
+pane	training	1	:scripts	0	:-	0	:/home/gserebry/dev/face-detector/_build	1	bash	:
+pane	training	2	:prepare	0	:	0	:/home/gserebry/dev/face-detector/modules/fcf_cascade	1	bash	:
+pane	training	3	:train	0	:	0	:/home/gserebry/train/retrain_fcf_casade_2017-06-07	1	bash	:
+pane	training	4	:dwell	0	:	0	:/home/gserebry/dev/dwell-time/modules	1	bash	:
+pane	training	5	:analyzer	0	:	0	:/home/gserebry/dev/face_analyzer	1	bash	:
+pane	training	6	:detector	1	:*	0	:/home/gserebry/dev/face-detector	1	bash	:
+pane	training	7	:CI	0	:	0	:/home/gserebry/dev/datasets	1	bash	:
+pane	training	8	:bash	0	:	0	:/home/gserebry/data/FDDB	1	bash	:
+pane	training	9	:[tmux]	0	:	0	:/home/gserebry/tools	1	htop	:htop
+pane	training	10	:bash	0	:	0	:/home/gserebry/tools/pycharm-community-2017.2.1	1	bash	:
+window	0	0	1	:*	ca5e,213x57,0,0,1
+window	4	0	1	:*	ca5f,213x57,0,0,2
+window	5	0	1	:*	a2a0,213x57,0,0[213x28,0,0,24,213x28,0,29,25]
+window	6	0	1	:*	a2a3,213x57,0,0[213x28,0,0,26,213x28,0,29,27]
+window	attributes	0	0	:	ca60,213x57,0,0,3
+window	attributes	1	1	:*	d261,213x59,0,0,4
+window	attributes	2	0	:-	5558,213x57,0,0[213x28,0,0,5,213x28,0,29,6]
+window	attributes	3	0	:	555d,213x57,0,0[213x28,0,0,7,213x28,0,29,8]
+window	attributes	4	0	:	6af5,213x57,0,0[213x28,0,0,9,213x28,0,29,10]
+window	attributes	5	0	:	6560,213x57,0,0,11
+window	automation	0	1	:*	6561,213x57,0,0,12
+window	training	0	0	:	6562,213x57,0,0,13
+window	training	1	0	:-	6563,213x57,0,0,14
+window	training	2	0	:	6564,213x57,0,0,15
+window	training	3	0	:	6565,213x57,0,0,16
+window	training	4	0	:	6566,213x57,0,0,17
+window	training	5	0	:	6567,213x57,0,0,18
+window	training	6	1	:*	6568,213x57,0,0,19
+window	training	7	0	:	e55f,213x57,0,0,20
+window	training	8	0	:	e560,213x57,0,0,21
+window	training	9	0	:	e561,213x57,0,0,22
+window	training	10	0	:	e562,213x57,0,0,23
+state	attributes	automation

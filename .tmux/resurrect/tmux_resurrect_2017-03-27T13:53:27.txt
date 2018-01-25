@@ -1,0 +1,5 @@
+pane	training	0	:evaluate	0	:-	0	:/home/gserebry/dev/fddb-evaluation-tools	1	bash	:
+pane	training	1	:scripts	1	:*	0	:/home/gserebry/dev/facense/scripts	1	bash	:
+window	training	0	0	:-	c95d,211x57,0,0,0
+window	training	1	1	:*	c95f,211x57,0,0,2
+state	training	

@@ -1,0 +1,1000 @@
+vim ~/.bashrc
+source ~/.bashrc
+git branch
+cd ..
+cd fddb-evaluation-tools/
+vim ~/.bashrc
+source ~/.bashrc
+echo $PS1
+vim ~/.bashrc
+echo $__git_ps1
+echo $(__git_ps1)
+vim ~/.bashrc
+source ~/.bashrc
+vim ~/.bashrc
+source ~/.bashrc
+vim ~/.bashrc
+git status
+git diff
+git stash
+python ./evaluate_py/evaluate.py -h
+source ~/dev/python2-env/
+source ~/dev/python2-env/bin/activate
+python ./evaluate_py/evaluate.py -h
+pip install -r ./evaluate_py/requirements.txt 
+pip install --isolated -r ./evaluate_py/requirements.txt 
+python ./evaluate_py/evaluate.py -h
+pip install --isolated pandas
+vim evaluate_py/requirements.txt 
+python ./evaluate_py/evaluate.py -h
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool
+pip install subprocess32
+pip install --isolated subprocess32
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models
+ls
+ls -l
+vim _detect_data.txt
+vim detect_data.txt
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models
+vim detect_data.txt
+vim _detect_data.txt
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models -r
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -p test_new_tool -m ~/dev/face-detector-repo/models -r 
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -r 
+ls
+feh roc.png 
+feh pr.png 
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models
+git diff
+vim evaluate_py/requirements.txt 
+pip install -r ./evaluate_py/requirements.txt 
+pip install --isolated -r ./evaluate_py/requirements.txt 
+git branch
+git commit -a -m'pure python runner for accuracy test'
+git push -u origin gs/get-rid-of-bash 
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1
+python ./evaluate_py/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+git diff
+python ~/dev/face-detector/accuracy/evaluate/evaluate.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+mv ~/dev/face-detector/accuracy/evaluate/evaluate.py mv ~/dev/face-detector/accuracy/evaluate/eval.py
+mv ~/dev/face-detector/accuracy/evaluate/evaluate.py ~/dev/face-detector/accuracy/evaluate/eval.py
+python ~/dev/face-detector/accuracy/evaluate/eval.py --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+touch ~/dev/face-detector/accuracy/evaluate/__main__.py
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+ls /home/gserebry/dev/face-detector/accuracy/evaluate/
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+ls
+feh roc.png 
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r --show
+ls
+ls -lht
+rm /home/gserebry/dev/face-detector/accuracy/evaluate/*.pyc
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r --show
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -j1 -r
+ls -lht
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -n'no-small-faces'
+python ~/dev/face-detector/accuracy/evaluate/ --detector ~/dev/face-detector-repo/_build/bin/fddbDetect -f ~/data/FDDB -g ~/dev/face-detector-repo/accuracy/facedetect_gt.txt -m ~/dev/face-detector-repo/models -n'no-small-faces-imgs'
+ls
+ls -lht stats.pickle 
+cp stats.pickle ~/dev/face-detector/accuracy/gt_data/ubuntu16_no_small_faces_imgs_stats.pickle
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation_symmetric_border
+sudo umount /media/external_share
+cd ~/dev/face_an
+cd ~/dev/face_analyzer/
+gvim CMakeLists.txt
+git log
+git push
+git checkout develop
+git diff
+git stash
+git checkout develop
+git branch -D et/sdl
+git pull -p
+git checkout et/sdl
+git stash list
+git stash pop
+git diff
+cd _build/
+cmake ..
+ninja
+ctest -V
+. /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/bin/setvars.sh 
+ctest -V
+git diff
+cmake -DWITH_CAFFE=OFF -DCaffe_FOUND=OFF -DBUILD_INTERNAL_API=OFF .
+cmake -DWITH_CAFFE=OFF -DCAFFE_FOUND=OFF -DBUILD_INTERNAL_API=OFF .
+ninja
+ctest -V
+git diff
+git commit -a -m'Fix review comments'
+git push
+cd ..
+ag cmake_minimum_required
+ag -f cmake_minimum_required
+ag -l cmake_minimum_required
+gvim $(ag -l cmake_minimum_required)
+gvim $(ag -l POLICY)
+gvim $(ag -l policy)
+gvim $(ag -l cmake_policy)
+cd _build/
+cmake ..
+ninja
+git diff
+git dif
+git diff
+git commit -a
+git push
+cd ..
+vim ./.gitmodules
+git status
+git submodule update --init --recursive
+git submodule status
+git submodule help
+git submodule foreach --recursive deinit
+git submodule foreach --recursive git submodule deinit
+git submodule foreach --recursive git submodule deinit .
+git submodule foreach --recursive git submodule deinit -f -- .
+git submodule foreach --recursive git submodule deinit -f
+git submodule update --init --recursive
+git submodule deinit cmake-scripts/
+cd cmake-scripts/
+git diff
+git status
+cd ..
+git submodule deinit cmake-scripts/ -f
+git submodule deinit -f cmake-scripts/
+git submodule update --init --recursive
+git diff
+git commit -a -m'Make paths to submodules to be relative'
+git push
+cd ..
+git clone git@gitlab-icv.inn.intel.com:algo/license_plate_detector.git
+cd license_plate_detector/
+git branch -r
+git checkout ik_fcf_regression 
+git log
+mkdir _build
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cd _build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cd ..
+git submodule update --init --recursive
+cd _build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+cd ~/dev/face-detector
+git checkout gs/add-evaluation-tools 
+git rebase gs/reimplement-crt-secure-fix 
+git mergetool
+git status
+cd modules/fcf_cascade/
+git status
+cd ..
+git submodule update --init --recursive
+cd ;;
+cd ..
+git status
+git rebase --continue
+git rebase --skip
+git grog
+git status
+git ls-files
+find . -name '*.pyc' -delete
+git status
+find . -name '*.orig' -delete
+git status
+ls tests/accuracy/
+ls
+ls tests/regression/
+git checkout master -- modules/fcf_cascade/
+git status
+git diff
+git show master -- modules/fcf_cascade/
+git show master -- modules/fcf_cascade
+git show master -- modules/
+git submodule status
+cd modules/fcf_cascade/
+git reset --hard HEAD
+cd ..
+git submodule update --init --recursive
+cd modules/fcf_cascade/
+git log
+cd ..
+git status
+cat ./.gitmodules
+cat ../.gitmodules
+git diff gs/reimplement-crt-secure-fix 
+cd modules fcf_cascade/
+git checkout 73df89ba0b7e06be8d047c9822c8ab4826a90ad3
+cdfcf_cascade/
+cd fcf_cascade/
+git checkout 73df89ba0b7e06be8d047c9822c8ab4826a90ad3
+git log
+git submodule update --init --recursive
+cd ..
+git status
+git reset HEAD modules/fcf_cascade/
+git status
+git submodule status
+cd _build/
+cmake ..
+ninja
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release -GNinja ..
+ninja
+cd ..
+ag 'copy'
+ag '-E copy'
+ag "'-E copy'"
+ag "-E copy"
+ag "\-E copy"
+ls accuracy/
+ls accuracy/fddbDetect/
+vim accuracy/fddbDetect/CMakeLists.txt 
+cd _build/
+cmake ..
+ninja
+ctest -V
+ls
+. ~/dev/python2-env/
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate/ -h
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ -h
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix test_develop_fcf
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix test_develop_fcf -j 16
+gvimdiff ./test_develop_fcf_detect_data.txt ../accuracy/gt_data/ubuntu16_detect_data.txt 
+cd ..
+ls
+git diff
+cp ./accuracy/ ../fd_accuracy
+cp -r ./accuracy/ ../fd_accuracy
+git checkout master
+git reset --hard HEAD
+git checkout master
+git submodule update --init --recursive
+find . -name 'cmake-scripts'
+rm -rf ./modules/fcf_cascade/modules/fpb/external/cmake-scripts
+git submodule update --init --recursive
+git status
+git submodule status 
+cd modules/fcf_cascade/
+git sta
+git status 
+rm -rf cmake/cmake-scripts/
+cd ..
+git statis
+git status
+cd _build/
+cp ./test_develop_fcf_detect_data.txt ../../
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release -GNinja ..
+ninja
+deactivate
+. ~/dev/python3-env/bin/AC
+. ~/dev/python3-env/bin/activate
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16
+vim ../../fd_accuracy/evaluate/eval.py
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 
+vim ./master_fd_detect_data.txt 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -h
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/ubuntu16_
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+gvimdiff master_fd_detect_data.txt ../../fd_accuracy/gt_data/ubuntu16_detect_data.txt 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix gs_reimplement_crt_fix_with_fcf_cascde_from_fd_master -j 16 -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+cd ../modules/fcf_cascade/
+git pull -p
+git checkout develop
+git pull
+git log
+cd ../../_build/
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix gs_reimplement_crt_fix_with_fcf_cascde_develop -j 16 -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+cd ..
+cd modules/fcf_cascade/
+git pull -p
+cd ..
+git status
+git commit -a -m'Update FCF cascade'
+git push
+cd _build/
+git pull -p
+ninja
+ls
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+ls
+feh roc.png 
+feh pr.png 
+ipython
+ipython3
+pip3 install ipython
+ipython3
+deactivate
+ipython3
+ipython
+cd ~/dev/python3-env/bin/ac
+. ~/dev/python3-env/bin/activate
+ipython
+pip3 install IPython
+ipython
+pip remove ipython
+pip -h ipython
+pip uninstall ipython
+pip3 uninstall ipython
+pip3 uninstall ipython3
+pip3 uninstall IPython
+pip3 install --isolated ipython
+ipython3
+#python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_no_small -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -n 'no-small-faces-imgs'
+cp master_fd_detect_data.txt master_fd_no_small_detect_data.txt
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_no_small -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -n 'no-small-faces-imgs'
+feh pr.png 
+feh roc.png 
+ipython3
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+apt search smbget
+apt-file search smbget
+ls ~/data/NICTA/
+sudo mount -oloop -tiso9660 ~/data/NICTA/NICTANegatives.iso /cdrom/
+ls /cdrom/
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+pip3 install tqdm
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+pip3 install --isolated tqdm
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+feh pr.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh pr.png 
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -'no-small-faces-imgs'
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -n 'no-small-faces-imgs'
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+ls
+vim master_fd_cpu_optstats.pickle
+ls -lht
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+vim master_fd_cpu_optstats.pickle
+df -h
+ls -lh
+deactivate
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+git status
+cd ..
+ls _build/
+cp ./_build/master_fd_cpu_optstats.pickle accuracy/gt_data/ubuntu16_cpu_opt_stats.pickle
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+python accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+cd _build/
+python accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+ls -lh
+cp master_fd_cpu_optstats.pickle ../accuracy/gt_data/ubuntu16_no_small_faces_imgs_stats.pickle
+cp master_fd_cpu_optstats.pickle ../accuracy/gt_data/ubuntu16_cpu_opt_no_small_faces_imgs_stats.pickle
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+cp master_fdstats.pickle ../accuracy/gt_data/ubuntu16_no_small_faces_imgs_stats.pickle
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+cp master_fdstats.pickle ../accuracy/gt_data/ubuntu16_stats.pickle
+ls
+git diff
+git status
+cd ..
+git add accuracy/gt_data/points/AIM.txt 
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+git status
+git add accuracy/evaluate/eval.py
+git status
+git commit -a -m 'fasten script, add stats with CPU_OPT'
+git lfs ls-files
+gitpush
+git push
+git checkout master
+git checkout -b gs/fix-valgrind
+vim devtools/valgrind.supp 
+git diff
+git checkout gs/fix-valgrind 
+vim devtools/valgrind.supp 
+cd ~/dev/Infra/
+git diff
+git checkout -b gs/add-python-packages
+ls
+ls docker/
+vim docker/yocto/Dockerfile 
+git status
+git commit -a -m'Add python packages needed for face detector evaluation tool'
+git push
+git push -u origin gs/add-
+git push -u origin gs/add-python-packages 
+cd
+source dev/py2-tensorflow/bin/activate
+pip -h
+pip icd ~/data/WiderAttribute/
+ls
+ls -lht
+sudo icv_guest
+su icv_guest
+su icv_guest 
+ssh icv_guest@localhost
+userdel icv_guest
+git push -u origin gs/use-minimal-opencv-includes 
+git checkout develop 
+git pull -p
+git submodule update --init --recursive
+ag 'segment exceeds given buffer limits'
+ag 'segment exceeds given buffer limits' ./*
+grep -rinH 'segment exceeds given buffer limits' *
+ls
+cd modules/perf-test/
+ls
+ag 'segment exceeds given buffer limits' ./*
+ag 'segment exceeds given buffer limits' /usr/include/
+ag 'segment exceeds given buffer limits' /usr/include/*
+ag 'segment exceeds given buffer limits' /home/gserebry/dev/opencv*
+ag 'segment exceeds' /home/gserebry/dev/opencv*
+ag 'segment exceeds' /usr/include/*
+cd ..
+ag 'segment' /usr/include/*
+ag 'segment exceed' /usr/include/*
+ag 'exceed' /usr/include/*
+cp stats.pickle ~/dev/face-detector/accuracy/gt_data/ubuntu16_no_small_faces_imgs_stats.pickle
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation_symmetric_border
+ls
+cd ~/dev/fcf_train/
+git branch
+git checkout gs/add_hard_negatives 
+git stash list
+git diff
+git log
+git diff 96b65a39e66619a8250856a411e75e2a72996533
+git fetch
+git difftool origin/mz/add-hard-negatives 
+git diff -h
+git help diff
+git diff --stat origin/mz/add-hard-negatives 
+cd ..
+git clone git@gitlab-icv.inn.intel.com:algo/fcf_train.git fcf_train_cmp
+cd fcf_train_cmp/
+cd ../fcf_train
+git difftool origin/mz/add-hard-negatives 
+git difftool -t diffuse origin/mz/add-hard-negatives 
+ls
+rm ./*.orig
+rm ./*_BASE_*
+rm ./*_BACKUP_*
+rm ./*_LOCAL_*
+rm ./*_REMOTE_*
+ls
+ls external/
+ls external/fcf_cascade/
+ls external/fcf_cascade/src/
+ls
+git merge -s theirs --no-ff --no-commit origin/mz/add-hard-negatives 
+git merge -s ours --no-ff --no-commit origin/mz/add-hard-negatives 
+git mergetool -t gvimdiff
+git status
+git merge --abort
+git status
+git merge --no-ff --no-commit origin/mz/add-hard-negatives 
+#!/bin/sh
+git checkout -m .
+# identify paths that show changes in either tip but were automerged
+scratch=`mktemp -t`
+sort <<EOD | uniq -u >"$scratch"
+$(  # paths that show changes at either tip:
+    (   git diff --name-only  ...MERGE_HEAD
+        git diff --name-only  MERGE_HEAD...
+    ) | sort -u )
+$(  # paths that already show a conflict:
+    git ls-files -u | cut -f2- )
+EOD
+# un-automerge them: strip the resolved-content entry and explicitly 
+# add the base/ours/theirs content entries
+git update-index --force-remove --stdin <"$scratch"
+stage_paths_from () {         xargs -a "$1" -d\\n git ls-tree -r $2 |         sed "s/ [^ ]*//;s/\t/ $3\t/" |         git update-index --index-info; }
+stage_paths_from "$scratch" $(git merge-base @ MERGE_HEAD) 1 
+stage_paths_from "$scratch" @ 2
+stage_paths_from "$scratch" MERGE_HEAD 3
+git mergetool -t gvimdiff
+git merge --abort
+ls
+rm ./*_LOCAL_*
+rm ./*_REMOTE_*
+rm ./*_BACKUP_*
+rm ./*_BASE_*
+git checkout --help
+git show --help
+git show develop:CascadeTrain.cpp 
+git show develop:CascadeTrain.cpp > CascadeTrain.cpp.develop
+git show origin/mz/add-hard-negatives:CascadeTrain.cpp > CascadeTrain.cpp.mz_add_hard_negatives
+gvim -O CascadeTrain.cpp CascadeTrain.cpp.develop CascadeTrain.cpp.mz_add_hard_negatives 
+sudo vim /etc/fstab
+sudo mount -a
+sudo umount /media/external_share 
+lsof /media/external_share 
+sudo fuser /media/external_share 
+sudo umount /media/external_share 
+sudo umount -f /media/external_share 
+sudo mount -a
+sudo vim /etc/fstab
+sudo mount -a
+git log
+OA
+su guest
+su itseezguest
+su intelguest
+cat /etc/passwd
+su icv_guest
+tmux new -s'training'
+tmux a -t'training'
+cd ~/data/WiderAttribute/
+ls
+tar - xvf wider_attribute_image.tgz 
+tar -xvf wider_attribute_image.tgz 
+sudo service lightdm stop
+sudo prime-select nvidia
+sudo service lightdm start
+sudo service lightdm stop
+sudo prime-select intel
+sudo service lightdm start
+nvidia-smi 
+cd ~/dev/caffe-shared/
+ls -a
+clang-format -h
+touch .clang-format
+htop
+cd ~/dev/person-attributes-extra/
+cd ~/dev/person_attributes/
+. ~/dev/python3-env/
+. ~/dev/python3-env/bin/activate
+ls
+cd caffe_train/
+ls
+cd data/
+ls
+touch data_fetching.py
+ls
+cd ..
+ls
+mv * ..
+cd ..
+rmdir caffe_train/
+touch cfg.py
+touch data/minibatch.py
+pip3 install easydict
+pip3 install -r ../py-faster-rcnn/requirements.txt 
+pip3 install --isolated -r ../py-faster-rcnn/requirements.txt 
+ipython3
+ipython3 --help
+ipython3 notebook
+jupyter notebook
+jupyter3 notebook
+jupyter -h
+pip3 install jupyter
+jupyter notebook
+pip3 install --isolated jupyter
+jupyter notebook
+ipython3
+ls
+python test.py 
+ipython3
+python test.py 
+ls
+less trainnet.prototxt 
+python test.py 
+less trainnet.prototxt 
+python test.py 
+less trainnet.prototxt 
+python test.py 
+less trainnet.prototxt 
+python test.py 
+less trainnet.prototxt 
+python test.py 
+less trainnet.prototxt 
+calc
+116 - 82
+calc
+sudp atp install apcalc
+sudo apt install apcalc
+calc
+cd ../caffe-sugar/
+git pull -p
+ls sugar/net_designer/
+popd
+cd ~/dev/person_attributes/
+ls
+python net.py 
+ls
+python net.py 
+deactivate
+. ~/dev/python2-env/bin/activate
+pip install --isolated ~/dev/py-faster-rcnn/requirements.txt 
+pip install --isolated -r ~/dev/py-faster-rcnn/requirements.txt 
+python net.py 
+python net.py --proto test_proto.prototxt --res 224 224 --class 5
+less test_proto.prototxt 
+python data/read_wider_attributes.py 
+pip install builtins
+pip install --isolated builtins
+pip search python-future
+pip search python-future|grep python-future
+pip install --isolated future
+pip install six
+pip install --isolated six
+python data/read_wider_attributes.py 
+cat ~/.bashrc
+git
+vim ~/dev/python2-env/bin/activate
+. ~/.bashrc
+ls -a
+deactivate
+. ~/dev/python2-env/bin/activate
+ipython
+ls
+mkdir wider_train
+cp models/pva_net_based_reid/* ./wider_train/
+cd wider_train/
+ls
+less reid_config.yaml 
+vim solver.prototxt 
+vim reid.prototxt 
+vim train_val.prototxt 
+vim solver.prototxt l
+cat /etc/fstab
+nvidia-s
+nvidia-smi 
+cd ..
+python train_attributes.py 
+ls
+mv data/train.py ./
+python train.py 
+mkdir wider_train/snapshots
+vim wider_train/solver.prototxt 
+python train.py 
+vim wider_train/solver.prototxt 
+python train.py 
+cd wider_train/
+vim solver.prototxt 
+python ..train.py 
+python ../train.py 
+python -h
+PYTHONPATH=../:$PYTHONPATH python ../train.py 
+PYTHONPATH=../:../data/:$PYTHONPATH python ../train.py 
+vim train_val.prototxt 
+PYTHONPATH=../:../data/:$PYTHONPATH python ../train.py 
+vim train_val.prototxt 
+PYTHONPATH=../:../data/:$PYTHONPATH python ../train.py 
+vim train_val.prototxt 
+ps aux|grep vim
+kill -9 32087
+kill -7 32087
+cd ~/dev/tampering_detection/_build/
+ls
+cd CameraTampering-1.0.0-Linux/
+readelf -d bin/ctd_example |less
+cd ../..
+ag RPATH
+grep -rinH RPATH
+vim CMakeLists.txt
+cd _`
+cd _/
+cd _build/
+cmake ..
+ninja
+readelf -d bin/ctd_example |less
+vim ../CMakeLists.txt
+git reset --hard HEAD
+cat /etc/fstab
+killall firefox
+cd ~/dev/tampering_detection/
+cd _build/
+make package
+ls
+cmake ..
+make package
+make -h
+cpack
+make all
+make
+ninja package
+tmux new -s 'attributes'
+tmux a -t'attributes'
+tmux a -t'training'
+tmux l
+tmux list
+tmux list-sessions
+tmux a -t'attributes'
+nvidia-smi
+htop
+sudo service lightdm restart
+nvidia-smi
+find . -name '*.png.yml' -delete
+cat /etc/fstab
+cd ~/dev/tampering_detection/
+cd _build/
+ldd bin/swpc_demo 
+readelf -h
+readelf -d ./bin/swpc_demo 
+readelf -d ./CameraTampering-1.0.0-Linux/bin/swpc_demo 
+readelf -d ./CameraTampering-1.0.0-Linux/lib/libcamera_tampering_detector_public.so
+readelf -d ~/dev/face-detector/_build/bin/fddbDetect 
+readelf -d ~/dev/face-detector/_build/lib/lib
+readelf -d ~/dev/face-detector/_build/bin/fddbDetect 
+readelf -d ~/dev/face-detector/_build/bin/face_detector_test 
+readelf -d ~/dev/face-detector/_build/bin/fd-demo 
+readelf -d ~/dev/face-detector/_build/bin/find-faces 
+. ~/dev/python2-env/bin/activate
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py -h
+pip install --isolated pyqt4
+pip search 
+pip install --isolated PyQt5
+pip install --isolated PyQt4
+pip install --isolated PySide
+pip install PyQt5
+pip install --isolated PyQt5
+deactivate
+pip install PyQt5
+. ~/dev/python2-env/bin/activate
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py -h
+nvidia-smi
+htop
+sudo iotop
+nvidia-smi
+while 1; do nvidia-smi; sleep(5); done
+while 1; do nvidia-smi; sleep 5; done
+man while
+while echo""; do nvidia-smi; sleep 5; done
+sudo apt install google-chrome
+ls ~/Downloads|grep chrome
+sudo dpkg -i /home/gserebry/Downloads/google-chrome-stable_current_amd64.deb 
+cd ~/dev/caffe-sugar/
+ls
+python scripts/plot_learning_curves.py -h
+python scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train.log 
+less ~/dev/person_attributes/wider_train/train.log
+python scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train.log 
+python scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train2.log 
+cd
+deactivate 
+less ~/dev/person_attributes/wider_train/train2.log 
+ls
+virtualenv -h
+virtualenv -p /usr/bin/python2.7 ~/dev/py2-caffe
+. ~/dev/py2-caffe/bin/activate
+cd ~/dev/caffe-sugar/
+ls
+ls scripts/
+ls scripts/models/
+ls scripts/models/inception/
+ks
+find . -name 'requirements.txt'
+find ../caffe-shared/ -name 'requirements.txt'
+pip install -r ../caffe-shared/python/requirements.txt 
+less ../caffe-shared/python/requirements.txt 
+pip install -r ../caffe-shared/python/requirements.txt 
+less ../caffe-shared/python/requirements.txt 
+man pip
+ls -a
+ls -a ../caffe-shared/python/
+ls -a ~
+ls ~/.config/
+ls ~/.config/pip/
+vim ~/.config/pip/pip.conf 
+ls
+vim ~/.config/pip/pip.conf 
+pip install -r ../caffe-shared/python/requirements.txt 
+deactivate
+. ~/dev/python2-env/bin/activate
+python scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train3.log 
+ipython
+ls /usr/local/lib/python2.7/site-packages/
+ls /usr/share/
+ls /usr/share/qt4
+ls /usr/lib/python2.7/
+ls /usr/lib/python2.7/dist-packages/
+cp -r /usr/lib/python2.7/dist-packages/PyQt4/ ~/dev/python2-env/lib/python2.7/site-packages/
+ls ~/dev/python2-env/lib/python2.7/site-packages/
+python scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train3.log 
+ipython
+ls ~/dev/python2-env/lib/
+ls ~/dev/python2-env/lib/python2.7/
+ls ~/dev/python2-env/lib/python2.7/site-packages/
+ls ~/dev/python2-env/lib/python2.7/site-packages/PyQt4/
+ls -a ~/dev/python2-env/lib/python2.7/site-packages/PyQt4/
+ls -lah ~/dev/python2-env/lib/python2.7/site-packages/PyQt4/
+ipython
+deactivate 
+. ~/dev/python2-env/bin/activate
+ipython
+cd ../python2-env/lib/python2.7/site-packages/
+ls
+ls cv2
+ls PyQt4/
+rm PyQt4/__init__.pyc
+rm PyQt4/uic/*.pyc
+rm PyQt4/uic/Compiler/*.pyc
+ls 
+rm -rf PyQt4/
+ln -s /usr/lib/python2.7/dist-packages/PyQt4/ ./PyQt4
+ll
+rm -rf PyQt4/
+ln -s /usr/lib/python2.7/dist-packages/PyQt4 ./PyQt4
+ls
+rm PyQt4
+ln -s /usr/lib/python2.7/dist-packages/PyQt4 ./PyQt4
+ls
+ll
+ipython
+python scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train3.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train3.log 
+apt search python2-qt
+apt search python-qt
+deactivate
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/train3.log 
+bg
+disown 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/finetune_reid.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/finetune_reid.log &
+less ~/dev/person_attributes/wider_train/train3.log 
+calc
+less ~/dev/person_attributes/wider_train/train3.log 
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/finetune_reid.log &
+htop
+python ~/dev/caffe-sugar/scripts/plot_learning_curves.py ~/dev/person_attributes/wider_train/finetune_reid.log &
+tmux list-sessions
+tmux a -t'attributes
+'
+tmux a -t'attributes'
+cd ~/dev/person_attributes/
+giti init
+git init
+ls
+git add *.py
+git status
+git add data/*.py
+git add wider_train/train_val.prototxt 
+git commit -m 'Single-threaded reading, broken async loader'
+mkdir test
+cd test
+cp ../wider_train/reid.caffemodel 
+cp ../wider_train/reid.caffemodel ./
+cp ../wider_train/train_val.prototxt 
+cp ../wider_train/train_val.prototxt ./
+cp ../wider_train/solver.prototxt ./
+vim solver.prototxt 
+mkdir snapshots
+PYTHOPATH=../:../data:$PYTHONPATH python ../train.py 2>&1 | tee test.log
+. ~/dev/python2-env/bin/activate
+PYTHOPATH=../:../data:$PYTHONPATH python ../train.py 2>&1 | tee test.log
+mkdir finetune_reid
+PYTHOPATH=../:../data:$PYTHONPATH python ../train.py 2>&1 | tee test.log
+tmux a -t'attributes'
+vim ~/data/WiderAttribute/wider_attribute_test.json 
+ps aux|grep x2go
+sudo service x2go start
+apt search x2go
+ls ~/Downloads/
+ls ~/Downloads/|grep x2go
+sudo apt-get install x2goserver x2goserver-xsession
+sudo apt-get update
+sudo apt-get install x2goserver x2goserver-xsession
+sudo apt-get update
+sudo apt install --reinstall appstreamcli
+apt search appstreamcli
+sudo apt install --reinstall appstream
+sudo apt install libappstream3
+sudo apt-get update
+sudo add-apt-repository ppa:x2go/stable
+sudo apt-get update
+sudo apt-get install x2goserver x2goserver-xsession
+ps aux|grep x2go
+sudo kill -9 20444
+ps aux|grep x2go
+tmux a -t'attributes'
+PYTHOPATH=../:../data:$PYTHONPATH python ../train.py 2>&1 | tee test.log
+tmux a -t'attributes'
+cd ~/dev/person_attributes/wider_train/
+cp solver.prototxt solver_debug.prototxt
+vim solver_debug.prototxt 
+mkdir finetune_reid_all_weights_fix_loss_debug/
+vim solver_debug.prototxt 
+vim solver.prototxt 
+vim solver_debug.prototxt
+PYTHOPATH=../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug.log
+. ~/dev/python2-env/bin/activate
+PYTHOPATH=../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug.log
+PYTHOPATH=../:../data:$PYTHONPATH python ../filter_dataset.py 
+date -h
+date --help
+date +%D%X
+date +%D-%X
+date +%D_%X
+date +%D_%X|tr '/:' '_'
+vim -O train_val.prototxt test.prototxt 
+PYTHOPATH=../:../data:$PYTHONPATH python ../test.py 
+ls
+ls finetune_reid_all_weights_fix_loss
+PYTHOPATH=../:../data:$PYTHONPATH python ../test.py 
+ls finetune_reid_all_weights_fix_loss
+PYTHOPATH=../:../data:$PYTHONPATH python ../test.py 
+git diff
+git commit -a -m'Fix test'
+git checkout -b gs/continue-training-from-solver-snapshot
+ls
+ls finetune_reid_all_weights_fix_loss
+vim solver.prototxt 
+ls 
+cp solver_debug.prototxt solver.prototxt 
+vim solver.prototxt 
+ls
+ls -lht
+git diff
+git commit -a -m'Python solver wrapper in use'
+git checkout master 
+git branch
+git checkout gs/multiprocess-data-prep 
+ls
+vim train_val_fix_loss.prototxt
+gvimdiff train_val_fix_loss.prototxt train_val.prototxt 
+ls
+ls -lht
+ls
+ls finetune_reid_all_weights_fix_loss
+PYTHOPATH=../:../data:$PYTHONPATH python ../test.py 
+cat /etc/fstab
+PYTHOPATH=../:../data:$PYTHONPATH python ../test.py 
+git diff
+git status
+git add train_crelu_part/train_val.prototxt 
+git commit -a -m'Generate solver.prototxt from code. Train lower part of reid net only'
+git checkout -b gs/multiprocess_loading
+git diff
+git diff gs/multiprocess-data-prep 
+git diff gs/continue-training-from-solver-snapshot 
+git grog
+mkdir debug
+cp train_crelu_part/train_val.prototxt debug/
+PYTHOPATH=../:../../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug/train_$(date +%D_%X|tr '/:' '_').log
+cd ~/dev/person_attributes/wider_train/
+PYTHOPATH=../:../../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug/train_$(date +%D_%X|tr '/:' '_').log
+. ~/dev/python2-env/bin/activate
+PYTHOPATH=../:../../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug/train_$(date +%D_%X|tr '/:' '_').log
+cd ~/dev/person_attributes/
+. ~/dev/python2-env/bin/activate
+PYTHOPATH=../:../../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug/train_$(date +%D_%X|tr '/:' '_').log
+cd wider_train/
+rm debug/*.log
+PYTHOPATH=../:../../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug/train_$(date +%D_%X|tr '/:' '_').log
+. ~/dev/python2-env/bin/activate
+cd ../person_attributes/wider_train/
+ls debug
+PYTHOPATH=../:../../:../data:$PYTHONPATH python ../train.py 2>&1 | tee debug/train_08_14_17_14_49_14.log 
+tmux a -t 'training'
+sudo service lightdm restart
+docker pull registry-icv.inn.intel.com/icvdss/openvx_ubuntu16
+docker
+docker run hello_world

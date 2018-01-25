@@ -1,0 +1,1000 @@
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+vim /home/gserebry/data/FDDB/allContROC.txt
+vim _detect_data.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+echo $?
+vim facedetect_gt.txt 
+vim ~/data/FDDB/allDiscROC.txt 
+vim facedetect_gt.txt 
+ ~/data/FDDB/allDiscROC.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+echo $?
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+ca facedetect_gt.txt 
+cat facedetect_gt.txt 
+cp ~/data/FDDB/allDiscROC.txt ./for_report/curves/
+bash plot_roc_linux.sh 
+evince fddb_rocs.pdf 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+echo $?
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+ls
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+vim facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+vim facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+vim facedetect_gt.txt 
+git diff
+git branch
+git log
+git commit -a
+ls
+git add calc_roc_auc_score.py 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models"
+vim facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models" -g "/home/gserebry/dev/facense/tests/fd-test/facedetect_gt.txt" 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models"
+git submodule status
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models/"
+/home/gserebry/dev/facense/_build/bin/fddbDetect -m /home/gserebry/dev/facense/models/ -i /home/gserebry/data/FDDB/2002/08/07/big/img_1348.jpg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models/"
+firefox facedetect_report.html 
+sudo service lightdm restart
+sudo service lightdm stop
+sudo apt-get install kdm
+apt search 'dm'
+apt-cache search 'dm'
+apt-cache search 'dm'|less
+apt-cache search -related lightdm
+apt-cache -related lightdm
+apt-cache --related lightdm
+man apt-cache
+apt-cache search -n 'dm'|less
+apt search 'display manager'
+sudo apt-get install lxdm
+sudo service lxdm restart
+sudo service lxdm start
+ps aux|grep lxdm
+sudo service lightdm stop
+ps aux|grep lightdm
+sudo service lxdm stop
+sudo service lxdm start
+sudo service lxdm stop
+sudo service lxdm start
+sudo service lxdm restart
+sudo service lxdm stop
+ps aux|grep lxdm
+sudo kill -9 19113
+ps aux|grep lightdm
+sudo service lxdm start
+ps aux|grep lxdm
+sudo service lxdm stop
+sudo kill -9 20697
+sudo kill -9 20607
+htop
+ps aux|grep X
+sudo kill -9 797
+sudo kill -9 852
+sudo kill -9 19060
+sudo kill -9 19059
+sudo kill -9 19046
+sudo kill -9 1236
+ps aux|grep X
+sudo service lightdm restart
+sudo service lxdm start
+journalctl -xe
+sudo service lxdm restart
+sudo reboot -h now
+cd ~/train/face_datatang_83k/
+ls
+cat run.sh 
+tail -f ./left_config_9000.yml
+tail -f ./left_9000_2017-03-09-23-43-02.log
+tail -f ./left_regenerate_2017-03-09-23-43-02.log
+less ./left_regenerate_2017-03-09-23-43-02.log
+less ./frontal_regenerate_2017-03-09-23-43-02.log
+cat run.sh 
+less frontal_9000_2017-03-09-23-43-02.log
+vim -O frontal_2017-03-09-23-43-02.log frontal_9000_2017-03-09-23-43-02.log
+less ./left_config_9000.yml
+tail -f ./left_9000_2017-03-09-23-43-02.log
+less ./left_9000_2017-03-09-23-43-02.log
+cat frontal_config.yml 
+cat left_config.yml 
+tail -f ./left_9000_2017-03-09-23-43-02.log
+tail -f ./right_9000_2017-03-09-23-43-02.log
+vim frontal_config.yml 
+tail -f ./right_9000_2017-03-09-23-43-02.log
+cp frontal_config_9000.yml frontal_config_14000.yml
+cp left_config_9000.yml left_config_14000.yml
+cp right_config_9000.yml right_config_14000.yml
+vim *_14000.yml
+vim run.sh 
+bash run.sh 
+tail -f frontal_2017-03-10-12-49-38.log 
+vim *_14000.yml
+bash run.sh 
+tail -f frontal_2017-03-10-12-49-38.log 
+less frontal_2017-03-10-12-49-38.log 
+tail -f frontal_2017-03-10-12-49-38.log 
+cat run.sh 
+tail -f left_2017-03-10-12-49-38.log
+tail -f right_2017-03-10-12-49-38.log
+tail -f frontal_2017-03-10-12-49-38.log 
+cat run.sh 
+vim frontal_config_9000.yml 
+vim *_config_9000.yml 
+vim run.sh 
+bash run.sh 
+tail -f frontal_9000_2017-03-10-18-44-42.log 
+tail -f left_9000_2017-03-10-18-44-42.log 
+vim run.sh 
+ls ../neg/
+wc -l ../neg/pascal_voc_2012.txt 
+wc -l ../neg/neg_filtered_subset_nicta_a_b_c_d.txt 
+vim run.sh 
+vim frontal_config_9000.yml 
+vim left_config_9000.yml 
+vim right_config_9000.yml 
+vim run.sh 
+bash run.sh 
+htop
+tail -f frontal_9000_pascal_neg.log 
+ls
+less frontal_9000_pascal_neg.log 
+cp frontal_config.yml test_config.yml
+vim test_config.yml 
+ls
+cd ../neg/
+ls
+vim hard_negatives.txt 
+ln -s ~/data/IMDB_WIKI/imdb ./IMDB
+ls
+ls -l
+ls IMDB
+cd ../face_datatang_83k/
+vim test_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log
+bg
+tail -f test.log 2~2~
+fg
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+vim test_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+vim ../neg/hard_negatives.txt 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml
+ls *.yml
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log
+bg
+tail -f frontal_36_2017-03-15-14-37-57.log
+fg
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log
+bg
+tail -f frontal_36_2017-03-15-14-37-57.log
+fg
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log &
+tail -f frontal_36_2017-03-15-14-37-57.log
+less frontal_36_2017-03-15-14-37-57.log
+tail -f frontal_36_2017-03-15-14-37-57.log
+touch ../neg/no_hard_negatives.txt
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_2017-03-15-17-26-24.log &
+tail -f frontal_2017-03-15-17-26-24.log 
+less frontal_2017-03-15-17-26-24.log 
+tail -f frontal_2017-03-15-17-26-24.log 
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log &
+tail -f frontal_36_2017-03-15-14-37-57.log
+fg
+cp frontal_config_9000.yml frontal_config.yml 
+vim frontal_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config.yml &> frontal_36_2017-03-15-14-37-57.log &
+tail -f frontal_36_2017-03-15-14-37-57.log
+vim frontal_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config.yml &> frontal_36_2017-03-16-10-03-28.log &
+tail -f frontal_36_2017-03-16-10-03-28.log 
+vim frontal_config.yml 
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim run.sh 
+bash run.sh 
+tail -f frontal_9000_no_hard_neg.log 
+tail -f left_9000_no_hard_neg.log 
+fg
+jobs
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim run.sh 
+run.sh 
+bash run.sh 
+tail -f left_9000_no_hard_neg.log 
+tail -f right_9000_no_hard_neg.log 
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_hard_512.log &
+tail -f frontal_36_hard_512.log 
+less frontal_36_hard_512.log 
+tail frontal_36_hard_512.log 
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim run.sh 
+bash run.sh 
+tail -f left_9000_hard_neg.log 
+cd ~/dev/fddb-evaluation-tools/
+cd ~/dev/facense
+cd tests/age-gender-test/
+ls
+cd ..
+cd scripts/
+vim age_gender_test.py 
+python ./age_gender_test.py -h
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ ../_build/ ./age_gender_test_result_tmp.html
+ls
+ls -a
+vim age_gender_test.py 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ ../_build/ ./age_gender_test_result_tmp.html
+ls
+vim age_gender_test.py 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+ls
+vim age_gender_test_result_tmp.html 
+vim age_gender_test.py 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+vim age_gender_test_result_tmp.html 
+vim age_gender_test.py 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+vim age_gender_test_result_tmp.html 
+vim age_gender_test.py 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+vim age_gender_test_result_tmp.html 
+vim age_gender_test.py 
+echo $?
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+echo $?
+vim age_gender_test_result_tmp.html 
+git status
+git diff
+cd ..
+vim models/cascade_*.xml
+git diff
+vim examples/fddbDetect/main.cpp
+git diff
+vim modules/face_detector/detector.cpp 
+cd scripts/
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+cd ..
+vim modules/face_detector/detector.cpp 
+vim examples/fddbDetect/main.cpp
+git diff
+git log
+cd ../my_facense/
+git log
+ls
+rm -rf ./*
+git clone git@gitlab-icv.inn.intel.com:dss/facense.git .
+ls
+ls 0a
+ls -a
+rm -rf ./*
+ls -a
+rm ./.git*
+ls -a
+git clone git@gitlab-icv.inn.intel.com:dss/facense.git .
+git log
+git grog
+git checkout aae58e0
+vim modules/face_detector/detector.cpp 
+git grog
+git checkout 86f0e40
+vim modules/face_detector/detector.cpp 
+ls
+ls modules/
+vim feature-pyramid-builder/
+git submodule
+git grog
+git checkout 936868c
+ls
+ls mody
+ls modules/
+vim modules/fcf_anyangle_detector/detector.cpp 
+vim modules/fcf_anyangle_detector/feature_pyramid_builder.cpp 
+vim modules/fcf_anyangle_detector/feature_pyramid_builder.hpp 
+vim modules/fcf_anyangle_detector/feature_pyramid_builder.cpp 
+vim modules/fcf_anyangle_detector/feature_pyramid_builder_cpu.cpp 
+vim modules/fcf_anyangle_detector/feature_pyramid_builder_common..cpp 
+vim modules/fcf_anyangle_detector/feature_pyramid_builder_common.cpp 
+cd ../face
+cd ../facense
+git diff
+cd _build/
+make -j7
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+cd ..
+cd scripts/
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+firefox ./age_gender_test_result_tmp.html 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+echo $?
+firefox ./age_gender_test_result_tmp.html 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+firefox ./age_gender_test_result_tmp.html 
+ls ../_build/res
+ls /home/gserebry/dev/facense/_build/res
+ls /home/gserebry/dev/facense/_build/res
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+firefox ./age_gender_test_result_tmp.html 
+cd ..
+git diff
+vim models/cascade_*
+cd scripts/
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+firefox ./age_gender_test_result_tmp.html 
+cd ../
+gti branch
+git branch
+git diff
+cd scripts/
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+firefox ./age_gender_test_result_tmp.html 
+git diff
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+firefox ./age_gender_test_result_tmp.html 
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html
+firefox ./age_gender_test_result_tmp.html 
+cd ..
+diffuse ./models/demoAPIconfig.xml ../my_facense/models/demoAPIconfig.xml 
+git diff
+git commit -a
+git push -u origin 
+git push -u origin gs/opt-fcf-cascade 
+cd _build/
+ls
+vim -9 ./res_ ../tests/age-gender-test/res*
+vim -O ./res_ ../tests/age-gender-test/res*
+vim -O ./res_ ../tests/age-gender-test/ref_*
+vim -O ./res_* ../tests/age-gender-test/ref_*
+mc
+cd ../scripts/
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html --no-verbose
+firefox ./age_gender_test_result_tmp.html 
+cd ..
+git diff
+git stash
+gti diff
+git diff
+cd scripts/
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html --no-verbose
+firefox ./age_gender_test_result_tmp.html 
+git module
+cd ..
+ls modules/
+vim ./devtools/cppcheck.supp 
+git diff
+git add devtools/cppcheck.supp 
+git add modules/face_detector/detector.hpp 
+git status
+git add API/ds.cpp
+git status
+git commit
+git push
+cd scripts/
+python ./age_gender_test.py /media/share/DSS/Age_Gender_Recognition/test/age_images.txt /media/share/DSS/Age_Gender_Recognition/test/age_labels.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_ims.txt /media/share/DSS/Age_Gender_Recognition/test/gender_test_lbls.txt ../models/ ../tests/age-gender-test/ref_res ../_build/ ./age_gender_test_result_tmp.html --no-verbose
+firefox ./age_gender_test_result_tmp.html 
+git diff
+mc
+git diff
+git commit -a
+git push
+cd ../../fddb-evaluation-tools/
+find . -type d
+source env/bin/activate
+python fp-vis/vis.py -h
+cd fp-vis/
+python vis.py -h
+python3 vis.py -h
+python vis.py -h
+python3 vis.py -h
+python vis.py -h
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+vim ../_detect_data.txt 
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python3 vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+cd ..
+mv ./fp-vis/* ./
+ls
+rmdir  fp-vis/
+ls -a
+git status
+git add ./*
+git status
+ls 
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python3 vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+ls
+python3 vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+pip install recordtype
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+pip2 install recordtype
+pip3 install recordtype
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python2 vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python3 vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+which python
+ls -l `which python`
+pip3 install recordtype
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+pip install namedlist
+pip2 install namedlist
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+pip install namedlist
+pip3 install namedlist
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+ipython3
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+ls /home/gserebry/data/FDDB/2002/08/15/big/img_700.jpg 
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+cd ..
+cd fp_vis/
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+ls
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB -v
+python vis.py --det ../_detect_data.txt --gt ~/data/FDDB/FDDB-folds/FDDB-fold-all-ellipseList.txt --dir ~/data/FDDB
+htop
+cd
+cd dev
+git clone https://github.com/pdollar/coco.git
+htop
+cd coco/PythonAPI/
+ls
+make
+deactivate
+make
+ls
+ls ..
+ls ../common/
+ls pycoco
+ls pycocotools/
+htop
+cd ..
+ls
+cd ~/data/MSCOCO/
+ls
+mkdir detections_short_cascade_36
+find test2014 test2015 train2014 val2014 -name '*.yml' -exec mv {} detections_short_cascade_36/ \;
+find test2014 test2015 train2014 val2014 -name '*.jpg'
+find test2014 test2015 train2014 val2014 -name '*.jpg' -printf '%F\0'
+find test2014 test2015 train2014 val2014 -name '*.jpg' -printf '%f\0'
+man find
+find test2014 test2015 train2014 val2014 -name '*.jpg' -printf '%p\0'
+find test2014 test2015 train2014 val2014 -name '*.jpg' -printf '%h/%f\n'
+find test2014 test2015 train2014 val2014 -name '*.jpg' -print0 
+find test2014 test2015 train2014 val2014 -name '*.jpg' -print0 |xargs -I{} ~/dev/facense/_build/bin/faceDetect -h
+~/dev/facense/_build/bin/faceDetect -h
+~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -m ~/dev/facense/models/cascade_left.xml -m ~/dev/facense/models/cascade_right.xml -i test2014/COCO_test2014_000000561803.jpg --size 48 --out test2014/COCO_test2014_000000561803.jpg.yml
+~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -m ~/dev/facense/models/cascade_left.xml -m ~/dev/facense/models/cascade_right.xml -i ./test2014/COCO_test2014_000000561803.jpg --size 48 --out test2014/COCO_test2014_000000561803.jpg.yml
+~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -m ~/dev/facense/models/cascade_left.xml -m ~/dev/facense/models/cascade_right.xml -i ./test2014/COCO_test2014_000000561803.jpg --size 48 --out test2014/COCO_test2014_000000561803.jpg.yml --show 1
+~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -m ~/dev/facense/models/cascade_left.xml -m ~/dev/facense/models/cascade_right.xml -i ./test2014/COCO_test2014_000000561803.jpg --size=48 --out test2014/COCO_test2014_000000561803.jpg.yml --show=1
+~/dev/facense/_build/bin/faceDetect -m ~/dev/facense/models/cascade_frontal.xml -i ./test2014/COCO_test2014_000000561803.jpg --size=48 --out test2014/COCO_test2014_000000561803.jpg.yml --show=1
+htistory|grep faceDetect
+history|grep faceDetect
+htop
+echo $TERM
+htop
+sudo iotop
+killall doublecmd
+ls
+git status
+cd ~/dev/facense_extra/
+git status
+git diff
+git log
+git commit -a
+htop
+source scripts
+source scripts/bin/activate
+python scripts/facedetect_training/extract_negatives_mscoco.py -h
+python scripts/facedetect_training/extract_negatives_mscoco.py --dir ~/data/MSCOCO/ --detections-dir ~/data/MSCOCO/detections_full_cascade/ -a ~/data/MSCOCO//detections_full_cascade/accepted_ms_coco_fp.txt --validate
+python scripts/facedetect_training/fcf_visualize.py -h
+python scripts/facedetect_training/fcf_visualize.py ~/train//face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml
+python scripts/facedetect_training/extract_negatives_mscoco.py --dir ~/data/MSCOCO/ --detections-dir ~/data/MSCOCO/detections_full_cascade/ -a ~/data/MSCOCO//detections_full_cascade/accepted_ms_coco_fp.txt --validate
+python scripts/facedetect_training/fcf_visualize.py ~/train//face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train//face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_fix_forehead.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train//face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train//face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml_
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x54_win\=60x66_9000_features_frontal.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml
+bg
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x54_win\=60x66_9000_features_frontal.xml
+bg
+python scripts/facedetect_training/fcf_visualize.py ~/train//face_datatang_83k/face_obj=48x48_win=60x60_9000_features_frontal_fix_forehead.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train//face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_fix_forehead.xml
+sudo dhclient -d
+ps aux|grep python
+kill -7 22368
+htop
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_frontal_fix_forehead_orientation.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead_orientation.xml
+htop
+source scripts/bin/activate
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_dt_ip/face_obj=48x48_win=60x60_9000_features_left_dt_ip.xml
+bg
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_left_fix_forehead.xml
+ps aux|grep fp_vis
+kill -9 29068
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_dt_orientation/face_obj\=48x48_win\=60x60_9000_features_frontal_dt_orientation_sym.xml
+man avconv
+man ffmpeg-utils
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_dt_orientation/~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_frontal_fix.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_frontal_fix.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_frontal_fix_forehead.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_frontal_fix.xml
+python scripts/facedetect_training/fcf_visualize.py ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_9000_features_frontal_fix_forehead.xml
+htop
+ls
+cd scripts/facedetect_evaluation/
+lsa
+ls
+python eval_objdetect.py -h
+python eval_objdetect.py --det ~/test/TaiyanggongA_TicketEntrance_Fewer.avi.yml  --gt ~/dev/facense/TaiyanggongA_TicketEntrance_Fewer.xml --reasonable --obj 48 48 --plot --dir ~/data/datatang/StreetSubway\ Video\ with\ Pedestrian\ Tracing\ Annotation/data/Video\ Data/Subway_Ticket/labeled/
+vim ~/test/TaiyanggongA_TicketEntrance_Fewer.avi.yml 
+python eval_objdetect.py --det ~/test/TaiyanggongA_TicketEntrance_Fewer.avi.yml  --gt ~/dev/facense/TaiyanggongA_TicketEntrance_Fewer.xml --reasonable --obj 48 48 --plot --dir ~/data/datatang/StreetSubway\ Video\ with\ Pedestrian\ Tracing\ Annotation/data/Video\ Data/Subway_Ticket/labeled/
+ls /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/lib/ubuntu_16.04/intel64/libC
+popd
+cd ../../..
+cd fddb-evaluation-tools/
+python ../facense_extra/scripts/facedetect_training/fcf_visualize.py ~/dev/facense/models/cascade_frontal.xml 
+htop
+ps aux|grep python
+kill -9 6640
+kill -9 7250
+kill -9 7251
+kill -9 7255
+kill -9 7262
+kill -9 
+kill -9 7265
+kill -9 7267
+kill -9 7268
+kill -9 7269
+htop
+ps aux|grep python
+kill -9 15203
+htop
+cd ~/dev/face-detector
+ls
+cd accuracy/evaluate/
+ls
+source ~/dev/python2-env/
+source ~/dev/python2-env/bin/activate
+python ./compare_stat_curves.py -h
+ls ..
+python ./compare_stat_curves.py --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../gt_data/windows_
+ls
+feh roc.png 
+python ./compare_stat_curves.py --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../gt_data/windows_
+feh roc.png 
+python ./compare_stat_curves.py --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../gt_data/windows_
+feh roc.png 
+git diff
+python ./compare_stat_curves.py -h
+python ./compare_stat_curves.py --titles-list 'facense-ubuntu16' 'facense-windows' --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../gt_data/windows_
+python ./compare_stat_curves.py --titles-list "'facense-ubuntu16' 'facense-windows'" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../gt_data/windows_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_
+feh roc.png 
+cp -p ~/dev/fddb-evaluation-tools/for_report/points/AIM.txt ../gt_data/points/AIM.txt
+mkdir ../gt_data/points
+cp -p ~/dev/fddb-evaluation-tools/for_report/points/AIM.txt ../gt_data/points/AIM.txt
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_
+feh roc.png 
+mv roc.pnd subset_gt_60_roc.png
+mv roc.png subset_gt_60_roc.png
+htop
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_no_small_faces_imgs_
+feh roc.png 
+mv roc.png subset_gt_60_roc.png
+python ./compare_stat_curves.py --titles-list "Facense" --points-dir ../gt_data/points/ ../gt_data/ubuntu16_
+feh roc.png 
+mv roc.png all_roc.png
+python ./compare_stat_curves.py --titles-list "'Facense-CPU' 'Facense-CPU-OPT'" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../../_build/master_fd_cpu_opt
+python ~/dev/fd_accuracy/compare_stat_curves.py --titles-list "'Facense-CPU' 'Facense-CPU-OPT'" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../../_build/master_fd_cpu_opt
+python ~/dev/fd_accuracy/evaluate/compare_stat_curves.py --titles-list "'Facense-CPU' 'Facense-CPU-OPT'" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ../gt_data/ubuntu16_ ../../_build/master_fd_cpu_opt
+python ~/dev/fd_accuracy/evaluate/compare_stat_curves.py --titles-list "'Facense-CPU' 'Facense-CPU-OPT'" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ~/dev/fd_accuracy/gt_data/ubuntu16_ ../../_build/master_fd_cpu_opt
+deactivate
+. ~/dev/python3-env/bin/activate
+python ~/dev/fd_accuracy/evaluate/compare_stat_curves.py --titles-list "'Facense-CPU' 'Facense-CPU-OPT'" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ~/dev/fd_accuracy/gt_data/ubuntu16_ ../../_build/master_fd_cpu_opt
+feh roc.png 
+python ~/dev/fd_accuracy/evaluate/compare_stat_curves.py --titles-list "'Facense-CPU' 'Facense-CPU-OPT'" --points-dir ~/dev/fddb-evaluation-tools/for_report/points/ ~/dev/fd_accuracy/gt_data/ubuntu16_ ../../_build/master_fd_cpu_opt
+feh roc.png 
+. ~/.bashrc
+git branch
+git diff
+git reset --hard HEAD
+git status
+cd ../..
+ls
+git diff
+ls accuracy/
+ls accuracy/evaluate/
+ls accuracy/
+ls tools/
+gti branch
+git branch
+git checkout gs/add-evaluation-tools 
+git brease master
+git grog
+git status
+git push -f
+ls
+git checkout master
+git pull -p
+cd _build/
+cmake 
+cmake ..
+ninja clean
+ninja
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate -h
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model -j 5
+ls
+vim ../accuracy/fddbDetect/main.cpp 
+ninja
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_with_hard_negative_mining.xml --fddb ~/data/FDDB -p multi_with_hard_negative_mining_cpu_opt -j 7
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_with_hard_negative_mining.xml --fddb ~/data/FDDB -p multi_with_hard_negative_mining_cpu_opt -j 7 -r -h
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_with_hard_negative_mining.xml --fddb ~/data/FDDB -p multi_with_hard_negative_mining_cpu_opt -j 7 -r -n no-small-faces-imgs
+touch evaluate_all.sh
+vim evaluate_all.sh 
+ninja
+bash evaluate_all.sh 
+ls -lht
+vim evaluate_all.sh 
+bash evaluate_all.sh 
+vim evaluate_all.sh 
+bash evaluate_all.sh 
+vim evaluate_all.sh 
+ls
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r
+vim evaluate_all.sh 
+vim ../accuracy/fddbDetect/main.cpp 
+ninja
+bash evaluate_all.sh 
+vim evaluate_all.sh 
+bash evaluate_all.sh 
+make -j7 -C ~/dev/opencv_master_build/
+cmake ..
+cmake -DWITH_AVX2=ON
+cmake -DWITH_AVX2=ON ..
+ninja
+ninja clean
+ninja
+bash evaluate_all.sh 
+make -j7 -C ~/dev/opencv_master_build/
+q
+ninja clean
+rm CMakeCache.txt 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+ninja
+deactivate
+. ~/dev/python3-env/bin/activate
+bash evaluate_all.sh 
+pip install -r ../accuracy/evaluate/requirements.txt 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r -n no-small-faces-images
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r -n no-small-faces-imgs
+cath evaluate_all.sh 
+cat evaluate_all.sh 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -j 16 --size 48 48 -n no-small-faces-imgs
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -j 16 --size 48 48 -n no-small-faces-
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -j 16 --size 48 48 -r
+ls
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt multi_add_grayscale multi_model_cpu_opt multi_model
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt multi_add_grayscale multi_model_cpu_opt multi_model --show
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt multi_add_grayscale multi_model_cpu_opt multi_model --show
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt multi_add_grayscale ../accuracy/gt_data/ubuntu16_ ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+python ../accuracy/evaluate/compare_stat_curves.py -h multi_add_grayscale ../accuracy/gt_data/ubuntu16_ --show
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single\ model Multiple\ model' multi_add_grayscale ../accuracy/gt_data/ubuntu16_ --show
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list '"Single\ model" "Multiple\ model"' multi_add_grayscale ../accuracy/gt_data/ubuntu16_ --show
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale ../accuracy/gt_data/ubuntu16_ --show
+python ../accuracy/evaluate/compare_stat_curves.py -h multi_add_grayscale ../accuracy/gt_data/ubuntu16_ --show
+python ../accuracy/evaluate/compare_stat_curves.py -h multi_add_grayscale ../accuracy/gt_data/ubuntu16_
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale ../accuracy/gt_data/ubuntu16_
+ls
+feh roc.png 
+rename 's/^/cpu/' *.png 
+ls
+rename 's/^cpu/cpu_/' *.png 
+ls
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_
+rename 's/^[pr].*/cpu_opt_/' *.png 
+ls
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale ../accuracy/gt_data/ubuntu16_
+rename 's/^/cpu_/' *.png 
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_
+rename 's/^[^c]{1}.\+/cpu_opt_/' *.png 
+ls
+rm *.png
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_
+mv pr.png cpu_opt_pr.png
+mv roc.png cpu_opt_roc.png
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale ../accuracy/gt_data/ubuntu16_
+mv roc.png cpu_roc.png
+mv pr.png cpu_pr.png
+feh cpu_pr.png 
+feh cpu_opt_pr.png 
+feh cpu_pr.png 
+feh cpu_opt_pr.png 
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale ../accuracy/gt_data/ubuntu16_
+mv pr.png cpu_pr.png
+mv roc.png cpu_roc.png
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_
+mv roc.png cpu_opt_roc.png
+mv pr.png cpu_opt_pr.png
+feh cpu_opt_pr.png cpu_pr.png 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r
+python ../accuracy/evaluate/compare_stat_curves.py --titles-list 'Single model,Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ multi_model_cpu_opt --show
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r -n no-small-faces-imgs
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ multi_model_cpu_opt --show
+ls
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi.xml --fddb ~/data/FDDB -p multi_model_cpu_opt -j 7 -r
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ multi_model_cpu_opt --show
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt multi_model_cpu_opt_ ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt multi_model_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+ls
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt multi_model_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+ls
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/ --fddb ~/data/FDDB -p all_cascades_cpu -j 7
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/ --fddb ~/data/FDDB -p all_cascades_cpu -j 7 -r
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/ --fddb ~/data/FDDB -p all_cascades_cpu -j 7 -r -n no-small-faces-imgs
+less ../accuracy/fddbDetect/main.cpp 
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_
+python ../accuracy/evaluate/compare_stat_curves.py --titles 'Single model, Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ 
+feh pr.png 
+python ../accuracy/evaluate/compare_stat_curves.py --titles 'Single model,Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ 
+feh pr.png 
+ls
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/ --fddb ~/data/FDDB -p multi_model -j 7 -r 
+python ../accuracy/evaluate/compare_stat_curves.py --titles 'Single model,Multiple models' multi_add_grayscale_cpu_opt ../accuracy/gt_data/ubuntu16_cpu_opt_ 
+python ../accuracy/evaluate/compare_stat_curves.py --titles 'Single model,Multiple models' multi_add_grayscale_cpu ../accuracy/gt_data/ubuntu16_cpu_opt_ --show
+calc
+git checkout gs/improve-accuracy-evaluation-and-visualization 
+ls
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/ --fddb ~/data/FDDB -p multi_model -j 7 -r -n no-small-faces-imgs
+cp multi_modelstats.pickle multi_model_gt120stats.pickle
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/ --fddb ~/data/FDDB -p all_cascades_cpu -j 7 -r -n no-small-faces-imgs
+# python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -j 16 --size 48 48 -r 
+# python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale all_cascades_cpu --show
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs --versbose
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs --verbose
+pip search opencv
+pip uninstall opencv-python
+pip uninstall opencv-contrib-python
+deactivate
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs --verbose
+deactivate
+. ~/dev/python3-env/bin/activate
+ln -s ~/dev/opencv_master_build/lib/cv2.so ~/dev/python2-env/lib/python2.7/site-packages/cv2/cv2.so
+rm /home/gserebry/dev/python2-env/lib/python2.7/site-packages/cv2/cv2.so
+ln -s ~/dev/opencv_master_build/lib/cv2.so ~/dev/python2-env/lib/python2.7/site-packages/cv2/cv2.so
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs --verbose
+ln -s ~/dev/opencv_master_build/lib/cv2.so ~/dev/python2-env/lib/python2.7/site-packages/cv2.so
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs --verbose
+deactivate
+. ~/dev/python3-env/bin/activate
+deactivate
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs --verbose
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -v
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs > /tmp/gt60.log
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs > /tmp/gt120.log
+meld /tmp/gt60.log /tmp/gt120.log 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs
+ls
+rm ../accuracy/evaluate/*.pyc
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -h
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/ubuntu16
+ls ../accuracy/gt_data/
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/ubuntu16_stats.pickle
+ls ../accuracy/gt_data/
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+firefox facedetect_report.html 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+git diff
+git status
+git add ../accuracy/evaluate/eval.py
+git log
+git commit -m 'More accurate selection of the best-recall curve point'
+git add ../accuracy/evaluate/eval.py
+git commit -m 'Fix: return back 60x60 filtering'
+vlc ~/dev/dwell-time/tests/testdata/regr_vid_long.avi
+mediainfo ~/dev/dwell-time/tests/testdata/regr_vid_long.avi
+git push
+ipython
+cd ..
+git checkout -b gs/wider-face
+git mv accuracy/evaluate/fddb.py accuracy/evaluate/dataset.py
+cat /etc/fstab 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+cd _build/
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt -v
+git status
+git add ../accuracy/evaluate/dataset.py
+git add ../accuracy/evaluate/eval.py
+git commit -m'refactor for easy work with any dataset'
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+ninja
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+ls ../models/
+git checkout mz/new-multy-model-add -- ../models/*
+ls ../models/
+git checkout origin/mz/new-multy-model-add -- ../models/*
+ls ../models/
+cp ~/Downloads/cascade_multi_add_grayscale.xml ../models/
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+feh /home/gserebry/data/WIDER_Face/WIDER_val/images/55--Sports_Coach_Trainer/55_Sports_Coach_Trainer_sportcoaching_55_523.jpg
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+ls
+ls -lht
+less multi_add_grayscale_detect_data.txt
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale_wider -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+less multi_add_grayscale_wider_detect_data.txt 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale_wider -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt -r
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale_wider -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt -r -v
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale_wider -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt -r
+git diff
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt -v
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+git diff
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+git diff
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt
+git diff
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n no-small-faces-imgs -g ../accuracy/gt_data/facedetect_gt.txt -v
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n -1 -g ../accuracy/gt_data/facedetect_gt.txt 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n 60 -g ../accuracy/gt_data/facedetect_gt.txt 
+git diff
+git diff master
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n -1 -g ../accuracy/gt_data/facedetect_gt.txt 
+ls
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n 60 -g ../accuracy/gt_data/facedetect_gt.txt 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p multi_add_grayscale -r -n 120 -g ../accuracy/gt_data/facedetect_gt.txt 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale_wider -n -1 -g ../accuracy/gt_data/facedetect_gt.txt -r
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale_wider -n 60 -g ../accuracy/gt_data/facedetect_gt.txt -r
+sudo icvguest
+sudo su
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --rootdir /home/gserebry/data/WIDER_Face/ --dataset WIDER -p multi_add_grayscale_wider -n 120 -g ../accuracy/gt_data/facedetect_gt.txt -r
+git status
+git add ../accuracy/evaluate/
+git status
+git reset HEAD
+git add ../accuracy/evaluate/dataset.py
+git add ../accuracy/evaluate/eval.py
+git add ../accuracy/evaluate/match.py
+git log
+git commit -m 'Add accuracy evaluation on Wider dataset'
+git push
+git push -u origin gs/wider-face 
+ls
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p all_cascades_cpu -r -g ../accuracy/gt_data/facedetect_gt.txt 
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p all_cascades_cpu -r -n 60 -g ../accuracy/gt_data/facedetect_gt.txt 
+git grog
+git checkout develop
+git pull
+git checkout gs/wider-face 
+git rebase --onto=develop master gs/wider-face 
+git grog
+git push -f
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p all_cascades_cpu -r -n 60 -g ../accuracy/gt_data/facedetect_gt.txt 
+deactivate
+. ~/dev/python3-env/bin/activate
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p all_cascades_cpu -r -n 60 -g ../accuracy/gt_data/facedetect_gt.txt 
+ln -s ~/dev/opencv_master_build/lib/python3/cv2.cpython-35m-x86_64-linux-gnu.so ~/dev/python3-env/lib/python3.5/site-packages/cv2.cpython-35m-x86_64-linux-gnu.so
+python ../accuracy/evaluate --detector bin/fddbDetect -m ../models/cascade_multi_add_grayscale.xml --fddb ~/data/FDDB -p all_cascades_cpu -r -n 60 -g ../accuracy/gt_data/facedetect_gt.txt 
+git diff
+git add ../accuracy/evaluate/eval.py
+git commit -m'Fix for python3 compatibility'
+git push
+deactivate
+. ~/dev/python2-env/bin/activate
+ls
+ls -lht
+feh roc.png 
+ls
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale all_cascades_cpu --show
+deactivate
+. ~/dev/python3-env/bin/activate
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale all_cascades_cpu --show
+deactivate
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate/compare_stat_curves.py multi_add_grayscale all_cascades_cpu --show
+git diff
+git log
+git add ../accuracy/evaluate/compare_stat_curves.py 
+git commit -m'Another fix for 2-3 compatibility'
+git push
+sudo apt-get update
+sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+sudo docker run hello-world
+vim /etc/systemd/system/docker.service.d/intel.conf` and add the following content there:
+    [Service]
+    Environment="HTTP_PROXY=http://proxy-chain.intel.com:911" "HTTPS_PROXY=http://proxy-chain.intel.com:912" "NO_PROXY=intel.com,.intel.com,localhost,127.0.0.1"
+    ExecStart=
+vim /etc/systemd/system/docker.service.d/intel.conf
+sudo vim /etc/systemd/system/docker.service.d/intel.conf
+sudo mkdir /etc/systemd/system/docker.service.d
+sudo vim /etc/systemd/system/docker.service.d/intel.conf
+sudo systemctl stop docker
+sudo systemctl daemon-reload 
+sudo systemctl start docker
+sudo docker run hello-world

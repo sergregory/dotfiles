@@ -1,0 +1,9 @@
+pane	training	0	:evaluate	0	:M	0	:/home/gserebry/dev/fddb-evaluation-tools	1	bash	:
+pane	training	1	:scripts	0	:	0	:/home/gserebry/dev/coco/PythonAPI	1	bash	:
+pane	training	2	:prepare	0	:-	0	:/home/gserebry/dev/facense_extra/scripts/facedetect_training	1	bash	:
+pane	training	3	:train	1	:*	0	:/home/gserebry/train/face_datatang_83k	1	bash	:
+window	training	0	0	:M	c95d,211x57,0,0,0
+window	training	1	0	:	c95f,211x57,0,0,2
+window	training	2	0	:-	c100,189x44,0,0,3
+window	training	3	1	:*	c961,211x57,0,0,4
+state	training	

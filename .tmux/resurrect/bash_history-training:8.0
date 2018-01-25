@@ -1,0 +1,1000 @@
+git checkout gs/disable-tests-if-submodule 
+git diff origin/develop 
+git log
+cd ..
+git blame CMakeLists.txt
+git log
+git diff HEAD^
+git gvimdiff HEAD^
+git difftool HEAD^
+git difftool develop 
+git diff
+vim CMakeLists.txt
+git diff
+git commit -a --amend
+git diff develop 
+git log
+vim CMakeLists.txt
+git commit -a --amend
+cd _build/
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DBUILD_DOCS=OFF ..
+ninja
+ctest -V
+git push
+git push -f
+cd ..
+cd face-detector-repo/
+git branch
+git pull -p
+git log
+cd modules/fcf_cascade/
+git pull -p
+git checkout develop 
+git pull
+cd ..
+git submodule update --init --recursive
+cd modules/fcf_cascade/
+git checkout develop 
+git pull
+git submodule update --init --recursive
+vim ./.gitmodules 
+cd ..
+git status
+vim ./.gitmodules 
+cd _build/
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DBUILD_DOCS=OFF ..
+ninja
+ctest -V
+git diff
+git commit -a
+git push
+htop
+ps aux|grep sky
+kill -9 10232
+ps aux|grep sky
+sky
+qtcreator
+ps aux|grep sky
+fuser /home/gserebry/.sky2/db/chat_db.sqlite
+ps aux|grep sky
+git status
+cd ../../face_analyzer/
+grep -rinH cmake_minimum_required
+grep cmake_minimum_required
+ag cmake_minimum_required
+man ag
+ag -l cmake_minimum_required
+gvim $(ag -l cmake_minimum_required)
+git branch
+. ~/.bashrc 
+git diff
+git checkout develop
+git pull -p
+git submodule update --init --recursive
+git checkout develop
+git pull -p
+echo $PS1
+echo ${GIT_STATUS{
+echo ${GIT_STATUS}
+git status
+vim ~/.bashrc
+. ~/.bashrc 
+git checkout gs/fix-ag-test 
+git checkout develop
+git checkout -b gs/lower-cmake-version
+gvim $(ag -l cmake_minimum_required)
+git diff
+git commit -a -m'specify the version of CMake Yocto can support now'
+git push -u origin gs/lower-cmake-version 
+cd ../face-detector-repo/
+git pull -p
+git submodule status
+ls
+git submodule deinit cmake/cmake_utils/
+vim ./.gitmodules 
+git checkout -b gs/use-cmake-scripts
+git submodule add ../../ICV-integration/cmake-scripts.git cmake/cmake-scripts
+cat ./.gitmodules 
+vim CMakeLists.txt 
+cd _build/
+make clean
+ls
+ninja clean
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cd ..
+ls
+cd cmake/
+ls
+rm -rf cmake_utils/
+cd ..
+cd _build/
+cmake .
+vim ../cmake/cmake-scripts/sdl/all_cmake_utils.cmake
+vim ../CMakeLists.txt 
+cmake ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+vim ../CMakeLists.txt 
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DBUILD_DOCS=OFF ..
+ls
+rm -rf ./*
+git diff
+git submodule statys
+git submodule status
+git status
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DBUILD_DOCS=OFF -GNinja ..
+ninja
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DBUILD_DOCS=OFF ..
+make VERBOSE=1
+git diff
+git commit -a -m 'use cmake-scripts instead of cmake_utils'
+git push -u origin gs/use-cmake-scripts 
+cd ..
+git rm cmake/cmake_utils
+cd ../
+cd Infra/docker/ubuntu16/
+ls
+git diff
+git checkout master 
+git pull -p
+git diff HEAD@{1}
+vim Dockerfile 
+sudo apt-get install -y --no-install-recommends latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3 doxygen
+vim Dockerfile 
+git diff
+git checkout -b gs/add-doxygen
+git commit -a
+git push -u origin gs/add-doxygen 
+cd
+cd dev/dwell-time/
+git checkout develop
+git pull -p
+git submodule update --init --recursive
+cd _build/
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON ..
+ninja
+./bin/demoDsAPI -h
+./bin/demoDsAPI --fa_model=/home/gserebry/dev/dwell-time/modules/face_analyzer/models/caffe/age_gender_net.prototxt --fa_weights=/home/gserebry/dev/dwell-time/modules/face_analyzer/models/caffe/age_gender_net.caffemodel --ft_models_path=/home/gserebry/dev/dwell-time/modules/face_detector/models/ --video=../tests/testdata/qq_out.mp4 
+ls
+gdb core
+man gdb
+gdb bin/demoDsAPI core
+git log
+vim ../example/main.cpp 
+make
+ninja
+./bin/demoDsAPI --fa_model=/home/gserebry/dev/dwell-time/modules/face_analyzer/models/caffe/age_gender_net.prototxt --fa_weights=/home/gserebry/dev/dwell-time/modules/face_analyzer/models/caffe/age_gender_net.caffemodel --ft_models_path=/home/gserebry/dev/dwell-time/modules/face_detector/models/ --video=../tests/testdata/qq_out.mp4 
+ls
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.2872/deployment_tools/inference_engine/ ..
+ninja
+pushd ~/Downloads/
+tar -xvf ./l_deeplearning_deploymenttoolkit_2017.1.0.4001.tgz 
+cd l_deeplearning_deploymenttoolkit_2017.1.0.4001/
+ls
+sudo install_GUI.sh
+sudo ./install_GUI.sh
+popd
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+ninja
+./bin/demoDsAPI --fa_model=/home/gserebry/dev/dwell-time/modules/face_analyzer/models/caffe/age_gender_net.prototxt --fa_weights=/home/gserebry/dev/dwell-time/modules/face_analyzer/models/caffe/age_gender_net.caffemodel --ft_models_path=/home/gserebry/dev/dwell-time/modules/face_detector/models/ --video=../tests/testdata/qq_out.mp4 
+cd ../../face-detector-repo/
+git pull -p
+cd _build/
+git checkout gs/use-cmake-scripts 
+cmake --BUILD_DOCS=ON .
+make
+make clean
+make
+cmake ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+make
+sudo apt remove 'texlive* latex* doxygen*'
+sudo apt-get remove 'texlive* latex* doxygen*'
+sudo apt-get remove 'texlive*'
+sudo apt-get remove 'texlive*' 'latex*' 'doxygen*'
+sudo apt install -y --no-install-recommends doxygen latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+make clean
+make
+sudo apt install -y --no-install-recommends doxygen latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+man apt
+man apt-get
+sudo apt-get install-s -y --no-install-recommends doxygen latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+sudo apt-get install -s -y --no-install-recommends doxygen latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+sudo apt-get install -s doxygen latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+man apt-get
+man dpkg
+man apt
+sudo apt-get remove 'texlive*' 'latex*' 'doxygen*'
+sudo apt-get install -s doxygen latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+sudo apt-get install -s --no-install-recommends doxygen latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+sudo apt-get install -s --no-install-recommends doxygen doxygen-latex latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+sudo apt-get install --no-install-recommends doxygen doxygen-latex latex-beamer latex-xcolor preview-latex-style texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-latex3
+make
+sudo apt-get install 'doxygen prosper texlive-base texlive-binaries texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-fonts-recommended-doc texlive-generic-recommended texlive-latex-base
+  texlive-latex-base-doc texlive-latex-extra texlive-latex-extra-doc texlive-latex-recommended texlive-latex-recommended-doc texlive-pictures texlive-pictures-doc texlive-pstricks texlive-pstricks-doc
+  texlive-xetex tipa
+'
+sudo apt-get install 'doxygen prosper texlive-base texlive-binaries texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-fonts-recommended-doc texlive-generic-recommended texlive-latex-base
+  texlive-latex-base-doc texlive-latex-extra texlive-latex-extra-doc texlive-latex-recommended texlive-latex-recommended-doc texlive-pictures texlive-pictures-doc texlive-pstricks texlive-pstricks-doc
+  texlive-xetex tipa
+'
+sudo apt-get install doxygen prosper texlive-base texlive-binaries texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-fonts-recommended-doc texlive-generic-recommended texlive-latex-base texlive-latex-base-doc texlive-latex-extra texlive-latex-extra-doc texlive-latex-recommended texlive-latex-recommended-doc texlive-pictures texlive-pictures-doc texlive-pstricks texlive-pstricks-doc texlive-xetex tipa
+sudo apt-get install doxygen prosper texlive-base texlive-binaries texlive-extra-utils texlive-font-utils texlive-fonts-recommended texlive-generic-recommended texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-pictures texlive-pstricks texlive-xetex tipa
+cd ../../face_an
+cd ../../face_analyzer/
+git pull -p
+git checkout et/sdl
+cd _build/
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+git submodule update --init --recursive
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+make -j5
+ninja
+cmake -DWITH_CAFFE=ON .
+ninja
+vim ../CMakeLists.txt
+cmake -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=ON .
+ninja
+ls lib/
+ls
+ls src/
+vim ../CMakeLists.txt
+cmake -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=1 .
+cmake -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=1 ..
+ninja
+ls -lhr
+ls -lhR
+ls
+ls lib
+ls src
+ls tests
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=1 ..
+ninja
+ls
+ls srcx
+ls src
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=1 ..|Grep Caffe
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=1 ..|grep Caffe
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=1 ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=1 ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=1 ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+cmake --trace -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+rm -rf ./*
+cmake --trace -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+vim ../evaluation-tool/CMakeLists.txt 
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+ninja
+git pull -p
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+git diff
+find ~ -name '*.pdf'
+find ~ -name '*.pdf'|fzf
+cd ~/dev/face-detector
+cd _build/
+cmake -DBUILD_DOCS=ON ..
+ninja
+git checkout gs/reimplement-crt-secure-fix 
+git pull -p
+cd ..
+cd _build/
+ninj aclean
+ninja clean
+cmake ..
+ninja
+ninja clean
+cmake -DTURN_ON_DEBUG_FEATURES ..
+cmake -DTURN_ON_DEBUG_FEATURES=ON ..
+ninja
+git diff
+git rm ../include/opencv_no_warnings.hpp 
+git diff
+cd ../modules/fcf_cascade/
+git status
+git pull
+git checkout master 
+git pull
+git submodule update --init --recursive
+git log
+git checkout SDL
+git checkout nk/sdl
+git submodule update --init --recursive
+vim tests/testdata/wrong_models/cascade_wrongWinSize.xml
+. ~/.bashrc
+cd ..
+cd _build/
+ninja clean
+cmake ..
+ninja
+vim ../include/facedetect_api.hpp 
+cmake ..
+ninja
+vim ../accuracy/main.cpp 
+git diff ../accuracy/main.cpp
+vim ../accuracy/main.cpp 
+vim ../examples/fd-demo/main.cpp 
+ninja
+vim ../tests/simple_test.cpp
+vim ../tools/find-faces/main.cpp 
+ninja
+git diff
+cd ..
+git status
+git grog
+git commit -a --amend
+git push -f
+cd modules/fcf_cascade/cmake/
+vim cmake-scripts/sdl/all_cmake_utils.cmake 
+cd..
+cd ..
+git pull -p
+cd modules/fcf_cascade/
+git pull -p
+git checkout develop
+git pull -p
+cd ..
+git status
+git commit -a --amend
+git push -f
+git checkout master
+git pull -p
+git checkout gs/reimplement-crt-secure-fix 
+git rebase master
+git push -f
+cd _build/
+make clean
+ls docs
+ls
+firefox docs_face_detector/html/index.html 
+git diff
+cd ..
+git diff
+cd cmake/cmake
+cd cmake/cmake_utils/
+git diff
+cd ../cmake-scripts/
+git status
+git diff
+git checkout -b gs/improve-doxygen-config
+git commit -a -m'Remove warning son exproted symbols, switch on STL support for doxygen'
+git pull -p
+git checkout master
+git pull -p
+git checkout gs/improve-doxygen-config 
+git rebase master
+git push -u origin gs/improve-doxygen-config 
+vim sdl/docs/Doxyfile.in 
+git commit -a --amend
+git push -f
+firefox ../../_build/docs_face_detector/html/index.html 
+git commit -a --amend
+git push -f
+cd ../..
+cd modules/fcf_cascade/
+git fetch
+git checkout nk/update_fpb_with_sdl
+git submodule update --init --recursive
+cd ../..
+git log
+git commit -a
+git push
+cd modules/fcf_cascade/
+git fetch
+git checkout develop
+cd ..
+git commit -a --amend
+git diff
+cd ..
+git status
+git checkout -- cmake/cmake_utils/
+git status
+cd cmake/cmake_utils/
+git status
+git reset --hard HEAD
+cd ..
+git status
+cd ../modules/fcf_cascade/
+git status
+git submodule update --init --recursive
+git status
+git pull
+git submodule update --init --recursive
+git status
+cd ..
+git status
+git commit -a --amend
+git push -f
+cd ../face_an
+cd ../face_analyzer/
+git pull -p
+git reset --hard HEAD
+git pull -p
+git status
+rm -rf TEs
+rm -rf Testing/
+rm -rf models/CMakeLists.txt 
+git status
+;s
+ls
+ls test
+git ls-files
+rm -rf test
+git status
+ls
+ls tools
+rm -rf tools
+git status
+ls
+ls perf-test/
+ls evaluation-tool/
+ls test-accuracy/
+git lfs ls-files
+git diff origin/nk/fix_cmake_scripts 
+git pull -p
+git diff
+git submodule update --init --recursive
+ag CMAKE_DL_LIBS
+cd _build/
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+ninja
+ls lib/
+ninja
+ls lib
+ls bin
+ls
+ls internal_api/
+ldd libface_analyzer_internal-0.0.so
+ldd internal_api/libface_analyzer_internal-0.0.so
+objdump internal_api/libface_analyzer_internal-0.0.so
+objdump -t internal_api/libface_analyzer_internal-0.0.so|fzf
+objdump -t internal_api/libface_analyzer_internal-0.0.so|c++filt |fzf
+ls internal_api/
+objdump -t internal_api/libface_analyzer_internal-0.0.so|c++filt |fzf
+nm --demangle internal_api/libface_analyzer_internal-0.0.so | ::create
+nm --demangle internal_api/libface_analyzer_internal-0.0.so | grep ::create
+rm -rf ./*
+# cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+make VERBOSE=1
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+ls src/
+ninja clean
+ls
+ls internal_api/
+ls evaluation-tool/
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build/ -DWITH_CAFFE=ON -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=TRUE ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+ninja
+ls evaluation-tool/
+ls
+ls lib/
+ls test-accuracy/
+ls test
+ls tests
+ctest -V
+. /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/bin/setvars.sh 
+ctest -V
+ninja clean
+ctest -V
+git diff
+git status
+git commit -a -m'Multiple changes in CMake and fixed warnings'
+git push
+ls ../tests/
+ctest -V
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ -DBUILD_INTERNAL_API=OFF ..
+ctest -V
+ninja clean
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+ninja
+ctest -V
+ls ../models
+ls ../tests/testdata/
+git mv ../tests/testdata/ ../models/
+ls ../models/
+ninja
+ctest -V
+git commit -a -m'Fix SDL tests'
+git push
+git log
+git grog
+git pull -p
+git checkout develop
+git pull
+git checkout et/sdl
+git grog
+git rebase develop
+git mergetool
+git status
+git rebase --continue
+git branch
+git log
+git log origin/et/sdl
+git status
+git rm ../tools/*
+git rm '../tools/*'
+git status
+git rebase --continue
+git mergetool
+git rebase --continue
+git status
+ls ../models/
+rm ../models/core 
+git status
+git grog
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+ninja
+ctest -V
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=ON -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build / ..
+ninja
+ctest -V
+git checkout -h
+git help branch
+git branch -u origin/et/sdl et_sdl_before_rebase
+git checkout origin/et/sdl -b et_sdl_before_rebase
+git log
+git checkout et/sdl 
+git push -f
+ctest -V
+git diff
+git commit -a -m'Make buildable without IE'
+git push
+gti diff
+git diff
+git commit -a -m'Fix test paths'
+git push
+cd ../..
+cd CI-Pipeline/
+git checkout ad/refactor 
+git pull -p
+git checkout -b gs/fix-face-analyzer-caffe-builder
+vim face_analyzer/caffe_ubuntu16.groovy 
+vim face_analyzer/precommit_caffe_ubuntu16.groovy 
+git commit -a -m'build face_analyzer with caffe and internal api'
+git push
+git push -u origin gs/fix-face-analyzer-caffe-builder 
+cd ../face_analyzer/_build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=ON -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build / ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=ON -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build / ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine -DWITH_CAFFE=ON -DBUILD_INTERNAL_API=OFF -DCaffe_DIR=/home/gserebry/dev/caffe-shared/_build / ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+rm -rf ./*
+ls
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+rm ../CMakeLists.txt.user 
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+rm ../CMakeLists.txt.user 
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+ninja
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -GNinja -DIE_ROOT_DIR=/opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/ ..
+ninja
+rm ../CMakeLists.txt.orig 
+rm ../CMakeLists.txt.user 
+git diff
+git commit -a -m'Specify include directories in a correct way'
+git push
+pushd ../../CI-Pipeline/
+git diff
+git commit -a -m'Specify correct path to the testdata'
+git push
+popd
+ls
+ls test-accuracy/
+git diff
+git commit -a -m'set valid path to the accuracy test binary'
+git push
+ssh gserebry@nnlicv117
+ldd ~/Downloads/qt-creator-opensource-linux-x86_64-4.2.2.run 
+pushd /usr/local/share/ca-certificates/
+ls
+sudo unzip ~/Downloads/Intel\ Root\ Certificate\ Chain\ Base64.zip
+sudo unzip ~/Downloads/IntelSHA2RootChain-Base64.zip 
+sudo rename 's/ /_/g' ./*
+ls
+sudo update-ca-certificates 
+popd
+cd ../../face-detector
+git branch
+git checkout gs/reimplement-crt-secure-fix 
+git submodule update --init --recursive
+cd modules/fcf_cascade/
+git log
+cd ..
+cd modules/fcf_cascade/
+git checkout -b gs/check-cascade-detection-fix
+vim src/detector_invoker.cpp 
+git commit -a -m'check whether the restricting detected object to be placed fully inside the image lowers quality or not'
+cd ../..
+git checkout -b gs/check-fcf-cascade
+git commit -a -m'check fcf cascade fix'
+git push -u origin gs/check-fcf-cascade 
+cd modules/fcf_cascade/
+git push -u origin gs/check-cascade-detection-fix 
+cat /etc/fstab
+c /media/e
+sudo umount /media/external_share 
+udo fuser /media/ex
+sudo fuser /media/external_share
+sudo mount -a
+sudo mount -o remount /media/external_share
+s /media/ex
+ls /media/external_share
+cd /media/external_share
+ls /media/external_share
+sudo umount /media/external_share
+cd ~/dev/face_an
+cd ~/dev/face_analyzer/
+gvim CMakeLists.txt
+git log
+git push
+git checkout develop
+git diff
+git stash
+git checkout develop
+git branch -D et/sdl
+git pull -p
+git checkout et/sdl
+git stash list
+git stash pop
+git diff
+cd _build/
+cmake ..
+ninja
+ctest -V
+. /opt/intel/deeplearning_deploymenttoolkit_2017.1.0.4001/deployment_tools/inference_engine/bin/setvars.sh 
+ctest -V
+git diff
+cmake -DWITH_CAFFE=OFF -DCaffe_FOUND=OFF -DBUILD_INTERNAL_API=OFF .
+cmake -DWITH_CAFFE=OFF -DCAFFE_FOUND=OFF -DBUILD_INTERNAL_API=OFF .
+ninja
+ctest -V
+git diff
+git commit -a -m'Fix review comments'
+git push
+cd ..
+ag cmake_minimum_required
+ag -f cmake_minimum_required
+ag -l cmake_minimum_required
+gvim $(ag -l cmake_minimum_required)
+gvim $(ag -l POLICY)
+gvim $(ag -l policy)
+gvim $(ag -l cmake_policy)
+cd _build/
+cmake ..
+ninja
+git diff
+git dif
+git diff
+git commit -a
+git push
+cd ..
+vim ./.gitmodules
+git status
+git submodule update --init --recursive
+git submodule status
+git submodule help
+git submodule foreach --recursive deinit
+git submodule foreach --recursive git submodule deinit
+git submodule foreach --recursive git submodule deinit .
+git submodule foreach --recursive git submodule deinit -f -- .
+git submodule foreach --recursive git submodule deinit -f
+git submodule update --init --recursive
+git submodule deinit cmake-scripts/
+cd cmake-scripts/
+git diff
+git status
+cd ..
+git submodule deinit cmake-scripts/ -f
+git submodule deinit -f cmake-scripts/
+git submodule update --init --recursive
+git diff
+git commit -a -m'Make paths to submodules to be relative'
+git push
+cd ..
+git clone git@gitlab-icv.inn.intel.com:algo/license_plate_detector.git
+cd license_plate_detector/
+git branch -r
+git checkout ik_fcf_regression 
+git log
+mkdir _build
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cd _build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cd ..
+git submodule update --init --recursive
+cd _build/
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build ..
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+cd ~/dev/face-detector
+git checkout gs/add-evaluation-tools 
+git rebase gs/reimplement-crt-secure-fix 
+git mergetool
+git status
+cd modules/fcf_cascade/
+git status
+cd ..
+git submodule update --init --recursive
+cd ;;
+cd ..
+git status
+git rebase --continue
+git rebase --skip
+git grog
+git status
+git ls-files
+find . -name '*.pyc' -delete
+git status
+find . -name '*.orig' -delete
+git status
+ls tests/accuracy/
+ls
+ls tests/regression/
+git checkout master -- modules/fcf_cascade/
+git status
+git diff
+git show master -- modules/fcf_cascade/
+git show master -- modules/fcf_cascade
+git show master -- modules/
+git submodule status
+cd modules/fcf_cascade/
+git reset --hard HEAD
+cd ..
+git submodule update --init --recursive
+cd modules/fcf_cascade/
+git log
+cd ..
+git status
+cat ./.gitmodules
+cat ../.gitmodules
+git diff gs/reimplement-crt-secure-fix 
+cd modules fcf_cascade/
+git checkout 73df89ba0b7e06be8d047c9822c8ab4826a90ad3
+cdfcf_cascade/
+cd fcf_cascade/
+git checkout 73df89ba0b7e06be8d047c9822c8ab4826a90ad3
+git log
+git submodule update --init --recursive
+cd ..
+git status
+git reset HEAD modules/fcf_cascade/
+git status
+git submodule status
+cd _build/
+cmake ..
+ninja
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release ..
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release -GNinja ..
+ninja
+cd ..
+ag 'copy'
+ag '-E copy'
+ag "'-E copy'"
+ag "-E copy"
+ag "\-E copy"
+ls accuracy/
+ls accuracy/fddbDetect/
+vim accuracy/fddbDetect/CMakeLists.txt 
+cd _build/
+cmake ..
+ninja
+ctest -V
+ls
+. ~/dev/python2-env/
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate/ -h
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ -h
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix test_develop_fcf
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix test_develop_fcf -j 16
+gvimdiff ./test_develop_fcf_detect_data.txt ../accuracy/gt_data/ubuntu16_detect_data.txt 
+cd ..
+ls
+git diff
+cp ./accuracy/ ../fd_accuracy
+cp -r ./accuracy/ ../fd_accuracy
+git checkout master
+git reset --hard HEAD
+git checkout master
+git submodule update --init --recursive
+find . -name 'cmake-scripts'
+rm -rf ./modules/fcf_cascade/modules/fpb/external/cmake-scripts
+git submodule update --init --recursive
+git status
+git submodule status 
+cd modules/fcf_cascade/
+git sta
+git status 
+rm -rf cmake/cmake-scripts/
+cd ..
+git statis
+git status
+cd _build/
+cp ./test_develop_fcf_detect_data.txt ../../
+rm -rf ./*
+cmake -DOpenCV_DIR=/home/gserebry/dev/opencv_master_build -DCMAKE_BUILD_TYPE=Release -GNinja ..
+ninja
+deactivate
+. ~/dev/python3-env/bin/AC
+. ~/dev/python3-env/bin/activate
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16
+vim ../../fd_accuracy/evaluate/eval.py
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 
+vim ./master_fd_detect_data.txt 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -h
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/ubuntu16_
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+gvimdiff master_fd_detect_data.txt ../../fd_accuracy/gt_data/ubuntu16_detect_data.txt 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix gs_reimplement_crt_fix_with_fcf_cascde_from_fd_master -j 16 -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+cd ../modules/fcf_cascade/
+git pull -p
+git checkout develop
+git pull
+git log
+cd ../../_build/
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix gs_reimplement_crt_fix_with_fcf_cascde_develop -j 16 -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+cd ..
+cd modules/fcf_cascade/
+git pull -p
+cd ..
+git status
+git commit -a -m'Update FCF cascade'
+git push
+cd _build/
+git pull -p
+ninja
+ls
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+ls
+feh roc.png 
+feh pr.png 
+ipython
+ipython3
+pip3 install ipython
+ipython3
+deactivate
+ipython3
+ipython
+cd ~/dev/python3-env/bin/ac
+. ~/dev/python3-env/bin/activate
+ipython
+pip3 install IPython
+ipython
+pip remove ipython
+pip -h ipython
+pip uninstall ipython
+pip3 uninstall ipython
+pip3 uninstall ipython3
+pip3 uninstall IPython
+pip3 install --isolated ipython
+ipython3
+#python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_no_small -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -n 'no-small-faces-imgs'
+cp master_fd_detect_data.txt master_fd_no_small_detect_data.txt
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_no_small -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -n 'no-small-faces-imgs'
+feh pr.png 
+feh roc.png 
+ipython3
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+apt search smbget
+apt-file search smbget
+ls ~/data/NICTA/
+sudo mount -oloop -tiso9660 ~/data/NICTA/NICTANegatives.iso /cdrom/
+ls /cdrom/
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+pip3 install tqdm
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+pip3 install --isolated tqdm
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+feh pr.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh pr.png 
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -'no-small-faces-imgs'
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt -n 'no-small-faces-imgs'
+python ../../fd_accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../../fd_accuracy/gt_data/facedetect_gt.txt
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+ls
+vim master_fd_cpu_optstats.pickle
+ls -lht
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+vim master_fd_cpu_optstats.pickle
+df -h
+ls -lh
+deactivate
+. ~/dev/python2-env/bin/activate
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+feh roc.png 
+git status
+cd ..
+ls _build/
+cp ./_build/master_fd_cpu_optstats.pickle accuracy/gt_data/ubuntu16_cpu_opt_stats.pickle
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+python accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+cd _build/
+python accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd_cpu_opt -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+ls -lh
+cp master_fd_cpu_optstats.pickle ../accuracy/gt_data/ubuntu16_no_small_faces_imgs_stats.pickle
+cp master_fd_cpu_optstats.pickle ../accuracy/gt_data/ubuntu16_cpu_opt_no_small_faces_imgs_stats.pickle
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt -n no-small-faces-imgs
+cp master_fdstats.pickle ../accuracy/gt_data/ubuntu16_no_small_faces_imgs_stats.pickle
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+cp master_fdstats.pickle ../accuracy/gt_data/ubuntu16_stats.pickle
+ls
+git diff
+git status
+cd ..
+git add accuracy/gt_data/points/AIM.txt 
+python ../accuracy/evaluate/ --detector ./bin/fddbDetect --models-dir ../models/ --fddb ~/data/FDDB/ --size 48 48 --result-prefix master_fd -j 16 -r -g ../accuracy/gt_data/facedetect_gt.txt
+git status
+git add accuracy/evaluate/eval.py
+git status
+git commit -a -m 'fasten script, add stats with CPU_OPT'
+git lfs ls-files
+gitpush
+git push
+git checkout master
+git checkout -b gs/fix-valgrind
+vim devtools/valgrind.supp 
+git diff
+git checkout gs/fix-valgrind 
+vim devtools/valgrind.supp 
+cd ~/dev/Infra/
+git diff
+git checkout -b gs/add-python-packages
+ls
+ls docker/
+vim docker/yocto/Dockerfile 
+git status
+git commit -a -m'Add python packages needed for face detector evaluation tool'
+git push
+git push -u origin gs/add-
+git push -u origin gs/add-python-packages 
+htop
+cd ~/data/FDDB
+ks
+ls
+ls FDDB-folds
+cat FDDB-folds/FDDB-fold-{01-10}.txt > /tmp/FDDB-fold-all.txt

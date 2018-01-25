@@ -1,0 +1,1000 @@
+make
+cd ..
+git submodule update --init --recursive
+cd _build/
+make
+make -j5
+cd ..
+find . -name pixel_range.hpp
+./_build/bin/fddbDetect -i ~/data/FDDB/2003/01/01/big/img_136.jpg -m ./models/
+cd _build/
+./bin/fddbDetect -i ~/data/FDDB/2003/01/01/big/img_136.jpg -m ./models/
+ls
+./bin/fddbDetect -i ~/data/FDDB/2003/01/01/big/img_136.jpg -m ./models/
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ..
+make -j
+gdb ./bin/fddbDetect -i ~/data/FDDB/2003/01/01/big/img_136.jpg -m ./models/
+gdb ./bin/fddbDetect 
+gdb ./bin/fddbDetect -i ~/data/FDDB/2003/01/01/big/img_136.jpg
+./bin/fddbDetect -i ~/data/FDDB/2003/01/01/big/img_136.jpg
+cd ..
+./_build/bin/fddbDetect -i ~/data/FDDB/2003/01/01/big/img_136.jpg
+cd _build/
+make
+cd ..
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ./_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/facense/models/ facense_new
+history|grep evaluate
+./fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ./evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17.xml face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17.xml face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17.xml face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17
+vim ~/data/FDDB/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16DiscROC.txt
+vim ~/data/FDDB/face_obj=48x48_win=60x60_shrink_3*
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17.xml face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16
+less ~/data/FDDB/facense_frontalDiscROC.txt
+less ~/data/FDDB/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16DiscROC.txt
+less ~/data/FDDB/facense_frontalDiscROC.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16 -s
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16 -s
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16 -s
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17.xml face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17
+#~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17.xml face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17
+#~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16
+vim -O ~/data/FDDB/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17DiscROC.txt ~/data/FDDB/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16DiscROC.txt
+ls
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ./_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/facense/models/ facense_new -s
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ./_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/facense/models/ facense_new
+make -C ~/dev/fddb-evaluation-tools/evaluation_tool/_build/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ./_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/facense/models/ facense_new -s
+#~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16
+ls ~/train/
+ls ~/train/face_datatang_83k/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57.xml face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57.xml face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57 -s
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57.xml face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57
+ls
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57.xml face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57 -s
+vim -O ~/data/FDDB/face_obj=48x48_win=60x60_shrink_3_6000_features_2017-02-28-14-16-17DiscROC.txt ~/data/FDDB/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16DiscROC.txt
+git status
+git diff
+git stash
+git checkout gs/for-demo-video-preparation 
+git branch
+git status
+ls
+ls examples/
+ls examples/faceDetect/
+less examples/faceDetect/main.cpp 
+git stash list
+git log
+git branch
+git stash list
+git stash@{1} apply
+git stash apply 1
+git stash help apply
+git stash apply @{1}
+git stash apply stash@{1}
+git diff
+git checkout -b gs/test-sangeeta-video
+git commit -a
+cd _build/
+make
+make -j
+./bin/faceDetect -h
+./bin/faceDetect --video ~/data/Sangeeta_Video.mov --show 1
+git push -u origin 
+git push -u origin gs/test-sangeeta-video 
+git status
+git submodule statis
+git submodule status
+git grog
+git rebase master
+git mergetool
+git rebase --abort
+git branch
+cp -r ../examples/faceDetect/ /tmp
+git checkout master
+git submodule update --init --recusrive
+git submodule update --init --recursive
+cd ..
+cp -r /tmp/faceDetect/ ./examples/
+vim CMakeLists.txt 
+cd _build/
+make -j
+make
+./bin/faceDetect --video ~/data/Sangeeta_Video.mov --show 1
+gdb './bin/faceDetect --video ~/data/Sangeeta_Video.mov --show 1'
+gdb './bin/faceDetect'
+cd ..
+./_build/bin/faceDetect --video ~/data/Sangeeta_Video.mov --show 1
+git status
+git branch -D gs/test-sangeeta-video 
+git add examples/faceDetect/CMakeLists.txt examples/faceDetect/main.cpp 
+git status
+git branch
+git checkout -b gs/test-sangeeta-video
+git commit -a
+git push -u -f origin gs/test-sangeeta-video 
+ls ~/train/face_datatang_83k/|grep obj=36x36_win=48x48
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55
+ls ~/train/face_datatang_83k/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=48x48_win=60x60_frontal_no_roll_2017-02-11-15-27-29.xml face_obj=48x48_win=60x60_frontal_no_roll_2017-02-11-15-27-29
+ls ~/train/face_datatang_83k/
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=48x48_frontal_all_negs.xml face_obj=36x36_win=48x48_frontal_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57.xml test
+ls
+ls -lht
+vim test_detect_data.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57.xml test
+vim test_detect_data.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj=36x36_win=60x60_shrink_6_6000_features_2017-02-27-17-40-57.xml test
+git status
+git pull
+git branch
+git checkout asmorkal/unittests 
+cd _build/
+make
+cd ..
+ls
+ls 3rdparty/
+ls tests/accuracy/CMakeLists.txt 
+vim tests/accuracy/CMakeLists.txt 
+cd _build/
+cmake ..
+cd ..
+ls
+cd tests/accuracy/
+cd ../../_build/
+ls
+cd tests/accuracy/
+ls ../3r
+ls
+cd ..
+cd .
+cd ..
+git branch
+git checkout master 
+git diff
+git reset --hard HEAD
+git checkout master
+cd _build/
+make
+cd ..
+git checkout asmorkal/unittests 
+git pull
+git status
+git checkout master
+git pull
+git merge --abort
+git reset --hard HEAD
+git pull
+git merge --abort
+git reset --hard HEAD
+git checkout master
+git branch -D asmorkal/unittests 
+git pull
+git checkout asmorkal/unittests 
+vim CMake
+vim CMakeLists.txt 
+cd _build/
+make clean
+cmake ..
+make -j5
+make VERBOSE=1
+ls
+ls CMakeFiles/CMakeTmp/
+ls tests/accuracy/CMakeFiles/
+ls tests/accuracy/CMakeFiles/facense_test.dir/
+rn tests/accuracy/CMakeFiles/facense_test.dir/*.o
+rm tests/accuracy/CMakeFiles/facense_test.dir/*.o
+make VERBOSE=1
+cd ..
+git status
+git log
+git commit -a
+git push -u origin asmorkal/unittests 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview
+/home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml -i /home/gserebry/data/FDDB/2002/07/19/big/img_130.jpg 
+gdb ~/dev/facedetect/_build/fddbDetect/fddbDetect 
+/home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml -i /home/gserebry/data/FDDB/2002/07/19/big/img_130.jpg 
+/home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m =~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml -i /home/gserebry/data/FDDB/2002/07/19/big/img_130.jpg 
+/home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml -i /home/gserebry/data/FDDB/2002/07/19/big/img_130.jpg 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-01-22-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview
+ls
+vim face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_detect_data.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-01-22-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview
+vim ~/dev/fddb-evaluation-tools/for_report/curves/Facense.txt 
+vim ~/dev/fddb-evaluation-tools/for_report/curves/ubuntu_testDiscROC.txt 
+vim ~/dev/fddb-evaluation-tools/for_report/curves/PVL-ours.txt 
+vim ~/dev/fddb-evaluation-tools/for_report/curves/Facense.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-01-22-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_nms
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-01-22-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_nms
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview_nms_average
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview_nms_average_0.65
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-01-22-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_nms_0.65
+ls ~/data/FDDB
+ls ~/data/FDDB/FDDB-folds
+vim ~/data/FDDB/FDDB-folds/FDDB-fold-all.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview_nms_average_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview_nms_average_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -n all "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_left_2017-03-01.xml -m ~/train/face_datatang_83k/face_obj\=48x48_win\=60x60_right_2017-03-01.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview_nms_average_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-01-22-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_nms_all
+ls
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-01-22-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_nms_all -s
+#~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-01-22-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_train_nms_0.3
+ls ~/train/face_datatang_83k/
+ls ~/train/face_datatang_83k/|grep nms_03
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_nms_03_2017-03-03-00-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_nms_03_2017-03-03-00-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_nms_03_2017-03-03-00-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_nms_train_nms_03
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_nms_03_2017-03-03-00-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_nms_03_2017-03-03-00-46-30.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_nms_03_2017-03-03-00-46-30.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_average_nms_train_nms_03_all
+cd ../facense_extra/
+source scripts/bin/activate
+python ./scripts/facedetect_evaluation/eval_objdetect.py 
+ls
+rename 's/_obj36/.obj36/g' *.yml
+ls
+python ./scripts/facedetect_evaluation/eval_objdetect.py --det *.yml --gt ./labels/finished/*.xml -h
+python ./scripts/facedetect_evaluation/eval_objdetect.py --det *.yml --gt ./labels/finished/*.xml --reasonable --obj 48 48 --plot
+python ./scripts/facedetect_evaluation/eval_objdetect.py --det *.yml --gt ./labels/finished/*.xml --reasonable --obj 60 60 --plot
+ls
+rm *+tp.yml
+rm *_tp.yml
+rm *_nd.yml
+rm *_fp.yml
+python ./scripts/facedetect_evaluation/eval_objdetect.py --det *.yml --gt ./labels/finished/*.xml --reasonable --obj 60 60 --plot
+git status
+git branch
+git push
+git status
+git log
+git branch
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_lef_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-09-19-34-09.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_2017-03-09-19-34-09_all
+/home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_lef_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-09-19-34-09.xml -i /home/gserebry/data/FDDB/2002/08/05/big/img_3670'.jpg'
+gdb /home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_lef_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-09-19-34-09.xml -i /home/gserebry/data/FDDB/2002/08/05/big/img_3670'.jpg'
+gdb ~/dev/facedetect/_build/fddbDetect/fddbDetect 
+gdb /home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-09-19-34-09.xml -i /home/gserebry/data/FDDB/2002/08/05/big/img_3670'.jpg'
+/home/gserebry/dev/facedetect/_build/fddbDetect/fddbDetect -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-09-19-34-09.xml -i /home/gserebry/data/FDDB/2002/08/05/big/img_3670'.jpg'
+ls ~/train/face_datatang_83k/|grep obj=36x36_win=48x48
+ls ~/train/face_datatang_83k/|grep obj=36x36_win=48x48|grep left
+ls ~/train/face_datatang_83k/|grep obj=36x36_win=48x48|grep right
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_left_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=36x36_win=48x48_right_2017-03-09-19-34-09.xml" face_obj=36x36_win=48x48_shrink_6_6000_features_multiview_2017-03-09-19-34-09_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_left_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_right_2017-03-09-19-34-09.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview_2017-03-09-19-34-09_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_left_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_right_2017-03-09-19-34-09.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_multiview_2017-03-09-19-34-09_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_2017-03-09-19-34-09.xml" face_obj=48x48_win=60x60_shrink_6_9000_features_multiview_2017-03-09-19-34-09_all
+ls ~/train/face_datatang_83k/|grep 9000
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-09-19-34-09.xml" face_obj=48x48_win=60x60_shrink_6_9000_features_frontal_2017-03-09-19-34-09_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-02-27-15-14-16.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_frontal_2017-02-27-15-14-16_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_2017-03-09-19-34-09.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_2017-03-09-19-34-09_frontal_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_6000_features_regenerate_2017-03-09-19-34-09.xml" face_obj=48x48_win=60x60_shrink_6_6000_features_regenerate_2017-03-09-19-34-09_frontal_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_2017-03-09-19-34-09.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_2017-03-09-19-34-09.xml" face_obj=48x48_win=60x60_shrink_6_9000_features_multiview_2017-03-09-19-34-09_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_all_features_2017-03-10-12-49-38.xml" face_obj=48x48_win=60x60_shrink_6_all_features_2017-03-10-12-49-38_frontal_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_all_features_2017-03-10-12-49-38.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_all_features_left_2017-03-10-12-49-38.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_all_features_right_2017-03-10-12-49-38.xml" face_obj=48x48_win=60x60_shrink_6_all_features_multiview_2017-03-10-12-49-38_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42.xml" face_obj=48x48_win=60x60_shrink_6_9000_features_2017-03-10-18-44-42_frontal_all
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n all -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_pascal_neg.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_pascal_neg.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_pascal_neg.xml" face_obj=48x48_win=60x60_shrink_6_9000_features_multiview_pascal_all
+git branch
+git status
+git diff
+git log
+git help tag
+git tag -a 'nose-centered-bbox' -m 'flip bounding boxes of faces around the nose tip, making them not tight from time to time' 1f09565f78ef61e2503cfdf27e2f1272ae23e2f1
+git tag
+git tag -h
+git tag -l
+git tag -n
+git push 
+git help tag
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=48x48_win=60x60_shrink_6_9000_features_pascal_neg.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_right_pascal_neg.xml -m ~/train/face_datatang_83k/face_obj=48x48_win=60x60_9000_features_left_pascal_neg.xml" face_obj=48x48_win=60x60_shrink_6_9000_features_multiview_pascal
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/fddb-evaluation-tools/models/ facense_old
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/fddb-evaluation-tools/models/ facense_old_all
+htop
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj\=36x36_win\=48x48_shrink_6_9000_features_frontal_w_hard_negatives.xml 36x36_9000_features_hard_negs
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj\=36x36_win\=48x48_shrink_6_6000_features_2017-03-01-11-16-55.xml 'face_obj=36x36_win=48x48_shrink_6_6000_features_2017-03-01-11-16-55'
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/face_obj\=36x36_win\=48x48_shrink_6_9000_features_frontal_wo_hard_negatives.xml face_obj=36x36_win=48x48_shrink_6_9000_features_frontal_wo_hard_negatives
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_shrink_6_6000_features_frontal_w1024_hard_negatives.xml' face_obj=36x36_win=48x48_shrink_6_6000_features_frontal_w1024_hard_negatives
+ls
+cd ~/dev/fddb-evaluation-tools/
+ls
+mv ~/dev/facense_extra/*_data.txt ./
+ls
+ls for_report/curves/
+mc
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/fddb-evaluation-tools/models/ facense_old_all_multiview
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/dev/fddb-evaluation-tools/models/ facense_old_multiview
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_shrink_6_6000_features_frontal_wo_hard_negatives.xml' face_obj=36x36_win=48x48_shrink_6_6000_features_frontal_wo_hard_negatives
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml' face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg
+git status
+git diff
+git commit -a
+git branch
+git push
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml' face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg
+vim ./face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg
+vim face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_detect_data.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml' face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml' face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_2
+vim ~/data/FDDB/allface_obj=36x36_win=48x48_9000_features_frontal_no_hard_negDiscROC.txt
+vim -O ~/data/FDDB/allface_obj=36x36_win=48x48_9000_features_frontal_no_hard_negDiscROC.txt ~/data/FDDB/allface_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_2DiscROC.txt
+ls
+vim -O face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_detect_data.txt face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_2_detect_data.txt
+sudo apt install xfce4-xkb-plugin 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml' ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_no_hard_neg.xml' ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_no_hard_neg.xml'" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml ~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_left_no_hard_neg.xml ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_no_hard_neg.xml" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml ~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_left_no_hard_neg.xml ~/train/face_datatang_83k/face_obj=36x36_win=48x48_9000_features_right_no_hard_neg.xml" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation $("~/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml ~/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml ~/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml") face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "/home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml") face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "/home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+less /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml
+less /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "/home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "/home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "/home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg_60
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "/home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml" face_obj=36x36_win=48x48_9000_features_mutliview_no_hard_neg_512wc
+~/dev/facedetect/_build/fddbDetect/fddbDetect $detectorTool -m $modelsFolder -i ${fddb_path}{=s/\r//g=}'.jpg'"
+vim -O face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_detect_data.txt face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_2_detect_data.txt
+head -n 10 face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_detect_data.txt
+~/dev/facedetect/_build/fddbDetect/fddbDetect $detectorTool -m $modelsFolder -i ~/data/FDDB/2002/08/26/big/img_265.jpg
+~/dev/facedetect/_build/fddbDetect/fddbDetect $detectorTool -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg
+~/dev/facedetect/_build/fddbDetect/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg
+~/dev/facense/_build/bin/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg
+~/dev/facense/_build/bin/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg &> /tmp/facense.txt
+~/dev/facedetect/_build/fddbDetect/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg &> /tmp/facedetect.txt
+vim -O /tmp/facense.txt /tmp/facedetect.txt 
+vim -O face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_detect_data.txt face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg_2_detect_data.txt
+~/dev/facense/_build/bin/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg &> /tmp/facense.txt
+cat /tmp/facense.txt 
+~/dev/facense/_build/bin/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg &> /tmp/facense.txt
+cat /tmp/facense.txt 
+cat /tmp/facedetect.txt 
+~/dev/facense/_build/bin/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg &> /tmp/facense.txt
+cat /tmp/facedetect.txt 
+cat /tmp/facense.txt 
+~/dev/facense/_build/bin/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml' face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg
+~/dev/facense/_build/bin/fddbDetect -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_frontal_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_left_no_hard_neg.xml -m /home/gserebry/train/face_datatang_83k/face_obj\=36x36_win\=48x48_9000_features_right_no_hard_neg.xml -i ~/data/FDDB/2002/08/26/big/img_265.jpg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg.xml' face_obj=36x36_win=48x48_9000_features_frontal_no_hard_neg
+git status
+q
+git branch -r
+git branch
+git diff master
+git checkout master
+git diff gs/win-re-evaluate 
+git push
+git checkout gs/win-re-evaluate 
+git push -u origin
+git log
+vim ~/dev/facense/models/config.xml
+sudo ifconfig enp5s0 down
+sudo ifconfig enp5s0 up
+sudo dhclient
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512_multi
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'" face_36_48_9000_features_hard_neg_after_512_multi
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'" face_36_48_9000_features_hard_neg_after_512_multi
+$?
+vim facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'" face_36_48_9000_features_hard_neg_after_512_multi
+$?
+vim facedetect_gt.txt 
+mount -a
+mount
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+ls -lht /home/gserebry/data/FDDB/
+ls
+ls -lht
+ls
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+vim /home/gserebry/data/FDDB/allContROC.txt
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+vim /home/gserebry/data/FDDB/allContROC.txt
+vim _detect_data.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facedetect/_build/fddbDetect/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+echo $?
+vim facedetect_gt.txt 
+vim ~/data/FDDB/allDiscROC.txt 
+vim facedetect_gt.txt 
+ ~/data/FDDB/allDiscROC.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+echo $?
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+ca facedetect_gt.txt 
+cat facedetect_gt.txt 
+cp ~/data/FDDB/allDiscROC.txt ./for_report/curves/
+bash plot_roc_linux.sh 
+evince fddb_rocs.pdf 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+echo $?
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+ls
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+vim facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+vim facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -r -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_frontal_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_left_hard_neg_after_512.xml' -m ~/train/face_datatang_83k/'face_obj=36x36_win=48x48_9000_features_right_hard_neg_after_512.xml'"
+firefox facedetect_report.html 
+vim facedetect_gt.txt 
+git diff
+git branch
+git log
+git commit -a
+ls
+git add calc_roc_auc_score.py 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models"
+vim facedetect_report.html 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models" -g ~/dev/facense/tests/fd-test/facedetect_gt.txt 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models" -g "/home/gserebry/dev/facense/tests/fd-test/facedetect_gt.txt" 
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models"
+git submodule status
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models"
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models/"
+/home/gserebry/dev/facense/_build/bin/fddbDetect -m /home/gserebry/dev/facense/models/ -i /home/gserebry/data/FDDB/2002/08/07/big/img_1348.jpg
+~/dev/fddb-evaluation-tools/fddb_evaluate.sh -n 'all' -f ~/data/FDDB -w ~/dev/facense/_build/bin/fddbDetect -e ~/dev/fddb-evaluation-tools/evaluation_tool/_build/fddb_evaluation -m "/home/gserebry/dev/facense/models/"
+firefox facedetect_report.html 
+sudo service lightdm restart
+sudo service lightdm stop
+sudo apt-get install kdm
+apt search 'dm'
+apt-cache search 'dm'
+apt-cache search 'dm'|less
+apt-cache search -related lightdm
+apt-cache -related lightdm
+apt-cache --related lightdm
+man apt-cache
+apt-cache search -n 'dm'|less
+apt search 'display manager'
+sudo apt-get install lxdm
+sudo service lxdm restart
+sudo service lxdm start
+ps aux|grep lxdm
+sudo service lightdm stop
+ps aux|grep lightdm
+sudo service lxdm stop
+sudo service lxdm start
+sudo service lxdm stop
+sudo service lxdm start
+sudo service lxdm restart
+sudo service lxdm stop
+ps aux|grep lxdm
+sudo kill -9 19113
+ps aux|grep lightdm
+sudo service lxdm start
+ps aux|grep lxdm
+sudo service lxdm stop
+sudo kill -9 20697
+sudo kill -9 20607
+htop
+ps aux|grep X
+sudo kill -9 797
+sudo kill -9 852
+sudo kill -9 19060
+sudo kill -9 19059
+sudo kill -9 19046
+sudo kill -9 1236
+ps aux|grep X
+sudo service lightdm restart
+sudo service lxdm start
+journalctl -xe
+sudo service lxdm restart
+sudo reboot -h now
+cd ~/train/face_datatang_83k/
+ls
+cat run.sh 
+tail -f ./left_config_9000.yml
+tail -f ./left_9000_2017-03-09-23-43-02.log
+tail -f ./left_regenerate_2017-03-09-23-43-02.log
+less ./left_regenerate_2017-03-09-23-43-02.log
+less ./frontal_regenerate_2017-03-09-23-43-02.log
+cat run.sh 
+less frontal_9000_2017-03-09-23-43-02.log
+vim -O frontal_2017-03-09-23-43-02.log frontal_9000_2017-03-09-23-43-02.log
+less ./left_config_9000.yml
+tail -f ./left_9000_2017-03-09-23-43-02.log
+less ./left_9000_2017-03-09-23-43-02.log
+cat frontal_config.yml 
+cat left_config.yml 
+tail -f ./left_9000_2017-03-09-23-43-02.log
+tail -f ./right_9000_2017-03-09-23-43-02.log
+vim frontal_config.yml 
+tail -f ./right_9000_2017-03-09-23-43-02.log
+cp frontal_config_9000.yml frontal_config_14000.yml
+cp left_config_9000.yml left_config_14000.yml
+cp right_config_9000.yml right_config_14000.yml
+vim *_14000.yml
+vim run.sh 
+bash run.sh 
+tail -f frontal_2017-03-10-12-49-38.log 
+vim *_14000.yml
+bash run.sh 
+tail -f frontal_2017-03-10-12-49-38.log 
+less frontal_2017-03-10-12-49-38.log 
+tail -f frontal_2017-03-10-12-49-38.log 
+cat run.sh 
+tail -f left_2017-03-10-12-49-38.log
+tail -f right_2017-03-10-12-49-38.log
+tail -f frontal_2017-03-10-12-49-38.log 
+cat run.sh 
+vim frontal_config_9000.yml 
+vim *_config_9000.yml 
+vim run.sh 
+bash run.sh 
+tail -f frontal_9000_2017-03-10-18-44-42.log 
+tail -f left_9000_2017-03-10-18-44-42.log 
+vim run.sh 
+ls ../neg/
+wc -l ../neg/pascal_voc_2012.txt 
+wc -l ../neg/neg_filtered_subset_nicta_a_b_c_d.txt 
+vim run.sh 
+vim frontal_config_9000.yml 
+vim left_config_9000.yml 
+vim right_config_9000.yml 
+vim run.sh 
+bash run.sh 
+htop
+tail -f frontal_9000_pascal_neg.log 
+ls
+less frontal_9000_pascal_neg.log 
+cp frontal_config.yml test_config.yml
+vim test_config.yml 
+ls
+cd ../neg/
+ls
+vim hard_negatives.txt 
+ln -s ~/data/IMDB_WIKI/imdb ./IMDB
+ls
+ls -l
+ls IMDB
+cd ../face_datatang_83k/
+vim test_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log
+bg
+tail -f test.log 2~2~
+fg
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+vim test_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+vim ../neg/hard_negatives.txt 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml &> test.log &
+tail -f test.log 
+~/dev/fcf_train/_build/fcftrain -config ./test_config.yml
+ls *.yml
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log
+bg
+tail -f frontal_36_2017-03-15-14-37-57.log
+fg
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log
+bg
+tail -f frontal_36_2017-03-15-14-37-57.log
+fg
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log &
+tail -f frontal_36_2017-03-15-14-37-57.log
+less frontal_36_2017-03-15-14-37-57.log
+tail -f frontal_36_2017-03-15-14-37-57.log
+touch ../neg/no_hard_negatives.txt
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_2017-03-15-17-26-24.log &
+tail -f frontal_2017-03-15-17-26-24.log 
+less frontal_2017-03-15-17-26-24.log 
+tail -f frontal_2017-03-15-17-26-24.log 
+vim frontal_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_2017-03-15-14-37-57.log &
+tail -f frontal_36_2017-03-15-14-37-57.log
+fg
+cp frontal_config_9000.yml frontal_config.yml 
+vim frontal_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config.yml &> frontal_36_2017-03-15-14-37-57.log &
+tail -f frontal_36_2017-03-15-14-37-57.log
+vim frontal_config.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config.yml &> frontal_36_2017-03-16-10-03-28.log &
+tail -f frontal_36_2017-03-16-10-03-28.log 
+vim frontal_config.yml 
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim run.sh 
+bash run.sh 
+tail -f frontal_9000_no_hard_neg.log 
+tail -f left_9000_no_hard_neg.log 
+fg
+jobs
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim run.sh 
+run.sh 
+bash run.sh 
+tail -f left_9000_no_hard_neg.log 
+tail -f right_9000_no_hard_neg.log 
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+~/dev/fcf_train/_build/fcftrain -config ./frontal_config_9000.yml &> frontal_36_hard_512.log &
+tail -f frontal_36_hard_512.log 
+less frontal_36_hard_512.log 
+tail frontal_36_hard_512.log 
+vim -O frontal_config_9000.yml left_config_9000.yml right_config_9000.yml 
+vim run.sh 
+bash run.sh 
+tail -f left_9000_hard_neg.log 
+tmux
+tmux list
+tmux list-sessions
+tmux a -t 1
+tmux a -t 'training'
+vim ~/.tmux.conf 
+tmux a -t 'training'
+cd ~/dev/fddb-evaluation-tools/
+ls
+git branch 
+git checkout maser
+git checkout master
+git diff
+vim fddb_evaluate.sh 
+tmux a -t 'training'
+cd ~/dev/facense_extra/scripts/facedetect_evaluation/
+vim
+cd ../../..
+cd fddb-evaluation-tools/
+ls
+virtualenv -h
+virtualenv -p /usr/bin/python3 --system-site-packages --no-setuptools --no-wheel --no-pip env
+vim env/bin/activate
+source env/bin/activate
+mkdir fp-vis
+cd fp-vis/
+touch __init__.py
+vim fddb.py
+cmake -E -h
+ls
+ls ../models/
+cmake .
+ls
+ls bin
+find . -name 'cascade_dummy.xml'
+cd ..
+find . -name 'cascade_dummy.xml'
+cd _build/
+ls bin
+cmake ..
+find . -name 'cascade_dummy.xml'
+cmake ..
+make
+ls
+ls bin
+tmux a -t 'training'
+cd ~/dev/facense
+git branch
+git status
+git diff
+git push
+git push -f
+git status
+git diff
+git reset --hard HEAD
+git branch
+git checkout master
+git checkout gs/prepare-for-regression-tests 
+cd _build/
+make
+git difftool aae58e04207b55373bc09795f9c374a7e4601151:devtools/cppcheck.supp ac73757a7a9a06c66072968be106cef4dea78b3d:devtools/cppcheck.supp 
+git log aae58e04207b55373bc09795f9c374a7e4601151
+git log ac73757a7a9a06c66072968be106cef4dea78b3d
+git log aae58e04207b55373bc09795f9c374a7e4601151
+git branch
+git diff
+git checkout master
+git checkout -b gs/fix-opencv-include
+git commit -a
+git push -u origin gs/fix-opencv-include 
+gti diff
+git diff
+git commit -a --amend
+git push -f
+cd ..
+cppcheck --xml --xml-version=2 --template=gcc --enable=all --suppressions-list=devtools/cppcheck.supp -UWCOREDUMP -Umin -Umax --force .
+cd ..
+ls
+cd my_facense/
+git remote -v
+rm -rf ./*
+mc
+cppcheck --xml --xml-version=2 --template=gcc --enable=all --suppressions-list=devtools/cppcheck.supp -UWCOREDUMP -Umin -Umax --force .
+cppcheck --xml --xml-version=2 --template=gcc --enable=all --suppressions-list=devtools/cppcheck.supp -UWCOREDUMP -Umin -Umax --force . > /dev/null
+cp ../facense/API/ds.h ./API/ds.h
+cppcheck --xml --xml-version=2 --template=gcc --enable=all --suppressions-list=devtools/cppcheck.supp -UWCOREDUMP -Umin -Umax --force . > /dev/null
+cd ../facense
+./_build/bin/age-gender-test 
+git branch
+git diff master
+ls models/
+git diff master~2
+git diff master~2:models/config.xml
+git diff master~2 -- models/config.xml
+gti status
+git status
+git add models/config
+git add models/config.xml
+git commit
+git commit -a
+git push
+git branch
+git checkout master
+git diff
+git branch
+git stahs
+git checkout master
+git pull
+git checkout -b gs/facedetect-sample
+git add examples/faceDetect/
+git status
+./_build/bin/faceDetect -h
+./_build/bin/faceDetect -m ./models/ -i ~/data/datatang/StreetSubway\ Video\ with\ Pedestrian\ Tracing\ Annotation/data/Video\ Data/Street/labeled/Haidian_Street_Crowded_1_SunnyChange.avi --show 1
+git status
+git commit -a
+git push -u origin gs/facedetect-sample 
+ps aux|grep charm
+kill -9 8111
+ps aux|grep charm
+pycharm
+cd ~/dev/fddb-evaluation-tools/
+git status
+git branch
+git checkout master 
+git diff
+git branch
+git commit -a
+git push -u origin 
+git add evaluation_tool/EllipsesFromRectanglesSingleImage.*
+git commit -a --amend
+git push -f
+git checkout master
+git pull
+cd ~/dev/facense
+git log
+ipython
+cd ~/data
+aria2c -x5 -j5 -s5 ftp://ftp.inrialpes.fr/pub/lear/douze/data/INRIAPerson.tar
+aria2c -x5 -j5 -s5 http://cvrr.ucsd.edu/vivachallenge/data/LISA_HD_Static.zip
+unzip -h
+unzip LISA_HD_Static.zip -d LISA_HD_Static[B
+aria2c -x5 -s5 -j5 http://www.robots.ox.ac.uk/~vgg/data/hands/downloads/hand_dataset.tar.gz
+aria2c http://www.robots.ox.ac.uk/~vgg/data/hands/downloads/hand_dataset.tar.gz
+ls -a
+aria2c -l
+man aria2c 
+aria2c -l- http://www.robots.ox.ac.uk/~vgg/data/hands/downloads/hand_dataset.tar.gz
+ls
+tar -xvf ./hand_dataset.tar.gz 
+touch LISA_HD_Static.zip_link.txt
+vim LISA_HD_Static.zip_link.txt
+cd ~/dev/facense_extra/scripts/facedetect_training/
+ls
+source ../bin/activate
+python ./prepare_for_train_datatang_83k_wild.py -h
+vim ~/train/face_datatang_83k/left_config_9000.yml 
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000.yml --out ~/train/datatang_83k_obj36x36_win48x48_shift --exclude ~/train/exclude_positives.txt --dry-run
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000.yml --out ~/train/datatang_83k_obj36x36_win48x48_shift --exclude ~/train/exclude_positives.txt
+git status
+git diff
+git commit -a
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000.yml --out ~/train/datatang_83k_obj36x36_win48x48_shift_var2 --exclude ~/train/exclude_positives.txt
+vim ~/train/face_datatang_83k/left_config_9000.yml ~/train/face_datatang_83k/right_config_9000.yml 
+pushd ~/dev/coco/PythonAPI/
+python setup.py build_ext install
+pip install Cython
+pip3 install Cython
+python setup.py build_ext install
+popd
+htop
+ls
+python ./extract_negatives_mscoco.py -h
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO/
+ls /home/gserebry/data/MSCOCO//annotations/i
+ls /home/gserebry/data/MSCOCO//annotations/
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO/
+htop
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO/
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO/ --detections-dir ~/data/MSCOCO/detections_full_cascade/
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/
+pip3 install Ipython
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/
+python3 ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/
+pip search ipython
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/
+hostname
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/ --accepted ./accepted_ms_coco_fp.txt
+vim accepted_ms_coco_fp.txt 
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/ --accepted ./accepted_ms_coco_fp.txt
+vim accepted_ms_coco_fp.txt 
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/ --accepted ./accepted_ms_coco_fp.txt
+ls -lht
+wc -l ./accepted_ms_coco_fp.txt 
+cp accepted_ms_coco_fp.txt accepted_ms_coco_fp.txt_backup
+python ./extract_negatives_mscoco.py --dir ~/data/MSCOCO --detections-dir ~/data/MSCOCO/detections_full_cascade/ --accepted ./accepted_ms_coco_fp.txt
+wc -l ./accepted_ms_coco_fp.txt 
+history|grep faceDetect
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60/ --exclude ~/train/exclude_positives.txt --dry-run
+mc
+rm ../lib/python3.5/site-packages/cv2.so 
+ln -s ~/dev/opencv_master_build/lib/python3/cv2.cpython-35m-x86_64-linux-gnu.so ../lib/python3.5/site-packages/cv2.so
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60/ --exclude ~/train/exclude_positives.txt --dry-run
+git status
+git log
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60_new/ --exclude ~/train/exclude_positives.txt
+git blame processing/datatang_83k_wild/landmarks.py
+git log 5f4e659f
+git log
+git diff 8b28c3131739d0e2636b30ff25dc2cab5b4f7bbd -- processing/datatang_83k_wild/landmarks.py
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60_new/ --exclude ~/train/exclude_positives.txt
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000_same_neg_as_front.yml --out ~/train/datatang_83k_obj48x48_win60x60_new/ --exclude ~/train/exclude_positives.txt
+#python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000_same_neg_as_front.yml --out ~/train/datatang_83k_obj48x48_win60x60_forehead/ --exclude ~/train/exclude_positives.txt
+vim ~/train/face_datatang_83k/left_config_9000_same_neg_as_front.yml
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000_same_neg_as_front.yml --out ~/train/datatang_83k_obj48x48_win60x60_forehead/ --exclude ~/train/exclude_positives.txt
+ls ~/train/face_datatang_83k/
+ls ~/train/
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000_same_neg_as_front.yml --out ~/train/datatang_83k_obj48x48_win60x60_forehead/ --exclude ~/train/exclude_positives.txt
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/left_config_9000_same_neg_as_front.yml --out ~/train/datatang_83k_obj36x48_win48x60_forehead_not_rect/ --exclude ~/train/exclude_positives.txt
+git diff
+git log
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60_forehead_shift/ --exclude ~/train/exclude_positives.txt
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60_fix/ --exclude ~/train/exclude_positives.txt [B
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60_fix_forehead/ --exclude ~/train/exclude_positives.txt
+vim ~/train/face_datatang_83k/frontal_config_forehead.yml 
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead.yml --out ~/train/datatang_83k_obj36x36_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+python ./show_landmarks_stats.py --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/ --exclude ~/train/exclude_positives.txt
+glxinfo
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ./attributes_fixed.txt --config ~/train/face_datatang_83k/frontal_config_9000.yml --out ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/ --exclude ~/train/exclude_positives.txt
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ./attributes_fixed.txt --config ~/train/face_datatang_83k/frontal_config_forehead.yml --out ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/ --exclude ~/train/exclude_positives.txt
+rm -rf ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ./attributes_fixed_2.txt --config ~/train/face_datatang_83k/frontal_config_forehead.yml --out ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/ --exclude ~/train/exclude_positives.txt
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/frontal_up/imgs.txt 
+wc -l ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_orientation/left/imgs.txt 
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win60x60_fix_forehead_no_border/ --exclude ~/train/exclude_positives.txt
+source ../bin/activate
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+git diff
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+ls
+rm 0rf ./processing/intel_pie/
+rm -rf ./processing/intel_pie/
+rm -rf ./processing/datatang_83k_wild/
+mkdir ./dataset/intel_pie
+touch dataset/intel_pie/__init__.py
+touch dataset/intel_pie/landmarks.py
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+ls
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+git diff
+git show master -- dataset/datatang_83k_wild/landmarks.py
+git show master:dataset/datatang_83k_wild/landmarks.py
+git branch
+git show gs/facedetect_training:dataset/datatang_83k_wild/landmarks.py
+git show gs/facedetect_training:scripts/facedetect_training/dataset/datatang_83k_wild/landmarks.py
+git show gs/facedetect_training:scripts/facedetect_training/processing/datatang_83k_wild/landmarks.py
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+git show gs/facedetect_training:scripts/facedetect_training/processing/datatang_83k_wild/landmarks.py
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+pip install line_profiler
+kernprof.py
+line 
+ls ../bin/
+ls ../lib/python3.5/site-packages/
+pip3 install line_profiler
+ln -s ~/.local/lib/python3.5/site-packages/kernprof.py ../bin/kernprof.py
+python ../bin/kernprof.py -h
+python ../bin/kernprof.py -l -o ./profile.txt -v ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+vim profile.txt 
+python ../bin/kernprof.py -l -v ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+less prepare_for_train_datatang_83k_wild.py.lprof
+python ../bin/kernprof.py ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+less prepare_for_train_datatang_83k_wild.py.prof
+ls -l
+ls -lh
+python ../bin/kernprof.py -l -o ./profile.txt ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+ls -lh
+ipython3
+python -m line_profiler profile.txt 
+mv processing/find_face.py processing/face.py
+git status
+git add processing/face.py 
+./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+python ./prepare_for_train_datatang_83k_wild.py --image_dir ~/data/NDG_Sports_Team/Datatang-83k-Wild/pic/ --landmarks ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --exclude ~/train/exclude_positives.txt
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/ --dry-run
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/
+man feh
+feh -h
+man feh
+feh -r ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/
+feh -r ~/train/datatang_83k_obj48x48_win48x48_fix_forehead/left/
+cd ..
+cd facedetect_training/
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config_forehead_no_border.yml --out ~/train/obj48x48_win48x48/
+feh -r ~/train/obj48x48_win48x48/frontal/
+bg
+feh -r ~/train/datatang_83k_obj48x48_win60x60_fix_forehead/frontal_up/
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win48x48/
+feh -r ~/train/datatang_83k_obj48x48_win60x60_fix_forehead/frontal_up/ &
+feh -r ~/train/obj48x48_win48x48/frontal/ &
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win48x48/
+git branch
+git status
+gti add dataset/datatang_83k_wild/landmarks.py 
+git add dataset/datatang_83k_wild/landmarks.py 
+git add dataset/intel_pie/*
+git status
+ls dataset/imdb_wiki/
+git commit -a
+htop
+ls
+mkdir dataset/celeb_face_a
+touch dataset/celeb_face_a/__init__.py
+touch dataset/celeb_face_a/reader.py
+ls dataset/intel_pie/
+touch dataset/celeb_face_a/landmarks.py
+ipython
+ipython3
+python ./show_landmarks_stats.py -h
+python ./show_landmarks_stats.py -l ~/data/CelebFaceA/Anno/list_landmarks_celeba.txt
+python ./show_landmarks_stats.py -l ~/data/CelebFaceA/Anno/list_landmarks_align_celeba.txt
+python ./show_landmarks_stats.py -l ~/data/CelebFaceA/Anno/list_landmarks_celeba.txt
+python ./show_landmarks_stats.py -l ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt
+python ./show_landmarks_stats.py -l ~/data/CelebFaceA/Anno/list_landmarks_celeba.txt
+python ./show_landmarks_stats.py --datatang ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --celebface ~/data/CelebFaceA/Anno/list_landmarks_celeba.txt
+python ./show_landmarks_stats.py --datatang ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --celebface ~/data/CelebFaceA/Anno/list_landmarks_celeba.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_orientation
+python ./show_landmarks_stats.py --datatang ~/data/NDG_Sports_Team/Datatang-83k-Wild/landmarks.txt --celebface ~/data/CelebFaceA/Anno/list_landmarks_celeba.txt --attributes ~/data/NDG_Sports_Team/Datatang-83k-Wild/attributes.txt
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_orientation_test
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_orientation_test_celebface
+git status
+git add dataset/celeb_face_a/*
+git status
+git commit -a --amend
+git log
+git checkout HEAD^
+vim prepare_for_train_datatang_83k_wild.py
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation
+vim prepare_for_train_datatang_83k_wild.py
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation
+vim prepare_for_train_datatang_83k_wild.py
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation
+git checkout -b gs/datatang_orientation
+git commit -a
+python ./prepare_for_train_datatang_83k_wild.py --config ~/train/face_datatang_83k/frontal_config.yml --out ~/train/obj48x48_win60x60_dt_orientation_symmetric_border
+htop
+cd ~/dev/face-detector/modules/fcf_cascade/
+ls
+vim cmake/ProjectCommonDef.cmake 
+hotp
+htop
